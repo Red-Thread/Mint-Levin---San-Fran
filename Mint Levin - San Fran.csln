@@ -1,0 +1,30 @@
+{
+  "_fileMetadata": {
+    "_schema": "1.0.0.0",
+    "_createdByAppHost": "2.601.10.0",
+    "_created": "2025-11-11T09:32:29.727081-05:00",
+    "_lastModifiedByAppHost": "2.601.10.0",
+    "_minimumAppHost": "2.0.0",
+    "_modified": "2025-11-20T11:43:27.42345-05:00"
+  },
+  "_solution": {
+    "_name": "Mint Levin - San Fran",
+    "_projects": [
+      {
+        "_name": "Pre-Function",
+        "_filename": "Pre-Function/Pre-Function.cuip",
+        "_datetime": "2025-11-11T22:24:35.076478Z"
+      },
+      {
+        "_name": "Mintz Levin",
+        "_filename": "Mintz Levin/Mintz Levin.cuip",
+        "_datetime": "2025-11-11T14:32:37.6534Z"
+      },
+      {
+        "_name": "Break Area",
+        "_filename": "Break Area/Break Area.cuip",
+        "_datetime": "2025-11-20T16:43:27.412631Z"
+      }
+    ]
+  }
+}

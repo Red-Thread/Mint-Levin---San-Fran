@@ -1,0 +1,110 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2025-11-20 11:42:22.328442-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2025-11-20 11:42:22.328424-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="i2v5ijdlz7" devicesVisited="[&quot;TSW-560P&quot;]" defaultWidth="0" defaultHeight="0" class="widget-container"><ch5-datetime timeoffsethours="0" tagName="ch5-datetime" horizontalalignment="left" displaytype="time" display24hourformat="false" displayampm="true" displaytwodigitshour="false" displayseconds="false" stylefordate="MMM d yyyy" id="i37lmthz6x" componentName="Date Time_1" ccid_ActiveFont="'Roboto'" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-560P&quot;]" ccid_themeCSSSet="true" oldID="ibnq"></ch5-datetime><ch5-datetime timeoffsethours="0" tagName="ch5-datetime" horizontalalignment="right" displaytype="date" display24hourformat="false" displayampm="true" displaytwodigitshour="false" displayseconds="false" stylefordate="MMM d yyyy" id="ibnq" componentName="Date Time" ccid_ActiveFont="'Roboto'" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-560P&quot;]" ccid_themeCSSSet="true" componentWasResized="true">
+              </ch5-datetime><ch5-text clearLabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="i7rc" componentName="room.name$" ccid_ActiveFont="'Roboto'" ccid_Label="Room Name" labelinnerhtml="Room Name" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-560P&quot;]" ccid_themeCSSSet="true" pd-receivestatelabel="Contract Enabled">
+              </ch5-text></div>
+
+{Css}
+@media (max-width: 99999px){#i2v5ijdlz7{width:363px;height:55px;left:0;top:0;position:absolute;background-color:#b7b7b7b7;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#i7rc{display:block;left:106px;top:7px;position:absolute;z-index:16;width:150px;height:48px;}#i7rc .ch5-text :not(i):not(svg){font-family:'Roboto';}#i7rc .ch5-text{min-height:10px;min-width:10px;padding:0px;}#ibnq{display:block;left:219px;top:8px;position:absolute;z-index:17;width:136px;height:16px;--ch5-datetime--width:136px;--ch5-datetime--height:16px;--ch5-datetime--font-size:10px;Label_font-size:10px;custom-normal-font-size:10px;}#ibnq :not(i):not(svg){font-family:'Roboto';}#i37lmthz6x{display:block;left:4px;top:8px;position:absolute;z-index:18;width:136px;height:16px;--ch5-datetime--width:136px;--ch5-datetime--height:16px;--ch5-datetime--font-size:10px;Label_font-size:10px;custom-normal-font-size:10px;}#i37lmthz6x :not(i):not(svg){font-family:'Roboto';}#wrapper{background-color:#ffffff;}}@media (orientation: portrait) and (max-height: 641px) and (max-width: 364px), (orientation: portrait) and (max-height: 639px){#i2v5ijdlz7{width:363px;height:55px;left:0;top:0;position:absolute;}#i7rc{display:block;left:106px;top:7px;position:absolute;z-index:16;width:150px;height:48px;}#ibnq{display:block;left:219px;top:8px;position:absolute;z-index:17;width:136px;height:16px;--ch5-datetime--width:136px;--ch5-datetime--height:16px;Label_font-size:10px;--ch5-datetime--font-size:10px;}#i37lmthz6x{left:4px;top:8px;position:absolute;width:136px;height:16px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "header"
+PageMode = "absolute"
+Id = "a2adf2c0-a318-4a43-8c19-c87a380c7229"
+DisplayBackgroundColor = "True"
+BackgroundColor = "#b7b7b7b7"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Date Time"
+Editable = true
+
+[Elements.Components.Attributes]
+timeoffsethours = "0"
+tagName = "ch5-datetime"
+horizontalalignment = "left"
+displaytype = "time"
+display24hourformat = "false"
+displayampm = "true"
+displaytwodigitshour = "false"
+displayseconds = "false"
+stylefordate = "MMM d yyyy"
+id = "i37lmthz6x"
+componentName = "Date Time_1"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-560P\"]"
+ccid_themeCSSSet = "true"
+oldID = "ibnq"
+[[Elements.Components]]
+Type = "Ch5 Date Time"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+timeoffsethours = "0"
+tagName = "ch5-datetime"
+horizontalalignment = "right"
+displaytype = "date"
+display24hourformat = "false"
+displayampm = "true"
+displaytwodigitshour = "false"
+displayseconds = "false"
+stylefordate = "MMM d yyyy"
+id = "ibnq"
+componentName = "Date Time"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-560P\"]"
+ccid_themeCSSSet = "true"
+componentWasResized = "true"
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "i7rc"
+componentName = "room.name$"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Room Name"
+labelinnerhtml = "Room Name"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-560P\"]"
+ccid_themeCSSSet = "true"
+pd-receivestatelabel = "Contract Enabled"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "i2v5ijdlz7"
+devicesVisited = "[\"TSW-560P\"]"
+defaultWidth = "0"
+defaultHeight = "0"
+

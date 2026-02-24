@@ -1,0 +1,67 @@
+{
+  "name": "Pre-Function",
+  "timestamp": "2026-02-23T23:38:10.756614+00:00",
+  "version": "1.0.0.0",
+  "schema_version": 1,
+  "extra_value": "",
+  "signals": {
+    "states": {
+      "boolean": {
+        "3": {
+          "2": "main.srclist.ListEnabled",
+          "4": "main.srclist.Button1ItemSelected",
+          "5": "main.srclist.Button2ItemSelected",
+          "6": "main.srclist.Button3ItemSelected",
+          "7": "main.srclist.Button4ItemSelected",
+          "504": "main.srclist.Button1Visible",
+          "505": "main.srclist.Button2Visible",
+          "506": "main.srclist.Button3Visible",
+          "507": "main.srclist.Button4Visible"
+        }
+      },
+      "numeric": {
+        "1": {
+          "4": "main.Slider.LowerTouchfb"
+        }
+      },
+      "string": {
+        "2": {
+          "1": "main.header.roomname.Indirect"
+        },
+        "3": {
+          "1": "main.srclist.Button1Text",
+          "2": "main.srclist.Button2Text",
+          "3": "main.srclist.Button3Text",
+          "4": "main.srclist.Button4Text"
+        }
+      }
+    },
+    "events": {
+      "boolean": {
+        "main.srclist.Button1ItemPress": {
+          "joinId": 1001,
+          "smartObjectId": 3
+        },
+        "main.srclist.Button2ItemPress": {
+          "joinId": 1002,
+          "smartObjectId": 3
+        },
+        "main.srclist.Button3ItemPress": {
+          "joinId": 1003,
+          "smartObjectId": 3
+        },
+        "main.srclist.Button4ItemPress": {
+          "joinId": 1004,
+          "smartObjectId": 3
+        }
+      },
+      "numeric": {
+        "main.Slider.LowerTouch": {
+          "joinId": 4,
+          "smartObjectId": 1
+        }
+      },
+      "string": {}
+    }
+  }
+}

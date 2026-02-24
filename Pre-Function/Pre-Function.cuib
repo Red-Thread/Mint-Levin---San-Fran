@@ -1,0 +1,114 @@
+{
+  "FileMetadata": {
+    "_createdByProjectApp": "1.4201.17.0",
+    "_lastModifiedByProjectApp": "1.4201.17.0",
+    "_schema": "1.0.0.0",
+    "_createdByAppHost": "2.601.10.0",
+    "_created": "2025-11-11T17:24:35.082182-05:00",
+    "_lastModifiedByAppHost": "2.601.10.0",
+    "_minimumAppHost": "2.0.0",
+    "_modified": "2025-11-20T10:31:23.257032-05:00"
+  },
+  "HardButtons": [
+    {
+      "DeviceSpecId": "EC216A047732C086",
+      "Name": "TSW-560P",
+      "Logic": {
+        "EC216A047732C086": [
+          {
+            "ButtonIndex": 1,
+            "ButtonLabel": "Power",
+            "SendEventOnClick": "20",
+            "PageFlip": "",
+            "IconTag": "fa-power-off",
+            "Type": 3,
+            "HasModifications": true
+          },
+          {
+            "ButtonIndex": 2,
+            "ButtonLabel": "Home",
+            "SendEventOnClick": "",
+            "PageFlip": "",
+            "IconTag": "fa-home",
+            "Type": 3,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 3,
+            "ButtonLabel": "Lights",
+            "SendEventOnClick": "",
+            "PageFlip": "",
+            "IconTag": "fa-lightbulb-o",
+            "Type": 3,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 4,
+            "ButtonLabel": "Up",
+            "SendEventOnClick": "41",
+            "PageFlip": "",
+            "IconTag": "fa-arrow-up",
+            "Type": 3,
+            "HasModifications": true
+          },
+          {
+            "ButtonIndex": 5,
+            "ButtonLabel": "Down",
+            "SendEventOnClick": "42",
+            "PageFlip": "",
+            "IconTag": "fa-arrow-down",
+            "Type": 3,
+            "HasModifications": true
+          }
+        ],
+        "5c0430ff-4492-46d3-8a82-060e1675e8e1": [
+          {
+            "ButtonIndex": 1,
+            "ButtonLabel": "Power",
+            "SendEventOnClick": "20",
+            "PageFlip": "",
+            "IconTag": "fa-power-off",
+            "Type": 4,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 2,
+            "ButtonLabel": "Home",
+            "SendEventOnClick": "",
+            "PageFlip": "",
+            "IconTag": "fa-home",
+            "Type": 4,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 3,
+            "ButtonLabel": "Lights",
+            "SendEventOnClick": "",
+            "PageFlip": "",
+            "IconTag": "fa-lightbulb-o",
+            "Type": 4,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 4,
+            "ButtonLabel": "Up",
+            "SendEventOnClick": "41",
+            "PageFlip": "",
+            "IconTag": "fa-arrow-up",
+            "Type": 4,
+            "HasModifications": false
+          },
+          {
+            "ButtonIndex": 5,
+            "ButtonLabel": "Down",
+            "SendEventOnClick": "42",
+            "PageFlip": "",
+            "IconTag": "fa-arrow-down",
+            "Type": 4,
+            "HasModifications": false
+          }
+        ]
+      }
+    }
+  ]
+}

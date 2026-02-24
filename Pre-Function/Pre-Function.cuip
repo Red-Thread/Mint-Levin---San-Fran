@@ -1,0 +1,32 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2025-11-11 17:24:35.105022-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2025-11-11 17:25:24.83672-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{DeviceResolutionSource}
+[]
+
+{ProjectAttributes}
+
+[Attributes]
+Name = "Pre-Function"
+ThemeId = "light-theme.css"
+ProjectThemeIds = "light-theme.css"
+ThemePageColor = "#ffffff"
+IncludeUnusedAsset = "False"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.16.1"
+ComponentKey = "UiEditor"
+Id = "b3c5b334-1dca-4a68-ae7f-6221f474bf69"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DeviceResolutionIds = "D-P-TSW560P-0360-0640"
+ipId = "03"
+ProjectSchemaVersion = "6"
+

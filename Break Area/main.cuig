@@ -1,0 +1,168 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-02-23 17:09:41.793087-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-02-23 17:09:41.793062-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<ch5-slider nohandle="false" size="custom" orientation="vertical" tapsettable="false" handleshape="rounded-rectangle" handlesize="regular" tooltipshowtype="off" tooltipdisplaytype="%" value="50" slidertype="fader" customvstheme="custom" min="0" max="100" step="1" id="i6qk" componentname="Slider" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-560P&quot;]" sendeventonchange="Contract Enabled" pd-receivestatevalue="Contract Enabled">
+              </ch5-slider><ch5-template transitionduration="1s" transitiondelay="0s" templateid="waaabe817-78ad-45e3-b9de-63da7e155be6" id="i44e" componentname="header" devicesvisited="[&quot;TSW-560P&quot;]"></ch5-template><ch5-button-list centeritems="false" columns="1" endless="false" numberofitems="4" orientation="vertical" previewstate="buttonnormal" usecontractforcustomstyle="false" usecontractforcustomclass="false" rows="1" scrollbar="true" scrolltoposition="0" stretch="null" indexid="idx" customclass="ccid-custom" buttoncheckboxposition="left" buttoncheckboxshow="false" buttonhalignlabel="center" buttonvalignlabel="middle" buttoniconposition="first" buttonmode="0" buttonshape="rounded-rectangle" buttontype="default" buttoniconurlfilltype="initial" pd-receivestateenable="Contract Enabled" pd-receivestateshow="" pd-receivestatescrolltoposition="" pd-receivestatenumberofitems="" pd-buttonreceivestateselected="Contract Enabled" pd-buttonreceivestatescriptlabelhtml="Contract Enabled" pd-buttonreceivestateiconclass="" buttonsendeventonclick="Contract Enabled" pd-buttonreceivestateenable="" pd-buttonreceivestateshow="Contract Enabled" usecontractforeachbuttonselection="false" affectedbypreviewstate="True" customvstheme="custom" loaditems="visible-only" id="iukb" componentname="src.list" ccid_activefont="'Roboto'" ccid_label="" ccid_linksendreceive="True" ccid_imageicontype="iconclass" devicesvisited="[&quot;TSW-560P&quot;]" assetid="0" pd-receivestateselectedbutton="" usecontractforitemshow="true" usecontractforitemenable="false" contractitemlabeltype="innerHTML" buttonselected="false"><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 1" id="iczr" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="TV Audio" labelinnerhtml="TV Audio"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 2" id="itat" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="Wall Plate" labelinnerhtml="Wall Plate"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 3" id="iulo" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="Off" labelinnerhtml="Off"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 4"></ch5-button-list-individual-button></ch5-button-list>
+
+{Css}
+@media (max-width: 99999px){#i6qk{width:30px;height:551px;display:block;left:297px;top:69px;position:absolute;--ch5-slider--width-regular:551px;--ch5-slider--connect-background-color:#0099ff;Appearance_active_background-color:#0099ff;--ch5-slider--connect-border-style:none;Appearance_active_border-style:none;}#i6qk .noUi-touch-area{slidertouchareapadding_padding:0px;}#i44e{display:block;left:0px;top:0;position:absolute;}#iukb .ch5-button-list :not(i):not(svg){font-family:'Roboto';}#iukb ch5-button{--ch5-button--default-background-color:#bac2c8;--ch5-button--default-border-color:#a0a7ad;--ch5-button--default-label-font-color:#343333;}#wrapper{background-color:#ffffff;}#iukb{width:210px;height:510px;listbuttonHSize_width:100px;listbuttonVSize_height:81px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;display:block;left:49px;top:81px;position:absolute;--ch5-button-list--button-container-height:81px;Appearance_background-color:#bac2c8;Appearance_border-color:#a0a7ad;Label_color:#343333;}}@media (orientation: portrait) and (max-height: 641px) and (max-width: 364px), (orientation: portrait) and (max-height: 639px){#i6qk{width:30px;height:551px;display:block;left:297px;top:69px;position:absolute;--ch5-slider--width-regular:551px;Appearance_active_background-color:#0099ff;--ch5-slider--connect-background-color:#0099ff;Appearance_active_border-style:none;--ch5-slider--connect-border-style:none;}#i44e{display:block;left:0px;top:0;position:absolute;}#iukb{width:210px;height:510px;listbuttonHSize_width:100px;listbuttonVSize_height:81px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;display:block;left:49px;top:81px;position:absolute;--ch5-button-list--button-container-height:81px;Appearance_background-color:#bac2c8;--ch5-button--default-background-color:#bac2c8;Appearance_border-color:#a0a7ad;--ch5-button--default-border-color:#a0a7ad;Label_color:#343333;--ch5-button--default-label-font-color:#343333;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "main"
+PageMode = "absolute"
+Id = "9de088b9-f83f-412a-a9d9-dd91d010c824"
+StartPage = "True"
+PreloadPage = "True"
+CachePage = "False"
+VisibilityJoin = "0"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Type = "Ch5 Slider"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+nohandle = "false"
+size = "custom"
+orientation = "vertical"
+tapsettable = "false"
+handleshape = "rounded-rectangle"
+handlesize = "regular"
+tooltipshowtype = "off"
+tooltipdisplaytype = "%"
+value = "50"
+slidertype = "fader"
+customvstheme = "custom"
+min = "0"
+max = "100"
+step = "1"
+id = "i6qk"
+componentName = "Slider"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-560P\"]"
+sendeventonchange = "Contract Enabled"
+pd-receivestatevalue = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+transitionduration = "1s"
+transitiondelay = "0s"
+templateid = "waaabe817-78ad-45e3-b9de-63da7e155be6"
+id = "i44e"
+componentName = "header"
+devicesVisited = "[\"TSW-560P\"]"
+[[Elements]]
+Type = "Ch5 Button List"
+Editable = true
+
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 1"
+id = "iczr"
+devicesVisited = "[\"TSW-560P\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+ccid_Label = "TV Audio"
+labelinnerhtml = "TV Audio"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 2"
+id = "itat"
+devicesVisited = "[\"TSW-560P\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+ccid_Label = "Wall Plate"
+labelinnerhtml = "Wall Plate"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 3"
+id = "iulo"
+devicesVisited = "[\"TSW-560P\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+ccid_Label = "Off"
+labelinnerhtml = "Off"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 4"
+
+[Elements.Attributes]
+centeritems = "false"
+columns = "1"
+endless = "false"
+numberofitems = "4"
+orientation = "vertical"
+previewstate = "buttonnormal"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+rows = "1"
+scrollbar = "true"
+scrolltoposition = "0"
+stretch = "null"
+indexid = "idx"
+customclass = "ccid-custom"
+buttoncheckboxposition = "left"
+buttoncheckboxshow = "false"
+buttonhalignlabel = "center"
+buttonvalignlabel = "middle"
+buttoniconposition = "first"
+buttonmode = "0"
+buttonshape = "rounded-rectangle"
+buttontype = "default"
+buttoniconurlfilltype = "initial"
+pd-receivestateenable = "Contract Enabled"
+pd-receivestateshow = ""
+pd-receivestatescrolltoposition = ""
+pd-receivestatenumberofitems = ""
+pd-buttonreceivestateselected = "Contract Enabled"
+pd-buttonreceivestatescriptlabelhtml = "Contract Enabled"
+pd-buttonreceivestateiconclass = ""
+buttonsendeventonclick = "Contract Enabled"
+pd-buttonreceivestateenable = ""
+pd-buttonreceivestateshow = "Contract Enabled"
+usecontractforeachbuttonselection = "false"
+affectedByPreviewState = "True"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "iukb"
+componentName = "src.list"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = ""
+ccid_linkSendReceive = "True"
+ccid_imageIconType = "iconclass"
+devicesVisited = "[\"TSW-560P\"]"
+assetid = "0"
+pd-receivestateselectedbutton = ""
+useContractForItemShow = "true"
+useContractForItemEnable = "false"
+contractitemlabeltype = "innerHTML"
+buttonselected = "false"
+

@@ -1,0 +1,32 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2025-11-11 09:32:37.590339-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2025-11-11 09:35:23.031666-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.3001.1"
+MinimumAppHost = "2.0.0"
+
+{DeviceResolutionSource}
+[]
+
+{ProjectAttributes}
+
+[Attributes]
+Name = "Mintz Levin"
+ThemeId = "zoom-light-theme.css"
+ProjectThemeIds = "zoom-light-theme.css"
+ThemePageColor = "#f7f7fc"
+IncludeUnusedAsset = "False"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.16.0"
+ComponentKey = "ZoomRoomControl"
+Id = "c92d51ec-4bad-4785-b485-3107108c6d85"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DeviceResolutionIds = "D-L-TSW1070-987-0740idle"
+ipId = "21"
+ProjectSchemaVersion = "6"
+

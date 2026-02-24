@@ -1,0 +1,32 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2025-11-11 09:32:29.690741-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2025-11-11 09:32:29.690732-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.3001.1"
+MinimumAppHost = "2.0.0"
+
+{DeviceResolutionSource}
+[]
+
+{ProjectAttributes}
+
+[Attributes]
+ComponentKey = "ZoomRoomControl"
+Name = "Mint Levin - San Fran"
+ThemeId = "zoom-light-theme.css"
+ProjectThemeIds = "zoom-light-theme.css"
+ThemePageColor = "#f7f7fc"
+IncludeUnusedAsset = "False"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.16.1"
+Id = "2cc80ac2-f735-47ba-8497-ed52521006f0"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DeviceResolutionIds = "D-L-TSW1070-1179-0740idle"
+ipId = "03"
+ProjectSchemaVersion = "6"
+

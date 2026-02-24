@@ -1,0 +1,131 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-02-23 16:27:31.352805-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-02-23 16:27:31.352796-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.3001.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="icm07mvu8k" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" defaultWidth="0" defaultHeight="0" class="widget-container"><html-div componentName="border.CeilingMic" id="iny4" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" oldID="iu8mhoj2yqmdt" pd-data-ch5-show="Contract Enabled"></html-div><html-div componentName="ceiling.Mute.State" id="ifte" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" oldID="isu6q4esxw2s5" pd-data-ch5-show="Contract Enabled"></html-div><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="2" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" useContractForCustomStyle="false" useContractForCustomClass="false" useContractForEnable="false" useContractForShow="false" useContractForNumItems="false" useContractForItemEnable="false" useContractForItemShow="true" customvstheme="custom" loaditems="visible-only" id="idj5" componentName="Faders" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-subpagereceivestateshow="Contract Enabled" widgetid="w815acc83-0c26-49cf-af50-1bedb003a40c">
+              </ch5-subpage-reference-list><ch5-toggle handleshape="circle" orientation="horizontal" size="x-small" value="false" customvstheme="custom" id="i6s9" componentName="ceilingMicToggle" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themeCSSSet="true" oldID="ih2l24w3jfggs" pd-receivestatevalue="Contract Enabled" pd-receivestateshow="Contract Enabled" sendeventontouch="Contract Enabled" ccid_ActiveFont="'Inter'" ccid_Label=""></ch5-toggle><ch5-text clearLabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" labelinnerhtml="Ceiling Mic Mute" id="ig9d" componentName="Formatted-Text" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themeCSSSet="true" oldID="iiivwp1xxq24g" pd-receivestateshow="Contract Enabled" ccid_Label="Ceiling Mic Mute" ccid_ActiveFont="'Inter'"></ch5-text></div>
+
+{Css}
+@media (max-width: 99999px){#iny4{display:block;background-color:rgba(182,198,213,0.27);border-style:solid;border-width:1px;border-color:#1b4b7c;width:269px;height:73px;left:370px;top:571px;position:absolute;border-top-left-radius:20px;border-radius:20px 20px 20px 20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;}#icm07mvu8k{width:987px;height:660px;left:0;top:0;position:absolute;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#iqhg .ch5-slider .noUi-connects{background-color:transparent;}#i6s9{toggleLabel_margin-top:0px;toggleLabel_margin-bottom:0px;toggleLabel_margin-left:0px;toggleLabel_margin-right:0px;toggleOnLabel_font-weight:700;toggleOffLabel_font-weight:700;display:block;left:516px;top:584px;position:absolute;toggleOffIcon_margin-top:0;toggleOffIcon_margin-bottom:0;toggleOffIcon_margin-left:2px;toggleOffIcon_margin-right:2px;toggleOnIcon_margin-top:0;toggleOnIcon_margin-bottom:0;toggleOnIcon_margin-left:2px;toggleOnIcon_margin-right:2px;toggleLabel_font-style:normal;toggleLabel_font-size:16px;toggleLabel_font-weight:400;width:80px;Icon_off_color:#ffffff;--ch5-toggle--icon-off-font-color:#ffffff;Icon_off_margin-top:0;--ch5-toggle--icon-off-margin-top:0;Icon_off_margin-bottom:0;--ch5-toggle--icon-off-margin-bottom:0;Icon_off_margin-left:2px;--ch5-toggle--icon-off-margin-left:2px;Icon_off_margin-right:2px;--ch5-toggle--icon-off-margin-right:2px;Icon_on_color:#ffffff;--ch5-toggle--icon-on-font-color:#ffffff;Icon_on_margin-top:0;--ch5-toggle--icon-on-margin-top:0;Icon_on_margin-bottom:0;--ch5-toggle--icon-on-margin-bottom:0;Icon_on_margin-left:2px;--ch5-toggle--icon-on-margin-left:2px;Icon_on_margin-right:2px;--ch5-toggle--icon-on-margin-right:2px;Label_off_color:#ffffff;--ch5-toggle--off-text-font-color:#ffffff;Label_off_font-weight:700;--ch5-toggle--off-text-font-weight:700;Label_on_color:#ffffff;--ch5-toggle--on-text-font-color:#ffffff;Label_on_font-weight:700;--ch5-toggle--on-text-font-weight:700;Label_color:#4a4a4a;--ch5-toggle--label-font-color:#4a4a4a;Label_margin-top:0px;--ch5-toggle--label-margin-top:0px;Label_margin-bottom:0px;--ch5-toggle--label-margin-bottom:0px;Label_margin-left:0px;--ch5-toggle--label-margin-left:0px;Label_margin-right:0px;--ch5-toggle--label-margin-right:0px;Label_font-style:normal;--ch5-toggle--label-font-style:normal;Label_font-size:16px;--ch5-toggle--label-font-size:16px;Label_font-weight:400;--ch5-toggle--label-font-weight:400;}#idj5{width:986px;height:auto;display:block;left:0px;top:0px;position:absolute;en:1;}#i6s9 .ch5-toggle :not(i):not(svg){font-family:"Inter";}#ifte{display:block;background-color:rgba(248,43,0,0.86);border-style:solid;border-width:1px;border-color:#1b4b7c;width:269px;height:73px;left:370px;top:571px;position:absolute;border-top-left-radius:20px;border-radius:20px 20px 20px 20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;}#ig9d{width:130px;--ch5-text--width:130px;height:81px;--ch5-text--height:81px;display:block;left:384px;top:567px;position:absolute;Label_font-size:18px;--ch5-text--font-size:18px;custom-normal-font-size:18px;}#ig9d .ch5-text :not(i):not(svg){font-family:"Inter";}#ig9d .ch5-text{min-height:10px;min-width:10px;padding:0px;}#wrapper{background-color:#ffffff;}}@media (orientation: landscape) and (max-width: 988px) and (max-height: 741px), (orientation: landscape) and (max-width: 986px){#iny4{display:block;background-color:rgba(182,198,213,0.27);border-style:solid;border-width:1px;border-color:#1b4b7c;width:269px;height:73px;left:370px;top:571px;position:absolute;border-top-left-radius:20px;border-radius:20px 20px 20px 20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;}#icm07mvu8k{width:987px;height:660px;left:0;top:0;position:absolute;}#i6s9{left:516px;top:584px;position:absolute;width:80px;}#idj5{width:986px;height:auto;display:block;left:0px;top:0px;position:absolute;}#ifte{display:block;background-color:rgba(248,43,0,0.86);border-style:solid;border-width:1px;border-color:#1b4b7c;width:269px;height:73px;left:370px;top:571px;position:absolute;border-top-left-radius:20px;border-radius:20px 20px 20px 20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;}#ig9d{width:130px;--ch5-text--width:130px;height:81px;--ch5-text--height:81px;display:block;left:384px;top:567px;position:absolute;Label_font-size:18px;--ch5-text--font-size:18px;custom-normal-font-size:18px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "subAudio"
+PageMode = "absolute"
+Id = "3a1c52a9-41fd-4776-ad54-9cc4fad73314"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "html-div"
+
+[Elements.Components.Attributes]
+componentName = "border.CeilingMic"
+id = "iny4"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+oldID = "iu8mhoj2yqmdt"
+pd-data-ch5-show = "Contract Enabled"
+[[Elements.Components]]
+Type = "html-div"
+
+[Elements.Components.Attributes]
+componentName = "ceiling.Mute.State"
+id = "ifte"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+oldID = "isu6q4esxw2s5"
+pd-data-ch5-show = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Subpage Reference List"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+columns = "1"
+rows = "1"
+centeritems = "true"
+numberofitems = "2"
+scrolltoposition = "0"
+scrollbar = "false"
+endless = "false"
+indexid = "idx"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+useContractForNumItems = "false"
+useContractForItemEnable = "false"
+useContractForItemShow = "true"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "idj5"
+componentName = "Faders"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+pd-subpagereceivestateshow = "Contract Enabled"
+widgetid = "w815acc83-0c26-49cf-af50-1bedb003a40c"
+[[Elements.Components]]
+Type = "Ch5 Toggle"
+Editable = true
+
+[Elements.Components.Attributes]
+handleshape = "circle"
+orientation = "horizontal"
+size = "x-small"
+value = "false"
+customvstheme = "custom"
+id = "i6s9"
+componentName = "ceilingMicToggle"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+ccid_themeCSSSet = "true"
+oldID = "ih2l24w3jfggs"
+pd-receivestatevalue = "Contract Enabled"
+pd-receivestateshow = "Contract Enabled"
+sendeventontouch = "Contract Enabled"
+ccid_ActiveFont = "'Inter'"
+ccid_Label = ""
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+labelinnerhtml = "Ceiling Mic Mute"
+id = "ig9d"
+componentName = "Formatted-Text"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+ccid_themeCSSSet = "true"
+oldID = "iiivwp1xxq24g"
+pd-receivestateshow = "Contract Enabled"
+ccid_Label = "Ceiling Mic Mute"
+ccid_ActiveFont = "'Inter'"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "icm07mvu8k"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+defaultWidth = "0"
+defaultHeight = "0"
+
