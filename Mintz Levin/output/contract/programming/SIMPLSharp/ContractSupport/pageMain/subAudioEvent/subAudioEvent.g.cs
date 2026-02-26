@@ -533,7 +533,7 @@ namespace MintzLevin.pageMain.subAudioEvent
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptToggle_PressEvent, onreceptToggle_Press);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.prefuncfader_LowerTouchEvent, onprefuncfader_LowerTouch);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.receptionfader_LowerTouchEvent, onreceptionfader_LowerTouch);
-            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 28);
+            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 35);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

@@ -368,11 +368,11 @@ namespace MintzLevin.pageMain.subShareSrc.sharecontentsrc
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_0_(ComponentMediator, 21, 4);
-            Items_1_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_1_(ComponentMediator, 22, 4);
-            Items_2_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_2_(ComponentMediator, 23, 4);
-            Items_3_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_3_(ComponentMediator, 24, 4);
-            Item = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Item(ComponentMediator, 21, 4);
+            Items_0_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_0_(ComponentMediator, 28, 4);
+            Items_1_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_1_(ComponentMediator, 29, 4);
+            Items_2_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_2_(ComponentMediator, 30, 4);
+            Items_3_ = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Items_3_(ComponentMediator, 31, 4);
+            Item = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.Item(ComponentMediator, 28, 4);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

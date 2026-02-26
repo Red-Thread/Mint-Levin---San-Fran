@@ -1,0 +1,229 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-02-25 17:20:15.519271-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-02-25 17:20:15.519269-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="ifyiq9oot7" devicesvisited="[&quot;4K Monitor&quot;]" defaultwidth="987px" defaultheight="660px" class="widget-container"><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="False" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="syncEnabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="igfk" componentname="Button" ccid_activefont="'Roboto'" ccid_label="Un-Dock" labelinnerhtml="Un-Dock" assetid="0" pageflip="0" devicesvisited="[&quot;4K Monitor&quot;]" ccid_sync_normal_appearancesector_background-color="syncDisabled" ccid_sync_normal_appearancesector_background-color_toggle="0" ccid_sync_pressed_appearancesector_background-color="syncDisabled" ccid_sync_pressed_appearancesector_background-color_toggle="0" ccid_sync_selected_appearancesector_background-color="syncDisabled" ccid_sync_selected_appearancesector_background-color_toggle="0" ccid_sync_normal_appearancesector_border-color="syncEnabled" ccid_sync_pressed_appearancesector_border-color="syncEnabled" ccid_sync_selected_appearancesector_border-color="syncEnabled" ccid_sync_normal_appearancesector_border-width="syncEnabled" ccid_sync_pressed_appearancesector_border-width="syncEnabled" ccid_sync_selected_appearancesector_border-width="syncEnabled" ccid_sync_normal_appearancesector_border-style="syncEnabled" ccid_sync_pressed_appearancesector_border-style="syncEnabled" ccid_sync_selected_appearancesector_border-style="syncEnabled" ccid_sync_normal_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_normal_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_normal_labelsector_color="syncEnabled" ccid_sync_pressed_labelsector_color="syncEnabled" ccid_sync_selected_labelsector_color="syncEnabled" ccid_sync_normal_labelsector_font-size="syncEnabled" ccid_sync_pressed_labelsector_font-size="syncEnabled" ccid_sync_selected_labelsector_font-size="syncEnabled" ccid_sync_normal_labelsector_font-weight="syncEnabled" ccid_sync_pressed_labelsector_font-weight="syncEnabled" ccid_sync_selected_labelsector_font-weight="syncEnabled" ccid_sync_normal_labelsector_text-decoration="syncEnabled" ccid_sync_pressed_labelsector_text-decoration="syncEnabled" ccid_sync_selected_labelsector_text-decoration="syncEnabled" ccid_sync_normal_labelsector_letter-spacing="syncEnabled" ccid_sync_pressed_labelsector_letter-spacing="syncEnabled" ccid_sync_selected_labelsector_letter-spacing="syncEnabled" ccid_sync_normal_labelsector_margin-left="syncEnabled" ccid_sync_pressed_labelsector_margin-left="syncEnabled" ccid_sync_selected_labelsector_margin-left="syncEnabled" ccid_sync_normal_labelsector_margin-top="syncEnabled" ccid_sync_pressed_labelsector_margin-top="syncEnabled" ccid_sync_selected_labelsector_margin-top="syncEnabled" ccid_sync_normal_iconsector_color="syncEnabled" ccid_sync_pressed_iconsector_color="syncEnabled" ccid_sync_selected_iconsector_color="syncEnabled" ccid_sync_normal_iconsector_font-size="syncEnabled" ccid_sync_pressed_iconsector_font-size="syncEnabled" ccid_sync_selected_iconsector_font-size="syncEnabled" ccid_sync_normal_iconsector_margin-left="syncEnabled" ccid_sync_pressed_iconsector_margin-left="syncEnabled" ccid_sync_selected_iconsector_margin-left="syncEnabled" ccid_sync_normal_iconsector_margin-top="syncEnabled" ccid_sync_pressed_iconsector_margin-top="syncEnabled" ccid_sync_selected_iconsector_margin-top="syncEnabled" ccid_sync_normal_labelsector_color_toggle="1" ccid_sync_normal_labelsector_font-size_toggle="1" ccid_sync_normal_labelsector_font-weight_toggle="1" ccid_sync_normal_labelsector_margin-left_toggle="1" ccid_sync_normal_labelsector_margin-top_toggle="1" ccid_sync_normal_appearancesector_border-color_toggle="1" ccid_sync_normal_appearancesector_border-width_toggle="1" ccid_sync_normal_appearancesector_border-style_toggle="1" ccid_sync_normal_appearancesector_border-top-left-radius_toggle="1" ccid_sync_normal_appearancesector_border-top-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle="1" ccid_sync_normal_labelsector_text-decoration_toggle="1" ccid_sync_normal_labelsector_letter-spacing_toggle="1" ccid_sync_normal_iconsector_color_toggle="1" ccid_sync_normal_iconsector_font-size_toggle="1" ccid_sync_normal_iconsector_margin-left_toggle="1" ccid_sync_normal_iconsector_margin-top_toggle="1" ccid_customsizeset="true" iconclass="fas fa-eject" sendeventontouch="Contract Enabled">
+              </ch5-button><ch5-toggle handleshape="circle" orientation="horizontal" size="regular" value="false" customvstheme="custom" id="ie6m" componentname="room.combine.toggle" ccid_activefont="'Roboto'" ccid_label="" ccid_linksendreceive="True" devicesvisited="[&quot;4K Monitor&quot;]" sendeventontouch="Contract Enabled" pd-receivestatevalue="Contract Enabled">
+              </ch5-toggle><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="right" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="ihw9" componentname="room.combine.button" ccid_activefont="'Roboto'" ccid_label="Combine Rooms" labelinnerhtml="Combine Rooms" ccid_linksendreceive="True" devicesvisited="[&quot;4K Monitor&quot;]" ccid_themecssset="true">
+              </ch5-text></div>
+
+
+
+{Css}
+@media (max-width: 99999px){#ifyiq9oot7{width:987px;height:660px;left:0;top:0;position:absolute;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ihw9{display:block;left:164px;top:211px;position:absolute;z-index:4;width:376px;height:48px;--ch5-text--width:376px;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;}#ihw9 .ch5-text :not(i):not(svg){font-family:'Roboto';}#ihw9 .ch5-text{min-height:10px;min-width:10px;padding:0px;}#ie6m .ch5-toggle :not(i):not(svg){font-family:'Roboto';}#ie6m{width:100px;display:block;left:579px;top:213px;position:absolute;z-index:5;}#igfk{display:block;left:390px;top:320px;position:absolute;z-index:6;width:230px;height:84px;--ch5-button--regular-width:230px;--ch5-button--regular-height:84px;--ch5-button--regular-icon-size:18px;undefined:18px;Icon_font-size:18px;custom-normal-icon-font-size:18px;--ch5-button--regular-pressed-icon-size:18px;pressedIcon_font-size:18px;custom-pressed-icon-font-size:18px;--ch5-button--regular-selected-icon-size:18px;selectedIcon_font-size:18px;custom-selected-icon-font-size:18px;--ch5-button--icon-margin-left:0;Icon_margin-left:0;--ch5-button--icon-margin-right:0;Icon_margin-right:0;--ch5-button--pressed-icon-margin-left:0;pressedIcon_margin-left:0;--ch5-button--selected-icon-margin-left:0;selectedIcon_margin-left:0;--ch5-button--label-margin-left:20px;Label_margin-left:10px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--pressed-label-margin-left:20px;pressedLabel_margin-left:10px;--ch5-button--selected-label-margin-left:20px;selectedLabel_margin-left:10px;}#igfk .ch5-button :not(i):not(svg){font-family:'Roboto';}#wrapper{background-color:#ffffff;}}@media (orientation: landscape) and (max-width: 2561px) and (max-height: 1441px), (orientation: landscape) and (max-width: 2559px){#ifyiq9oot7{width:987px;height:660px;left:0;top:0;position:absolute;}#ihw9{display:block;left:164px;top:211px;position:absolute;z-index:4;width:376px;height:48px;--ch5-text--width:376px;Label_font-size:32px;--ch5-text--font-size:32px;}#ie6m{width:100px;display:block;left:579px;top:213px;position:absolute;z-index:5;}#igfk{display:block;left:390px;top:320px;position:absolute;z-index:6;width:230px;height:84px;--ch5-button--regular-width:230px;--ch5-button--regular-height:84px;--ch5-button--regular-icon-size:18px;undefined:18px;--ch5-button--regular-pressed-icon-size:18px;--ch5-button--regular-selected-icon-size:18px;--ch5-button--icon-margin-left:0;--ch5-button--icon-margin-right:0;--ch5-button--pressed-icon-margin-left:0;--ch5-button--selected-icon-margin-left:0;--ch5-button--label-margin-left:20px;--ch5-button--label-margin-right:0;--ch5-button--pressed-label-margin-left:20px;--ch5-button--selected-label-margin-left:20px;}}
+
+
+
+{PageAttributes}
+
+[Attributes]
+Name = "subRoomSetup"
+PageMode = "absolute"
+Id = "1e69b6f8-c6a9-42bf-8084-cb338cd37751"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Name = ""
+Type = "widgetContainer"
+Status = ""
+Content = ""
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Button"
+Status = ""
+Content = ""
+Editable = true
+
+[[Elements.Components.Components]]
+Name = ""
+Type = "textnode"
+Status = ""
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "False"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "syncEnabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "igfk"
+componentName = "Button"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Un-Dock"
+labelinnerhtml = "Un-Dock"
+assetid = "0"
+pageflip = "0"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_sync_normal_appearancesector_background-color = "syncDisabled"
+ccid_sync_normal_appearancesector_background-color_toggle = "0"
+ccid_sync_pressed_appearancesector_background-color = "syncDisabled"
+ccid_sync_pressed_appearancesector_background-color_toggle = "0"
+ccid_sync_selected_appearancesector_background-color = "syncDisabled"
+ccid_sync_selected_appearancesector_background-color_toggle = "0"
+ccid_sync_normal_appearancesector_border-color = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-color = "syncEnabled"
+ccid_sync_selected_appearancesector_border-color = "syncEnabled"
+ccid_sync_normal_appearancesector_border-width = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-width = "syncEnabled"
+ccid_sync_selected_appearancesector_border-width = "syncEnabled"
+ccid_sync_normal_appearancesector_border-style = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-style = "syncEnabled"
+ccid_sync_selected_appearancesector_border-style = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_normal_labelsector_color = "syncEnabled"
+ccid_sync_pressed_labelsector_color = "syncEnabled"
+ccid_sync_selected_labelsector_color = "syncEnabled"
+ccid_sync_normal_labelsector_font-size = "syncEnabled"
+ccid_sync_pressed_labelsector_font-size = "syncEnabled"
+ccid_sync_selected_labelsector_font-size = "syncEnabled"
+ccid_sync_normal_labelsector_font-weight = "syncEnabled"
+ccid_sync_pressed_labelsector_font-weight = "syncEnabled"
+ccid_sync_selected_labelsector_font-weight = "syncEnabled"
+ccid_sync_normal_labelsector_text-decoration = "syncEnabled"
+ccid_sync_pressed_labelsector_text-decoration = "syncEnabled"
+ccid_sync_selected_labelsector_text-decoration = "syncEnabled"
+ccid_sync_normal_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_pressed_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_selected_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_normal_labelsector_margin-left = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-left = "syncEnabled"
+ccid_sync_selected_labelsector_margin-left = "syncEnabled"
+ccid_sync_normal_labelsector_margin-top = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-top = "syncEnabled"
+ccid_sync_selected_labelsector_margin-top = "syncEnabled"
+ccid_sync_normal_iconsector_color = "syncEnabled"
+ccid_sync_pressed_iconsector_color = "syncEnabled"
+ccid_sync_selected_iconsector_color = "syncEnabled"
+ccid_sync_normal_iconsector_font-size = "syncEnabled"
+ccid_sync_pressed_iconsector_font-size = "syncEnabled"
+ccid_sync_selected_iconsector_font-size = "syncEnabled"
+ccid_sync_normal_iconsector_margin-left = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-left = "syncEnabled"
+ccid_sync_selected_iconsector_margin-left = "syncEnabled"
+ccid_sync_normal_iconsector_margin-top = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-top = "syncEnabled"
+ccid_sync_selected_iconsector_margin-top = "syncEnabled"
+ccid_sync_normal_labelsector_color_toggle = "1"
+ccid_sync_normal_labelsector_font-size_toggle = "1"
+ccid_sync_normal_labelsector_font-weight_toggle = "1"
+ccid_sync_normal_labelsector_margin-left_toggle = "1"
+ccid_sync_normal_labelsector_margin-top_toggle = "1"
+ccid_sync_normal_appearancesector_border-color_toggle = "1"
+ccid_sync_normal_appearancesector_border-width_toggle = "1"
+ccid_sync_normal_appearancesector_border-style_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-left-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle = "1"
+ccid_sync_normal_labelsector_text-decoration_toggle = "1"
+ccid_sync_normal_labelsector_letter-spacing_toggle = "1"
+ccid_sync_normal_iconsector_color_toggle = "1"
+ccid_sync_normal_iconsector_font-size_toggle = "1"
+ccid_sync_normal_iconsector_margin-left_toggle = "1"
+ccid_sync_normal_iconsector_margin-top_toggle = "1"
+ccid_customSizeSet = "true"
+iconclass = "fas fa-eject"
+sendeventontouch = "Contract Enabled"
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Toggle"
+Status = ""
+Content = ""
+Editable = true
+
+[[Elements.Components.Components]]
+Name = ""
+Type = "textnode"
+Status = ""
+Content = "\n              "
+
+[Elements.Components.Attributes]
+handleshape = "circle"
+orientation = "horizontal"
+size = "regular"
+value = "false"
+customvstheme = "custom"
+id = "ie6m"
+componentName = "room.combine.toggle"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = ""
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"4K Monitor\"]"
+sendeventontouch = "Contract Enabled"
+pd-receivestatevalue = "Contract Enabled"
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Text"
+Status = ""
+Content = ""
+Editable = true
+
+[[Elements.Components.Components]]
+Name = ""
+Type = "textnode"
+Status = ""
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "right"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "ihw9"
+componentName = "room.combine.button"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Combine Rooms"
+labelinnerhtml = "Combine Rooms"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_themeCSSSet = "true"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "ifyiq9oot7"
+devicesVisited = "[\"4K Monitor\"]"
+defaultWidth = "987px"
+defaultHeight = "660px"
+

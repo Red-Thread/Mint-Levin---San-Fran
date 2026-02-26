@@ -251,7 +251,7 @@ namespace MintzLevin.pageMain.subAudio
             _devices = new List<BasicTriListWithSmartObject>(); 
  
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.ceilingMicToggle_PressEvent, onceilingMicToggle_Press);
-            Faders = new MintzLevin.pageMain.subAudio.Faders.Faders(ComponentMediator, 16);
+            Faders = new MintzLevin.pageMain.subAudio.Faders.Faders(ComponentMediator, 23);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

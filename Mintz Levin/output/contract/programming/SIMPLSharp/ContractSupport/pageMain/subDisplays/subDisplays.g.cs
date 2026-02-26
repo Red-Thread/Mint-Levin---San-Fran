@@ -48,7 +48,12 @@ namespace MintzLevin.pageMain.subDisplays
         /// <summary>
         /// ComplexComponent zref_DisplayCntl
         /// </summary>
-        MintzLevin.pageMain.subDisplays.displayList.IdisplayList displayList { get; }
+        MintzLevin.pageMain.subDisplays.displayList1.IdisplayList1 displayList1 { get; }
+
+        /// <summary>
+        /// ComplexComponent zref_DisplayCntl
+        /// </summary>
+        MintzLevin.pageMain.subDisplays.displaylist2.Idisplaylist2 displaylist2 { get; }
     }
 
     /// <summary>
@@ -149,7 +154,8 @@ namespace MintzLevin.pageMain.subDisplays
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            displayList = new MintzLevin.pageMain.subDisplays.displayList.displayList(ComponentMediator, 3);
+            displayList1 = new MintzLevin.pageMain.subDisplays.displayList1.displayList1(ComponentMediator, 5);
+            displaylist2 = new MintzLevin.pageMain.subDisplays.displaylist2.displaylist2(ComponentMediator, 10);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -157,7 +163,9 @@ namespace MintzLevin.pageMain.subDisplays
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((MintzLevin.pageMain.subDisplays.displayList.displayList)displayList).AddDevice(device);
+            ((MintzLevin.pageMain.subDisplays.displayList1.displayList1)displayList1).AddDevice(device);
+
+            ((MintzLevin.pageMain.subDisplays.displaylist2.displaylist2)displaylist2).AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
@@ -165,7 +173,9 @@ namespace MintzLevin.pageMain.subDisplays
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((MintzLevin.pageMain.subDisplays.displayList.displayList)displayList).RemoveDevice(device);
+            ((MintzLevin.pageMain.subDisplays.displayList1.displayList1)displayList1).RemoveDevice(device);
+
+            ((MintzLevin.pageMain.subDisplays.displaylist2.displaylist2)displaylist2).RemoveDevice(device);
         }
 
         #endregion
@@ -188,9 +198,14 @@ namespace MintzLevin.pageMain.subDisplays
         }
 
         /// <summary>
-        /// ComplexComponent displayList
+        /// ComplexComponent displayList1
         /// </summary>
-        public MintzLevin.pageMain.subDisplays.displayList.IdisplayList displayList { get; private set; }
+        public MintzLevin.pageMain.subDisplays.displayList1.IdisplayList1 displayList1 { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent displaylist2
+        /// </summary>
+        public MintzLevin.pageMain.subDisplays.displaylist2.Idisplaylist2 displaylist2 { get; private set; }
 
         #endregion
 

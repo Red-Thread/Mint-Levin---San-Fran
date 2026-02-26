@@ -149,7 +149,7 @@ namespace MintzLevin.pageMain.subShareSrc
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            sharecontentsrc = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc(ComponentMediator, 20);
+            sharecontentsrc = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc(ComponentMediator, 27);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

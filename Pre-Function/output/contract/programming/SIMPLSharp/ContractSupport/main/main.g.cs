@@ -39,6 +39,18 @@ namespace PreFunction.main
         event EventHandler<UIEventArgs> Slider_LowerTouchEvent;
 
         /// <summary>
+        /// Slider.Enabled Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void Slider_Enabled(mainBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// Slider.Enabled Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void Slider_Enabled(bool digital);
+
+        /// <summary>
         /// Slider.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The ushort delegate to update the panel.</param>
@@ -67,6 +79,12 @@ namespace PreFunction.main
         PreFunction.main.Isrclist srclist { get; }
     }
 
+    /// <summary>
+    /// Digital callback used in feedback events.
+    /// </summary>
+    /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
+    /// <param name="main">The <see cref="Imain"/> on which to apply the feedback.</param>
+    public delegate void mainBoolInputSigDelegate(BoolInputSig boolInputSig, Imain main);
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
@@ -103,6 +121,19 @@ namespace PreFunction.main
 
         private static class Joins
         {
+            /// <summary>
+            /// Digital signals,
+            /// </summary>
+            internal static class Booleans
+            {
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: main.Slider.Enabled
+                /// Slider.Enabled
+                /// </summary>
+                public const uint Slider_EnabledState = 2;
+
+            }
             /// <summary>
             /// Analog signals.
             /// </summary>
@@ -209,6 +240,20 @@ namespace PreFunction.main
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
+        /// <inheritdoc/>
+        public void Slider_Enabled(mainBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Slider_EnabledState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void Slider_Enabled(bool digital)
+        {
+            Slider_Enabled((sig, component) => sig.BoolValue = digital);
+        }
 
         /// <inheritdoc/>
         public void Slider_LowerTouchfb(mainUShortInputSigDelegate callback)

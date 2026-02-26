@@ -1,0 +1,219 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-02-25 17:20:15.527548-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-02-25 17:20:15.527546-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="itnphm7x9a" devicesvisited="[&quot;4K Monitor&quot;]" defaultwidth="500px" defaultheight="500px" class="widget-container"><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="iumk" componentname="display.name" ccid_activefont="'Roboto'" ccid_label="Display Name" labelinnerhtml="Display Name" ccid_linksendreceive="True" devicesvisited="[&quot;4K Monitor&quot;]" ccid_themecssset="true" pd-receivestatelabel="Contract Enabled">
+              </ch5-text><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="disabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="i2oi" componentname="display.input.hdmi" ccid_activefont="'Roboto'" ccid_label="HDMI" assetid="0" pageflip="0" devicesvisited="[&quot;4K Monitor&quot;]" ccid_customsizeset="true" labelmode="simple" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" oldid="ivji" labelinnerhtml="HDMI" iconclass="fas fa-laptop"></ch5-button><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="disabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="ivji" componentname="display.power.off" ccid_activefont="'Roboto'" ccid_label="Power Off" assetid="0" pageflip="0" devicesvisited="[&quot;4K Monitor&quot;]" ccid_customsizeset="true" labelmode="simple" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" oldid="ij24" labelinnerhtml="Power Off" iconclass="fas fa-minus"></ch5-button><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="disabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="ij24" componentname="display.power.on" ccid_activefont="'Roboto'" ccid_label="Power On" assetid="0" pageflip="0" devicesvisited="[&quot;4K Monitor&quot;]" ccid_customsizeset="true" labelmode="simple" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" oldid="ia0k" labelinnerhtml="Power On" iconclass="fas fa-power-off">
+              </ch5-button></div>
+
+
+
+{Css}
+@media (max-width: 99999px){#itnphm7x9a{width:400px;height:350px;left:0;top:0;position:absolute;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ij24{display:block;left:49px;top:146px;position:absolute;z-index:3;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(34,214,69,0.34);pressedAppearance_background-color:rgba(34,214,69,0.34);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#6ff478;selectedAppearance_background-color:#6ff478;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#ij24 .ch5-button :not(i):not(svg){font-family:'Roboto';}#ivji{display:block;left:207px;top:145px;position:absolute;z-index:4;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(244,44,24,0.57);pressedAppearance_background-color:rgba(244,44,24,0.57);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#f44848;selectedAppearance_background-color:#f44848;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#ivji .ch5-button :not(i):not(svg){font-family:'Roboto';}#i2oi{display:block;left:132px;top:240px;position:absolute;z-index:5;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(36,129,191,0.52);pressedAppearance_background-color:rgba(36,129,191,0.52);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#6fa5f4;selectedAppearance_background-color:#6fa5f4;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#i2oi .ch5-button :not(i):not(svg){font-family:'Roboto';}#iumk{display:block;left:129px;top:64px;position:absolute;z-index:8;width:150px;height:48px;}#iumk .ch5-text :not(i):not(svg){font-family:'Roboto';}#iumk .ch5-text{min-height:10px;min-width:10px;padding:0px;}#wrapper{background-color:#ffffff;}}@media (orientation: landscape) and (max-width: 2561px) and (max-height: 1441px), (orientation: landscape) and (max-width: 2559px){#itnphm7x9a{width:400px;height:350px;left:0;top:0;position:absolute;}#ij24{display:block;left:49px;top:146px;position:absolute;z-index:3;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(34,214,69,0.34);pressedAppearance_background-color:rgba(34,214,69,0.34);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#6ff478;selectedAppearance_background-color:#6ff478;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#ivji{display:block;left:207px;top:145px;position:absolute;z-index:4;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(244,44,24,0.57);pressedAppearance_background-color:rgba(244,44,24,0.57);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#f44848;selectedAppearance_background-color:#f44848;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#i2oi{display:block;left:132px;top:240px;position:absolute;z-index:5;width:143px;height:46px;--ch5-button--regular-width:143px;--ch5-button--regular-height:46px;--ch5-button--default-background-color:#d0d0d0;Appearance_background-color:#d0d0d0;--ch5-button--default-label-font-color:#8a8a93;Label_color:#8a8a93;--ch5-button--default-icon-color:#8a8a93;Icon_color:#8a8a93;--ch5-button--regular-font-size:18px;undefined:26px;Label_font-size:18px;custom-normal-label-font-size:18px;--ch5-button--label-margin-left:4px;Label_margin-left:2px;--ch5-button--label-margin-right:0;Label_margin-right:0;--ch5-button--regular-icon-size:26px;Icon_font-size:26px;custom-normal-icon-font-size:26px;--ch5-button--default-border-color:#8f999f;Appearance_border-color:#8f999f;--ch5-button--default-pressed-background-color:rgba(36,129,191,0.52);pressedAppearance_background-color:rgba(36,129,191,0.52);--ch5-button--default-pressed-border-color:#000000;pressedAppearance_border-color:#000000;--ch5-button--default-pressed-icon-color:#000000;pressedIcon_color:#000000;--ch5-button--regular-pressed-icon-size:12px;pressedIcon_font-size:12px;custom-pressed-icon-font-size:12px;--ch5-button--regular-pressed-font-size:12px;pressedLabel_font-size:12px;custom-pressed-label-font-size:12px;--ch5-button--default-pressed-label-font-color:#000000;pressedLabel_color:#000000;--ch5-button--default-selected-background-color:#6fa5f4;selectedAppearance_background-color:#6fa5f4;--ch5-button--default-selected-border-color:#8f999f;selectedAppearance_border-color:#8f999f;--ch5-button--default-selected-label-font-color:#000000a3;selectedLabel_color:#000000a3;--ch5-button--default-selected-icon-color:#000000a3;selectedIcon_color:#000000a3;--ch5-button--regular-selected-font-size:18px;selectedLabel_font-size:18px;custom-selected-label-font-size:18px;--ch5-button--regular-selected-icon-size:26px;selectedIcon_font-size:26px;custom-selected-icon-font-size:26px;}#iumk{display:block;left:129px;top:64px;position:absolute;z-index:8;width:150px;height:48px;}}
+
+
+
+{PageAttributes}
+
+[Attributes]
+Name = "zref_DisplayCntrl"
+PageMode = "absolute"
+Id = "281cf1df-4639-44a0-bcdf-513e0a834a7b"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Name = ""
+Type = "widgetContainer"
+Status = ""
+Content = ""
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Text"
+Status = ""
+Content = ""
+Editable = true
+
+[[Elements.Components.Components]]
+Name = ""
+Type = "textnode"
+Status = ""
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "iumk"
+componentName = "display.name"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Display Name"
+labelinnerhtml = "Display Name"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_themeCSSSet = "true"
+pd-receivestatelabel = "Contract Enabled"
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Button"
+Status = ""
+Content = ""
+Editable = true
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "disabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "i2oi"
+componentName = "display.input.hdmi"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "HDMI"
+assetid = "0"
+pageflip = "0"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_customSizeSet = "true"
+labelmode = "simple"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+oldID = "inii7i3qrf"
+labelinnerhtml = "HDMI"
+iconclass = "fas fa-laptop"
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Button"
+Status = ""
+Content = ""
+Editable = true
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "disabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "ivji"
+componentName = "display.power.off"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Power Off"
+assetid = "0"
+pageflip = "0"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_customSizeSet = "true"
+labelmode = "simple"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+oldID = "ia3bshzna8"
+labelinnerhtml = "Power Off"
+iconclass = "fas fa-minus"
+[[Elements.Components]]
+Name = ""
+Type = "Ch5 Button"
+Status = ""
+Content = ""
+Editable = true
+
+[[Elements.Components.Components]]
+Name = ""
+Type = "textnode"
+Status = ""
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "disabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "ij24"
+componentName = "display.power.on"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Power On"
+assetid = "0"
+pageflip = "0"
+devicesVisited = "[\"4K Monitor\"]"
+ccid_customSizeSet = "true"
+labelmode = "simple"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+oldID = "ia0k"
+labelinnerhtml = "Power On"
+iconclass = "fas fa-power-off"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "itnphm7x9a"
+devicesVisited = "[\"4K Monitor\"]"
+defaultWidth = "500px"
+defaultHeight = "500px"
+

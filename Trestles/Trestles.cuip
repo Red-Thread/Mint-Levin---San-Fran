@@ -1,0 +1,32 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-02-25 17:20:15.510524-05:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-02-25 17:20:15.510509-05:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{DeviceResolutionSource}
+[]
+
+{ProjectAttributes}
+
+[Attributes]
+ComponentKey = "UiEditor"
+Name = "Trestles"
+ThemeId = "light-theme.css"
+ProjectThemeIds = "light-theme.css"
+ThemePageColor = "#ffffff"
+IncludeUnusedAsset = "False"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.16.0"
+Id = "f3fd5c3f-f406-4bad-83a1-d70e0f1d0065"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DeviceResolutionIds = "G-L-4KMONIT-2560-1440"
+ipId = "20"
+ProjectSchemaVersion = "6"
+

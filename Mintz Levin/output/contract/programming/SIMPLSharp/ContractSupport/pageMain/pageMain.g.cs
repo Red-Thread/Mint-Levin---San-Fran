@@ -58,6 +58,11 @@ namespace MintzLevin.pageMain
         void roomstatus_Indirect(string serial);
 
         /// <summary>
+        /// ComplexComponent subCamera
+        /// </summary>
+        MintzLevin.pageMain.subCamera.IsubCamera subCamera { get; }
+
+        /// <summary>
         /// ComplexComponent subDisplays
         /// </summary>
         MintzLevin.pageMain.subDisplays.IsubDisplays subDisplays { get; }
@@ -190,18 +195,21 @@ namespace MintzLevin.pageMain
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 2);
-            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 8);
-            subAudio = new MintzLevin.pageMain.subAudio.subAudio(ComponentMediator, 15);
-            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 19);
-            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 25);
-            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 27);
+            subCamera = new MintzLevin.pageMain.subCamera.subCamera(ComponentMediator, 2);
+            subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 4);
+            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 15);
+            subAudio = new MintzLevin.pageMain.subAudio.subAudio(ComponentMediator, 22);
+            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 26);
+            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 32);
+            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 34);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
         {
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((MintzLevin.pageMain.subCamera.subCamera)subCamera).AddDevice(device);
 
             ((MintzLevin.pageMain.subDisplays.subDisplays)subDisplays).AddDevice(device);
 
@@ -220,6 +228,8 @@ namespace MintzLevin.pageMain
         {
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((MintzLevin.pageMain.subCamera.subCamera)subCamera).RemoveDevice(device);
 
             ((MintzLevin.pageMain.subDisplays.subDisplays)subDisplays).RemoveDevice(device);
 
@@ -268,6 +278,11 @@ namespace MintzLevin.pageMain
         {
             roomstatus_Indirect((sig, component) => sig.StringValue = serial);
         }
+
+        /// <summary>
+        /// ComplexComponent subCamera
+        /// </summary>
+        public MintzLevin.pageMain.subCamera.IsubCamera subCamera { get; private set; }
 
         /// <summary>
         /// ComplexComponent subDisplays

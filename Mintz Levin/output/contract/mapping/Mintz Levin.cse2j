@@ -1,6 +1,6 @@
 {
   "name": "Mintz Levin",
-  "timestamp": "2026-02-23T23:38:25.357897+00:00",
+  "timestamp": "2026-02-25T23:37:47.516224+00:00",
   "version": "1.0.0.0",
   "schema_version": 1,
   "extra_value": "",
@@ -8,35 +8,77 @@
     "states": {
       "boolean": {
         "2": {
-          "1": "pageMain.subDisplays.Visibility_fb"
+          "1": "pageMain.subCamera.camAutoTrack.Visibility_fb",
+          "2": "pageMain.subCamera.camearAutoTrackTxt.Visibility_fb",
+          "3": "pageMain.subCamera.Visibility_fb",
+          "4": "pageMain.subCamera.camZoomIn.Enable",
+          "5": "pageMain.subCamera.CamZoomOut.Enable",
+          "6": "pageMain.subCamera.camAutoTrack.Selected",
+          "7": "pageMain.subCamera.camPreset_01.Selected",
+          "8": "pageMain.subCamera.camPreset_02.Selected",
+          "9": "pageMain.subCamera.camPrest_00.Selected",
+          "10": "pageMain.subCamera.camZoomIn.Selected",
+          "11": "pageMain.subCamera.CamZoomOut.Selected"
         },
         "3": {
-          "1": "pageMain.subDisplays.displayList.List_Item1_Visible",
-          "2": "pageMain.subDisplays.displayList.List_Item2_Visible",
-          "3": "pageMain.subDisplays.displayList.List_Item3_Visible",
-          "4": "pageMain.subDisplays.displayList.List_Item4_Visible"
+          "2": "pageMain.subCamera.cameraDPad.Enable"
         },
         "4": {
-          "1201": "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
-          "1202": "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
-          "1203": "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+          "1": "pageMain.subDisplays.Visibility_fb"
         },
         "5": {
-          "1201": "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
-          "1202": "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
-          "1203": "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+          "1": "pageMain.subDisplays.displayList1.List_Item1_Visible",
+          "2": "pageMain.subDisplays.displayList1.List_Item2_Visible",
+          "3": "pageMain.subDisplays.displayList1.List_Item3_Visible",
+          "4": "pageMain.subDisplays.displayList1.List_Item4_Visible"
         },
         "6": {
-          "1201": "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
-          "1202": "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
-          "1203": "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+          "1201": "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
         },
         "7": {
-          "1201": "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
-          "1202": "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
-          "1203": "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+          "1201": "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
         },
         "8": {
+          "1201": "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "9": {
+          "1201": "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "10": {
+          "1": "pageMain.subDisplays.displaylist2.List_Item1_Visible",
+          "2": "pageMain.subDisplays.displaylist2.List_Item2_Visible",
+          "3": "pageMain.subDisplays.displaylist2.List_Item3_Visible",
+          "4": "pageMain.subDisplays.displaylist2.List_Item4_Visible"
+        },
+        "11": {
+          "1201": "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "12": {
+          "1201": "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "13": {
+          "1201": "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "14": {
+          "1201": "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Selected",
+          "1202": "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Selected",
+          "1203": "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Selected"
+        },
+        "15": {
           "1": "pageMain.Navigation.List_Item1_Visible",
           "2": "pageMain.Navigation.List_Item2_Visible",
           "3": "pageMain.Navigation.List_Item3_Visible",
@@ -44,25 +86,25 @@
           "5": "pageMain.Navigation.List_Item5_Visible",
           "6": "pageMain.Navigation.List_Item6_Visible"
         },
-        "9": {
+        "16": {
           "1201": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.Button.Selected"
         },
-        "10": {
+        "17": {
           "1201": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.Button.Selected"
         },
-        "11": {
+        "18": {
           "1201": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.Button.Selected"
         },
-        "12": {
+        "19": {
           "1201": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.Button.Selected"
         },
-        "13": {
+        "20": {
           "1201": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.Button.Selected"
         },
-        "14": {
+        "21": {
           "1201": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Selected"
         },
-        "15": {
+        "22": {
           "1": "pageMain.subAudio.ceilingMicToggle.Visibility_fb",
           "2": "pageMain.subAudio.borderCeilingMic.Visibility_fb",
           "3": "pageMain.subAudio.ceilingMuteState.Visibility_fb",
@@ -70,20 +112,20 @@
           "5": "pageMain.subAudio.Visibility_fb",
           "7": "pageMain.subAudio.ceilingMicToggle.Selected"
         },
-        "16": {
+        "23": {
           "1": "pageMain.subAudio.Faders.List_Item1_Visible",
           "2": "pageMain.subAudio.Faders.List_Item2_Visible"
         },
-        "17": {
+        "24": {
           "1201": "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.MicMute.Selected"
         },
-        "18": {
+        "25": {
           "1201": "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.MicMute.Selected"
         },
-        "19": {
+        "26": {
           "1": "pageMain.subShareSrc.Visibility_fb"
         },
-        "20": {
+        "27": {
           "1": "pageMain.subShareSrc.sharecontentsrc.List_Item1_Visible",
           "2": "pageMain.subShareSrc.sharecontentsrc.List_Item2_Visible",
           "3": "pageMain.subShareSrc.sharecontentsrc.List_Item3_Visible",
@@ -93,23 +135,23 @@
           "7": "pageMain.subShareSrc.sharecontentsrc.List_Item3_Enable",
           "8": "pageMain.subShareSrc.sharecontentsrc.List_Item4_Enable"
         },
-        "21": {
+        "28": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "22": {
+        "29": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "23": {
+        "30": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "24": {
+        "31": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "25": {
+        "32": {
           "1": "pageMain.subRoomSetup.roomcombinebutton.Visibility_fb",
           "2": "pageMain.subRoomSetup.Visibility_fb"
         },
-        "26": {
+        "33": {
           "1001": "pageMain.subRoomSetup.rmSetup.Button1ItemSelected",
           "1002": "pageMain.subRoomSetup.rmSetup.Button2ItemSelected",
           "1003": "pageMain.subRoomSetup.rmSetup.Button3ItemSelected",
@@ -117,7 +159,7 @@
           "1502": "pageMain.subRoomSetup.rmSetup.Button2Visible",
           "1503": "pageMain.subRoomSetup.rmSetup.Button3Visible"
         },
-        "27": {
+        "34": {
           "1": "pageMain.subAudioEvent.ceilingMicToggle.Visibility_fb",
           "2": "pageMain.subAudioEvent.prefuncToggle.Visibility_fb",
           "3": "pageMain.subAudioEvent.receptToggle.Visibility_fb",
@@ -132,32 +174,32 @@
           "13": "pageMain.subAudioEvent.prefuncToggle.Selected",
           "14": "pageMain.subAudioEvent.receptToggle.Selected"
         },
-        "28": {
+        "35": {
           "1": "pageMain.subAudioEvent.Faders.List_Item1_Visible",
           "2": "pageMain.subAudioEvent.Faders.List_Item2_Visible"
         },
-        "29": {
+        "36": {
           "1201": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.MicMute.Selected"
         },
-        "30": {
+        "37": {
           "1201": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.MicMute.Selected"
         }
       },
       "numeric": {
-        "17": {
+        "24": {
           "1801": "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouchfb"
         },
-        "18": {
+        "25": {
           "1801": "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouchfb"
         },
-        "27": {
+        "34": {
           "4": "pageMain.subAudioEvent.prefuncfader.LowerTouchfb",
           "5": "pageMain.subAudioEvent.receptionfader.LowerTouchfb"
         },
-        "29": {
+        "36": {
           "1801": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouchfb"
         },
-        "30": {
+        "37": {
           "1801": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouchfb"
         }
       },
@@ -166,65 +208,77 @@
           "1": "pageMain.roomname.Indirect",
           "2": "pageMain.roomstatus.Indirect"
         },
-        "4": {
-          "1": "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayName.Indirect"
-        },
-        "5": {
-          "1": "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayName.Indirect"
-        },
         "6": {
-          "1": "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayName.Indirect"
+          "1": "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayName.Indirect"
         },
         "7": {
-          "1": "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayName.Indirect"
+          "1": "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "8": {
+          "1": "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayName.Indirect"
         },
         "9": {
+          "1": "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "11": {
+          "1": "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "12": {
+          "1": "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "13": {
+          "1": "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "14": {
+          "1": "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayName.Indirect"
+        },
+        "16": {
           "1": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.Button.Icon"
         },
-        "10": {
+        "17": {
           "1": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.Button.Icon"
         },
-        "11": {
+        "18": {
           "1": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.Button.Icon"
         },
-        "12": {
+        "19": {
           "1": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.Button.Icon"
         },
-        "13": {
+        "20": {
           "1": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.Button.Icon"
         },
-        "14": {
+        "21": {
           "1": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Icon"
         },
-        "17": {
+        "24": {
           "1": "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.FormattedText.Indirect"
         },
-        "18": {
+        "25": {
           "1": "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.FormattedText.Indirect"
         },
-        "21": {
+        "28": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "22": {
+        "29": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "23": {
+        "30": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "24": {
+        "31": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "26": {
+        "33": {
           "1": "pageMain.subRoomSetup.rmSetup.Button1Text",
           "2": "pageMain.subRoomSetup.rmSetup.Button2Text",
           "3": "pageMain.subRoomSetup.rmSetup.Button3Text",
@@ -232,181 +286,273 @@
           "502": "pageMain.subRoomSetup.rmSetup.Button2IconClass",
           "503": "pageMain.subRoomSetup.rmSetup.Button3IconClass"
         },
-        "27": {
+        "34": {
           "1": "pageMain.subAudioEvent.overFlowpreFunctionname.Indirect",
           "2": "pageMain.subAudioEvent.overflowreceptionname.Indirect"
         },
-        "29": {
+        "36": {
           "1": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.FormattedText.Indirect"
         },
-        "30": {
+        "37": {
           "1": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.FormattedText.Indirect"
         }
       }
     },
     "events": {
       "boolean": {
-        "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
-          "joinId": 1201,
-          "smartObjectId": 4
+        "pageMain.subCamera.camAutoTrack.Press": {
+          "joinId": 1,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
-          "joinId": 1202,
-          "smartObjectId": 4
+        "pageMain.subCamera.camPreset_01.Press": {
+          "joinId": 2,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
-          "joinId": 1203,
-          "smartObjectId": 4
+        "pageMain.subCamera.camPreset_02.Press": {
+          "joinId": 3,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
-          "joinId": 1201,
-          "smartObjectId": 5
+        "pageMain.subCamera.camPrest_00.Press": {
+          "joinId": 4,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
-          "joinId": 1202,
-          "smartObjectId": 5
+        "pageMain.subCamera.camZoomIn.Press": {
+          "joinId": 5,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
-          "joinId": 1203,
-          "smartObjectId": 5
+        "pageMain.subCamera.CamZoomOut.Press": {
+          "joinId": 6,
+          "smartObjectId": 2
         },
-        "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
+        "pageMain.subCamera.cameraDPad.Up": {
+          "joinId": 3,
+          "smartObjectId": 3
+        },
+        "pageMain.subCamera.cameraDPad.Down": {
+          "joinId": 4,
+          "smartObjectId": 3
+        },
+        "pageMain.subCamera.cameraDPad.Left": {
+          "joinId": 5,
+          "smartObjectId": 3
+        },
+        "pageMain.subCamera.cameraDPad.Right": {
+          "joinId": 6,
+          "smartObjectId": 3
+        },
+        "pageMain.subCamera.cameraDPad.Center": {
+          "joinId": 7,
+          "smartObjectId": 3
+        },
+        "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 6
         },
-        "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+        "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
           "joinId": 1202,
           "smartObjectId": 6
         },
-        "pageMain.subDisplays.displayList.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+        "pageMain.subDisplays.displayList1.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
           "joinId": 1203,
           "smartObjectId": 6
         },
-        "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
+        "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 7
         },
-        "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+        "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
           "joinId": 1202,
           "smartObjectId": 7
         },
-        "pageMain.subDisplays.displayList.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+        "pageMain.subDisplays.displayList1.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
           "joinId": 1203,
           "smartObjectId": 7
         },
-        "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.Button.Press": {
+        "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
+          "joinId": 1201,
+          "smartObjectId": 8
+        },
+        "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 8
+        },
+        "pageMain.subDisplays.displayList1.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 8
+        },
+        "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 9
         },
-        "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.Button.Press": {
-          "joinId": 1201,
-          "smartObjectId": 10
+        "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 9
         },
-        "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.Button.Press": {
+        "pageMain.subDisplays.displayList1.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 9
+        },
+        "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 11
         },
-        "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.Button.Press": {
+        "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 11
+        },
+        "pageMain.subDisplays.displaylist2.Items[0].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 11
+        },
+        "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 12
         },
-        "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.Button.Press": {
+        "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 12
+        },
+        "pageMain.subDisplays.displaylist2.Items[1].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 12
+        },
+        "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 13
         },
-        "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Press": {
+        "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 13
+        },
+        "pageMain.subDisplays.displaylist2.Items[2].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 13
+        },
+        "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayInputHDMI.Press": {
           "joinId": 1201,
           "smartObjectId": 14
         },
-        "pageMain.subAudio.ceilingMicToggle.Press": {
-          "joinId": 2,
-          "smartObjectId": 15
+        "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayPowerOff.Press": {
+          "joinId": 1202,
+          "smartObjectId": 14
         },
-        "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.MicMute.Press": {
+        "pageMain.subDisplays.displaylist2.Items[3].zref_DisplayCntlCONTRACT.displayPowerOn.Press": {
+          "joinId": 1203,
+          "smartObjectId": 14
+        },
+        "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.Button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 16
+        },
+        "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.Button.Press": {
           "joinId": 1201,
           "smartObjectId": 17
         },
-        "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.MicMute.Press": {
+        "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.Button.Press": {
           "joinId": 1201,
           "smartObjectId": 18
         },
-        "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Press": {
+        "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.Button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 19
+        },
+        "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.Button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 20
+        },
+        "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Press": {
           "joinId": 1201,
           "smartObjectId": 21
         },
-        "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Press": {
-          "joinId": 1201,
+        "pageMain.subAudio.ceilingMicToggle.Press": {
+          "joinId": 2,
           "smartObjectId": 22
         },
-        "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Press": {
-          "joinId": 1201,
-          "smartObjectId": 23
-        },
-        "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Press": {
+        "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.MicMute.Press": {
           "joinId": 1201,
           "smartObjectId": 24
         },
-        "pageMain.subRoomSetup.dockrelease.Press": {
-          "joinId": 2,
+        "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.MicMute.Press": {
+          "joinId": 1201,
           "smartObjectId": 25
         },
-        "pageMain.subRoomSetup.rmSetup.Button1ItemPress": {
-          "joinId": 1001,
-          "smartObjectId": 26
+        "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Press": {
+          "joinId": 1201,
+          "smartObjectId": 28
         },
-        "pageMain.subRoomSetup.rmSetup.Button2ItemPress": {
-          "joinId": 1002,
-          "smartObjectId": 26
-        },
-        "pageMain.subRoomSetup.rmSetup.Button3ItemPress": {
-          "joinId": 1003,
-          "smartObjectId": 26
-        },
-        "pageMain.subAudioEvent.ceilingMicToggle.Press": {
-          "joinId": 2,
-          "smartObjectId": 27
-        },
-        "pageMain.subAudioEvent.prefuncToggle.Press": {
-          "joinId": 3,
-          "smartObjectId": 27
-        },
-        "pageMain.subAudioEvent.receptToggle.Press": {
-          "joinId": 4,
-          "smartObjectId": 27
-        },
-        "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.MicMute.Press": {
+        "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
           "smartObjectId": 29
         },
-        "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.MicMute.Press": {
+        "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
           "smartObjectId": 30
+        },
+        "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Press": {
+          "joinId": 1201,
+          "smartObjectId": 31
+        },
+        "pageMain.subRoomSetup.dockrelease.Press": {
+          "joinId": 2,
+          "smartObjectId": 32
+        },
+        "pageMain.subRoomSetup.rmSetup.Button1ItemPress": {
+          "joinId": 1001,
+          "smartObjectId": 33
+        },
+        "pageMain.subRoomSetup.rmSetup.Button2ItemPress": {
+          "joinId": 1002,
+          "smartObjectId": 33
+        },
+        "pageMain.subRoomSetup.rmSetup.Button3ItemPress": {
+          "joinId": 1003,
+          "smartObjectId": 33
+        },
+        "pageMain.subAudioEvent.ceilingMicToggle.Press": {
+          "joinId": 2,
+          "smartObjectId": 34
+        },
+        "pageMain.subAudioEvent.prefuncToggle.Press": {
+          "joinId": 3,
+          "smartObjectId": 34
+        },
+        "pageMain.subAudioEvent.receptToggle.Press": {
+          "joinId": 4,
+          "smartObjectId": 34
+        },
+        "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.MicMute.Press": {
+          "joinId": 1201,
+          "smartObjectId": 36
+        },
+        "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.MicMute.Press": {
+          "joinId": 1201,
+          "smartObjectId": 37
         }
       },
       "numeric": {
         "pageMain.subAudio.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 17
+          "smartObjectId": 24
         },
         "pageMain.subAudio.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 18
+          "smartObjectId": 25
         },
         "pageMain.subAudioEvent.prefuncfader.LowerTouch": {
           "joinId": 4,
-          "smartObjectId": 27
+          "smartObjectId": 34
         },
         "pageMain.subAudioEvent.receptionfader.LowerTouch": {
           "joinId": 5,
-          "smartObjectId": 27
+          "smartObjectId": 34
         },
         "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 29
+          "smartObjectId": 36
         },
         "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 30
+          "smartObjectId": 37
         }
       },
       "string": {}

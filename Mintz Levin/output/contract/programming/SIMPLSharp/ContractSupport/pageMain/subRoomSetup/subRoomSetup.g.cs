@@ -179,7 +179,7 @@ namespace MintzLevin.pageMain.subRoomSetup
             _devices = new List<BasicTriListWithSmartObject>(); 
  
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.dockrelease_PressEvent, ondockrelease_Press);
-            rmSetup = new MintzLevin.pageMain.subRoomSetup.rmSetup(ComponentMediator, 26);
+            rmSetup = new MintzLevin.pageMain.subRoomSetup.rmSetup(ComponentMediator, 33);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

@@ -222,9 +222,9 @@ namespace MintzLevin.pageMain.subAudio.Faders
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new MintzLevin.pageMain.subAudio.Faders.Items_0_(ComponentMediator, 17, 2);
-            Items_1_ = new MintzLevin.pageMain.subAudio.Faders.Items_1_(ComponentMediator, 18, 2);
-            Item = new MintzLevin.pageMain.subAudio.Faders.Item(ComponentMediator, 17, 2);
+            Items_0_ = new MintzLevin.pageMain.subAudio.Faders.Items_0_(ComponentMediator, 24, 2);
+            Items_1_ = new MintzLevin.pageMain.subAudio.Faders.Items_1_(ComponentMediator, 25, 2);
+            Item = new MintzLevin.pageMain.subAudio.Faders.Item(ComponentMediator, 24, 2);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
