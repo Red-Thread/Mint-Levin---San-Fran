@@ -73,9 +73,9 @@ namespace MintzLevin.pageMain
         MintzLevin.pageMain.Navigation.INavigation Navigation { get; }
 
         /// <summary>
-        /// ComplexComponent subAudio
+        /// ComplexComponent tempHeader
         /// </summary>
-        MintzLevin.pageMain.subAudio.IsubAudio subAudio { get; }
+        MintzLevin.pageMain.ItempHeader tempHeader { get; }
 
         /// <summary>
         /// ComplexComponent subShareSrc
@@ -198,10 +198,10 @@ namespace MintzLevin.pageMain
             subCamera = new MintzLevin.pageMain.subCamera.subCamera(ComponentMediator, 2);
             subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 4);
             Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 15);
-            subAudio = new MintzLevin.pageMain.subAudio.subAudio(ComponentMediator, 22);
-            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 26);
-            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 32);
-            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 34);
+            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 22);
+            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 23);
+            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 29);
+            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 31);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -215,7 +215,7 @@ namespace MintzLevin.pageMain
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).AddDevice(device);
 
-            ((MintzLevin.pageMain.subAudio.subAudio)subAudio).AddDevice(device);
+            ((MintzLevin.pageMain.tempHeader)tempHeader).AddDevice(device);
 
             ((MintzLevin.pageMain.subShareSrc.subShareSrc)subShareSrc).AddDevice(device);
 
@@ -235,7 +235,7 @@ namespace MintzLevin.pageMain
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).RemoveDevice(device);
 
-            ((MintzLevin.pageMain.subAudio.subAudio)subAudio).RemoveDevice(device);
+            ((MintzLevin.pageMain.tempHeader)tempHeader).RemoveDevice(device);
 
             ((MintzLevin.pageMain.subShareSrc.subShareSrc)subShareSrc).RemoveDevice(device);
 
@@ -295,9 +295,9 @@ namespace MintzLevin.pageMain
         public MintzLevin.pageMain.Navigation.INavigation Navigation { get; private set; }
 
         /// <summary>
-        /// ComplexComponent subAudio
+        /// ComplexComponent tempHeader
         /// </summary>
-        public MintzLevin.pageMain.subAudio.IsubAudio subAudio { get; private set; }
+        public MintzLevin.pageMain.ItempHeader tempHeader { get; private set; }
 
         /// <summary>
         /// ComplexComponent subShareSrc

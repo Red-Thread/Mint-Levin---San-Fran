@@ -1,16 +1,16 @@
 {FileMetadata}
 Schema = "1.0.0.0"
 CreatedByAppHost = "2.601.10.0"
-Created = 2026-02-25 18:16:59.618969-05:00
+Created = 2026-02-27 15:22:08.2147-05:00
 LastModifiedByAppHost = "2.601.10.0"
-Modified = 2026-02-25 18:16:59.618611-05:00
+Modified = 2026-02-27 15:22:08.214695-05:00
 CreatedByProjectApp = "1.4201.17.0"
 LastModifiedByProjectApp = "1.4201.17.0"
 MinimumProjectApp = "1.2600.1"
 MinimumAppHost = "2.0.0"
 
 {Html}
-<ch5-slider nohandle="false" size="custom" orientation="vertical" tapsettable="false" handleshape="rounded-rectangle" handlesize="regular" tooltipshowtype="off" tooltipdisplaytype="%" value="50" slidertype="fader" customvstheme="custom" min="0" max="100" step="1" id="i6qk" componentname="Slider" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-560P&quot;]" sendeventonchange="Contract Enabled" pd-receivestatevalue="Contract Enabled" pd-receivestateenable="Contract Enabled">
+<ch5-slider nohandle="false" size="custom" orientation="vertical" tapsettable="false" handleshape="rounded-rectangle" handlesize="regular" tooltipshowtype="off" tooltipdisplaytype="%" value="50" slidertype="fader" customvstheme="custom" min="0" max="65535" step="1" id="i6qk" componentname="Slider" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-560P&quot;]" sendeventonchange="Contract Enabled" pd-receivestatevalue="Contract Enabled" pd-receivestateenable="Contract Enabled">
               </ch5-slider><ch5-template transitionduration="1s" transitiondelay="0s" templateid="waaabe817-78ad-45e3-b9de-63da7e155be6" id="i44e" componentname="header" devicesvisited="[&quot;TSW-560P&quot;]"></ch5-template><ch5-button-list centeritems="false" columns="1" endless="false" numberofitems="4" orientation="vertical" previewstate="buttonnormal" usecontractforcustomstyle="false" usecontractforcustomclass="false" rows="1" scrollbar="true" scrolltoposition="0" stretch="null" indexid="idx" customclass="ccid-custom" buttoncheckboxposition="left" buttoncheckboxshow="false" buttonhalignlabel="center" buttonvalignlabel="middle" buttoniconposition="first" buttonmode="0" buttonshape="rounded-rectangle" buttontype="default" buttoniconurlfilltype="initial" pd-receivestateenable="Contract Enabled" pd-receivestateshow="" pd-receivestatescrolltoposition="" pd-receivestatenumberofitems="" pd-buttonreceivestateselected="Contract Enabled" pd-buttonreceivestatescriptlabelhtml="Contract Enabled" pd-buttonreceivestateiconclass="" buttonsendeventonclick="Contract Enabled" pd-buttonreceivestateenable="" pd-buttonreceivestateshow="Contract Enabled" usecontractforeachbuttonselection="false" affectedbypreviewstate="True" customvstheme="custom" loaditems="visible-only" id="iukb" componentname="src.list" ccid_activefont="'Roboto'" ccid_label="" ccid_linksendreceive="True" ccid_imageicontype="iconclass" devicesvisited="[&quot;TSW-560P&quot;]" assetid="0" pd-receivestateselectedbutton="" usecontractforitemshow="true" usecontractforitemenable="false" contractitemlabeltype="innerHTML" buttonselected="false"><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 1" id="iczr" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="TV Audio" labelinnerhtml="TV Audio"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 2" id="itat" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="Bluetooth Audio" labelinnerhtml="Bluetooth Audio"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 3" id="iulo" devicesvisited="[&quot;TSW-560P&quot;]" pageflipattributename="onRelease" onrelease="0" ccid_label="Off" labelinnerhtml="Off"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 4"></ch5-button-list-individual-button></ch5-button-list>
 
 {Css}
@@ -49,7 +49,7 @@ value = "50"
 slidertype = "fader"
 customvstheme = "custom"
 min = "0"
-max = "100"
+max = "65535"
 step = "1"
 id = "i6qk"
 componentName = "Slider"

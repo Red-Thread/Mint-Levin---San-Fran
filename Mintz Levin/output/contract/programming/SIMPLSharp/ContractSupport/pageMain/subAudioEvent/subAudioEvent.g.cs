@@ -155,6 +155,18 @@ namespace MintzLevin.pageMain.subAudioEvent
         void subAudioEvent_Visibility_fb(bool digital);
 
         /// <summary>
+        /// pageMain.subAudioEvent.textBreakArea.Visibility Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void textBreakArea_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subAudioEvent.textBreakArea.Visibility Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void textBreakArea_Visibility_fb(bool digital);
+
+        /// <summary>
         /// pageMain.subAudioEvent.textPreFunc.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
@@ -165,18 +177,6 @@ namespace MintzLevin.pageMain.subAudioEvent
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void textPreFunc_Visibility_fb(bool digital);
-
-        /// <summary>
-        /// pageMain.subAudioEvent.textRecept.Visibility Feedback
-        /// </summary>
-        /// <param name="callback">The bool delegate to update the panel.</param>
-        void textRecept_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
-
-        /// <summary>
-        /// pageMain.subAudioEvent.textRecept.Visibility Feedback
-        /// </summary>
-        /// <param name="digital">The bool to update the panel.</param>
-        void textRecept_Visibility_fb(bool digital);
 
         /// <summary>
         /// pageMain.subAudioEvent.ceilingMicToggle.Press Feedback
@@ -251,6 +251,18 @@ namespace MintzLevin.pageMain.subAudioEvent
         void receptionfader_LowerTouchfb(short analog);
 
         /// <summary>
+        /// pageMain.subAudioEvent.overflow.breakArea.name.Indirect Feedback
+        /// </summary>
+        /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
+        void overflowbreakAreaname_Indirect(subAudioEventStringInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subAudioEvent.overflow.breakArea.name.Indirect Feedback
+        /// </summary>
+        /// <param name="serial">The <see cref="string"/> to update the panel.</param>
+        void overflowbreakAreaname_Indirect(string serial);
+
+        /// <summary>
         /// pageMain.subAudioEvent.overFlow.preFunction.name.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
@@ -263,16 +275,28 @@ namespace MintzLevin.pageMain.subAudioEvent
         void overFlowpreFunctionname_Indirect(string serial);
 
         /// <summary>
-        /// pageMain.subAudioEvent.overflow.reception.name.Indirect Feedback
+        /// pageMain.subAudioEvent.textBreakArea.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void overflowreceptionname_Indirect(subAudioEventStringInputSigDelegate callback);
+        void textBreakArea_Indirect(subAudioEventStringInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudioEvent.overflow.reception.name.Indirect Feedback
+        /// pageMain.subAudioEvent.textBreakArea.Indirect Feedback
         /// </summary>
         /// <param name="serial">The <see cref="string"/> to update the panel.</param>
-        void overflowreceptionname_Indirect(string serial);
+        void textBreakArea_Indirect(string serial);
+
+        /// <summary>
+        /// pageMain.subAudioEvent.textPreFunc.Indirect Feedback
+        /// </summary>
+        /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
+        void textPreFunc_Indirect(subAudioEventStringInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subAudioEvent.textPreFunc.Indirect Feedback
+        /// </summary>
+        /// <param name="serial">The <see cref="string"/> to update the panel.</param>
+        void textPreFunc_Indirect(string serial);
 
         /// <summary>
         /// ComplexComponent zref_Fader
@@ -401,16 +425,16 @@ namespace MintzLevin.pageMain.subAudioEvent
                 public const uint subAudioEvent_Visibility_fbState = 8;
 
                 /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.textBreakArea.Visibility_fb
+                /// pageMain.subAudioEvent.textBreakArea.Visibility
+                /// </summary>
+                public const uint textBreakArea_Visibility_fbState = 9;
+
+                /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.textPreFunc.Visibility_fb
                 /// pageMain.subAudioEvent.textPreFunc.Visibility
                 /// </summary>
-                public const uint textPreFunc_Visibility_fbState = 9;
-
-                /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.textRecept.Visibility_fb
-                /// pageMain.subAudioEvent.textRecept.Visibility
-                /// </summary>
-                public const uint textRecept_Visibility_fbState = 10;
+                public const uint textPreFunc_Visibility_fbState = 10;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicToggle.Selected
@@ -469,15 +493,25 @@ namespace MintzLevin.pageMain.subAudioEvent
             {
 
                 /// <summary>
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.overflowbreakAreaname.Indirect
+                /// pageMain.subAudioEvent.overflow.breakArea.name.Indirect
+                /// </summary>
+                public const uint overflowbreakAreaname_IndirectState = 1;
+                /// <summary>
                 /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.overFlowpreFunctionname.Indirect
                 /// pageMain.subAudioEvent.overFlow.preFunction.name.Indirect
                 /// </summary>
-                public const uint overFlowpreFunctionname_IndirectState = 1;
+                public const uint overFlowpreFunctionname_IndirectState = 2;
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.overflowreceptionname.Indirect
-                /// pageMain.subAudioEvent.overflow.reception.name.Indirect
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.textBreakArea.Indirect
+                /// pageMain.subAudioEvent.textBreakArea.Indirect
                 /// </summary>
-                public const uint overflowreceptionname_IndirectState = 2;
+                public const uint textBreakArea_IndirectState = 3;
+                /// <summary>
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.textPreFunc.Indirect
+                /// pageMain.subAudioEvent.textPreFunc.Indirect
+                /// </summary>
+                public const uint textPreFunc_IndirectState = 4;
             }
         }
 
@@ -533,7 +567,7 @@ namespace MintzLevin.pageMain.subAudioEvent
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptToggle_PressEvent, onreceptToggle_Press);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.prefuncfader_LowerTouchEvent, onprefuncfader_LowerTouch);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.receptionfader_LowerTouchEvent, onreceptionfader_LowerTouch);
-            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 35);
+            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 32);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -756,6 +790,20 @@ namespace MintzLevin.pageMain.subAudioEvent
             subAudioEvent_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
+        public void textBreakArea_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.textBreakArea_Visibility_fbState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void textBreakArea_Visibility_fb(bool digital)
+        {
+            textBreakArea_Visibility_fb((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void textPreFunc_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -768,20 +816,6 @@ namespace MintzLevin.pageMain.subAudioEvent
         public void textPreFunc_Visibility_fb(bool digital)
         {
             textPreFunc_Visibility_fb((sig, component) => sig.BoolValue = digital);
-        }
-        /// <inheritdoc/>
-        public void textRecept_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.textRecept_Visibility_fbState], this);
-            }
-        }
-
-        /// <inheritdoc/>
-        public void textRecept_Visibility_fb(bool digital)
-        {
-            textRecept_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
 
         /// <inheritdoc/>
@@ -826,6 +860,20 @@ namespace MintzLevin.pageMain.subAudioEvent
         }
 
         /// <inheritdoc/>
+        public void overflowbreakAreaname_Indirect(subAudioEventStringInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.overflowbreakAreaname_IndirectState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void overflowbreakAreaname_Indirect(string serial)
+        {
+            overflowbreakAreaname_Indirect((sig, component) => sig.StringValue = serial);
+        }
+        /// <inheritdoc/>
         public void overFlowpreFunctionname_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -840,18 +888,32 @@ namespace MintzLevin.pageMain.subAudioEvent
             overFlowpreFunctionname_Indirect((sig, component) => sig.StringValue = serial);
         }
         /// <inheritdoc/>
-        public void overflowreceptionname_Indirect(subAudioEventStringInputSigDelegate callback)
+        public void textBreakArea_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.overflowreceptionname_IndirectState], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.textBreakArea_IndirectState], this);
             }
         }
 
         /// <inheritdoc/>
-        public void overflowreceptionname_Indirect(string serial)
+        public void textBreakArea_Indirect(string serial)
         {
-            overflowreceptionname_Indirect((sig, component) => sig.StringValue = serial);
+            textBreakArea_Indirect((sig, component) => sig.StringValue = serial);
+        }
+        /// <inheritdoc/>
+        public void textPreFunc_Indirect(subAudioEventStringInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.textPreFunc_IndirectState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void textPreFunc_Indirect(string serial)
+        {
+            textPreFunc_Indirect((sig, component) => sig.StringValue = serial);
         }
 
         /// <summary>
