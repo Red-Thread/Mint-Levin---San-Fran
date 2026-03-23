@@ -1,0 +1,106 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-03-17 13:06:32.087924-04:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-03-17 13:06:32.087886-04:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.3001.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="ic1bfjcyg1" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" defaultWidth="967px" defaultHeight="660px" class="widget-container"><ch5-subpage-reference-list orientation="horizontal" columns="3" rows="1" centeritems="true" numberofitems="7" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" useContractForCustomStyle="false" useContractForCustomClass="false" useContractForEnable="false" useContractForShow="false" useContractForNumItems="false" useContractForItemEnable="true" useContractForItemShow="true" customvstheme="custom" loaditems="visible-only" id="i7kkxm5ji9" componentName="routing.src" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-subpagereceivestateshow="Contract Enabled" pd-subpagereceivestateenable="Contract Enabled" oldID="iy9k" widgetid="w010cb3e5-4d56-42fa-8c6d-706fceae6a60">
+              </ch5-subpage-reference-list><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="4" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" useContractForCustomStyle="false" useContractForCustomClass="false" useContractForEnable="false" useContractForShow="false" useContractForNumItems="false" useContractForItemEnable="false" useContractForItemShow="false" customvstheme="custom" loaditems="visible-only" id="idp3" componentName="route.dest" ccid_linkSendReceive="True" devicesVisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" widgetid="w3e4702d4-272f-45a5-869d-a882dcca4387">
+              </ch5-subpage-reference-list></div>
+
+{Css}
+@media (max-width: 99999px){#ic1bfjcyg1{width:967px;height:660px;left:0;top:0;position:absolute;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#i7kkxm5ji9{width:960px;height:auto;display:block;left:3px;top:50px;position:absolute;listSpacing_item-spacing:0;--ch5-subpage-reference-list--item-padding:0;}#idp3{width:844px;height:auto;display:block;left:61px;top:357px;position:absolute;}#wrapper{background-color:#ffffff;}}@media (orientation: landscape) and (max-width: 988px) and (max-height: 741px), (orientation: landscape) and (max-width: 986px){#ic1bfjcyg1{width:967px;height:660px;left:0;top:0;position:absolute;}#i7kkxm5ji9{width:960px;left:3px;top:50px;listSpacing_item-spacing:0;--ch5-subpage-reference-list--item-padding:0;position:absolute;height:auto;}#idp3{width:844px;height:auto;display:block;left:61px;top:357px;position:absolute;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "subRouting"
+PageMode = "absolute"
+Id = "7b711e93-9ab6-4976-ad21-d112e407a06a"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Subpage Reference List"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+columns = "3"
+rows = "1"
+centeritems = "true"
+numberofitems = "7"
+scrolltoposition = "0"
+scrollbar = "false"
+endless = "false"
+indexid = "idx"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+useContractForNumItems = "false"
+useContractForItemEnable = "true"
+useContractForItemShow = "true"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "i7kkxm5ji9"
+componentName = "routing.src"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+pd-subpagereceivestateshow = "Contract Enabled"
+pd-subpagereceivestateenable = "Contract Enabled"
+oldID = "iy9k"
+widgetid = "w010cb3e5-4d56-42fa-8c6d-706fceae6a60"
+[[Elements.Components]]
+Type = "Ch5 Subpage Reference List"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+columns = "1"
+rows = "1"
+centeritems = "true"
+numberofitems = "4"
+scrolltoposition = "0"
+scrollbar = "false"
+endless = "false"
+indexid = "idx"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+useContractForNumItems = "false"
+useContractForItemEnable = "false"
+useContractForItemShow = "false"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "idp3"
+componentName = "route.dest"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+widgetid = "w3e4702d4-272f-45a5-869d-a882dcca4387"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "ic1bfjcyg1"
+devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
+defaultWidth = "967px"
+defaultHeight = "660px"
+

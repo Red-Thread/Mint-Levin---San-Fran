@@ -314,13 +314,13 @@ namespace MintzLevin.pageMain.Navigation
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new MintzLevin.pageMain.Navigation.Items_0_(ComponentMediator, 16, 6);
-            Items_1_ = new MintzLevin.pageMain.Navigation.Items_1_(ComponentMediator, 17, 6);
-            Items_2_ = new MintzLevin.pageMain.Navigation.Items_2_(ComponentMediator, 18, 6);
-            Items_3_ = new MintzLevin.pageMain.Navigation.Items_3_(ComponentMediator, 19, 6);
-            Items_4_ = new MintzLevin.pageMain.Navigation.Items_4_(ComponentMediator, 20, 6);
-            Items_5_ = new MintzLevin.pageMain.Navigation.Items_5_(ComponentMediator, 21, 6);
-            Item = new MintzLevin.pageMain.Navigation.Item(ComponentMediator, 16, 6);
+            Items_0_ = new MintzLevin.pageMain.Navigation.Items_0_(ComponentMediator, 30, 6);
+            Items_1_ = new MintzLevin.pageMain.Navigation.Items_1_(ComponentMediator, 31, 6);
+            Items_2_ = new MintzLevin.pageMain.Navigation.Items_2_(ComponentMediator, 32, 6);
+            Items_3_ = new MintzLevin.pageMain.Navigation.Items_3_(ComponentMediator, 33, 6);
+            Items_4_ = new MintzLevin.pageMain.Navigation.Items_4_(ComponentMediator, 34, 6);
+            Items_5_ = new MintzLevin.pageMain.Navigation.Items_5_(ComponentMediator, 35, 6);
+            Item = new MintzLevin.pageMain.Navigation.Item(ComponentMediator, 30, 6);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

@@ -131,6 +131,18 @@ namespace MintzLevin.pageMain.subAudioEvent
         void borderRecept_Visibility_fb(bool digital);
 
         /// <summary>
+        /// pageMain.subAudioEvent.ceilingMicMuteActive.Visibility Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void ceilingMicMuteActive_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subAudioEvent.ceilingMicMuteActive.Visibility Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void ceilingMicMuteActive_Visibility_fb(bool digital);
+
+        /// <summary>
         /// pageMain.subAudioEvent.ceilingMic.name.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
@@ -413,46 +425,52 @@ namespace MintzLevin.pageMain.subAudioEvent
                 public const uint borderRecept_Visibility_fbState = 6;
 
                 /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicMuteActive.Visibility_fb
+                /// pageMain.subAudioEvent.ceilingMicMuteActive.Visibility
+                /// </summary>
+                public const uint ceilingMicMuteActive_Visibility_fbState = 7;
+
+                /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicname.Visibility_fb
                 /// pageMain.subAudioEvent.ceilingMic.name.Visibility
                 /// </summary>
-                public const uint ceilingMicname_Visibility_fbState = 7;
+                public const uint ceilingMicname_Visibility_fbState = 8;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.Visibility_fb
                 /// subAudioEvent.Visibility
                 /// </summary>
-                public const uint subAudioEvent_Visibility_fbState = 8;
+                public const uint subAudioEvent_Visibility_fbState = 9;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.textBreakArea.Visibility_fb
                 /// pageMain.subAudioEvent.textBreakArea.Visibility
                 /// </summary>
-                public const uint textBreakArea_Visibility_fbState = 9;
+                public const uint textBreakArea_Visibility_fbState = 10;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.textPreFunc.Visibility_fb
                 /// pageMain.subAudioEvent.textPreFunc.Visibility
                 /// </summary>
-                public const uint textPreFunc_Visibility_fbState = 10;
+                public const uint textPreFunc_Visibility_fbState = 11;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicToggle.Selected
                 /// pageMain.subAudioEvent.ceilingMicToggle.Press
                 /// </summary>
-                public const uint ceilingMicToggle_SelectedState = 12;
+                public const uint ceilingMicToggle_SelectedState = 13;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncToggle.Selected
                 /// pageMain.subAudioEvent.prefuncToggle.Press
                 /// </summary>
-                public const uint prefuncToggle_SelectedState = 13;
+                public const uint prefuncToggle_SelectedState = 14;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptToggle.Selected
                 /// pageMain.subAudioEvent.receptToggle.Press
                 /// </summary>
-                public const uint receptToggle_SelectedState = 14;
+                public const uint receptToggle_SelectedState = 15;
 
             }
             /// <summary>
@@ -567,7 +585,7 @@ namespace MintzLevin.pageMain.subAudioEvent
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptToggle_PressEvent, onreceptToggle_Press);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.prefuncfader_LowerTouchEvent, onprefuncfader_LowerTouch);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.receptionfader_LowerTouchEvent, onreceptionfader_LowerTouch);
-            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 32);
+            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 46);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -676,6 +694,20 @@ namespace MintzLevin.pageMain.subAudioEvent
         public void borderRecept_Visibility_fb(bool digital)
         {
             borderRecept_Visibility_fb((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void ceilingMicMuteActive_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.ceilingMicMuteActive_Visibility_fbState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void ceilingMicMuteActive_Visibility_fb(bool digital)
+        {
+            ceilingMicMuteActive_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
         public void ceilingMicname_Visibility_fb(subAudioEventBoolInputSigDelegate callback)

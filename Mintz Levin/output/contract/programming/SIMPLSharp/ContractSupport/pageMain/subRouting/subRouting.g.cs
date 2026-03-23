@@ -23,45 +23,50 @@ using Crestron.SimplSharpPro;
 using Crestron.SimplSharpPro.DeviceSupport;
 using MintzLevin;
 
-namespace MintzLevin.pageMain.subShareSrc
+namespace MintzLevin.pageMain.subRouting
 {
 
     /// <summary>
-    /// subShareSrc
+    /// subRouting
     /// </summary>
-    public partial interface IsubShareSrc 
+    public partial interface IsubRouting 
     {
         object UserObject { get; set; }
 
         /// <summary>
-        /// subShareSrc.Visibility Feedback
+        /// subRouting.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void subShareSrc_Visibility_fb(subShareSrcBoolInputSigDelegate callback);
+        void subRouting_Visibility_fb(subRoutingBoolInputSigDelegate callback);
 
         /// <summary>
-        /// subShareSrc.Visibility Feedback
+        /// subRouting.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
-        void subShareSrc_Visibility_fb(bool digital);
+        void subRouting_Visibility_fb(bool digital);
 
         /// <summary>
         /// ComplexComponent zref_btnShare
         /// </summary>
-        MintzLevin.pageMain.subShareSrc.sharecontentsrc.Isharecontentsrc sharecontentsrc { get; }
+        MintzLevin.pageMain.subRouting.routingsrc.Iroutingsrc routingsrc { get; }
+
+        /// <summary>
+        /// ComplexComponent zrefDest
+        /// </summary>
+        MintzLevin.pageMain.subRouting.routedest.Iroutedest routedest { get; }
     }
 
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
-    /// <param name="subsharesrc">The <see cref="IsubShareSrc"/> on which to apply the feedback.</param>
-    public delegate void subShareSrcBoolInputSigDelegate(BoolInputSig boolInputSig, IsubShareSrc subsharesrc);
+    /// <param name="subrouting">The <see cref="IsubRouting"/> on which to apply the feedback.</param>
+    public delegate void subRoutingBoolInputSigDelegate(BoolInputSig boolInputSig, IsubRouting subrouting);
 
     /// <summary>
-    /// subShareSrc
+    /// subRouting
     /// </summary>
-    internal partial class subShareSrc : IsubShareSrc, IDisposable
+    internal partial class subRouting : IsubRouting, IDisposable
     {
         #region Standard CH5 Component members
 
@@ -94,10 +99,10 @@ namespace MintzLevin.pageMain.subShareSrc
             {
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subShareSrc.Visibility_fb
-                /// subShareSrc.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.Visibility_fb
+                /// subRouting.Visibility
                 /// </summary>
-                public const uint subShareSrc_Visibility_fbState = 1;
+                public const uint subRouting_Visibility_fbState = 1;
 
             }
         }
@@ -107,23 +112,23 @@ namespace MintzLevin.pageMain.subShareSrc
         #region Construction and Initialization
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
+        /// Initializes a new instance of the <see cref="subRouting"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
-        internal subShareSrc(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
+        internal subRouting(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
         {
             ComponentMediator = componentMediator;
             Initialize(controlJoinId, itemCount);
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
+        /// Initializes a new instance of the <see cref="subRouting"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
-        internal subShareSrc(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
+        internal subRouting(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
         {
         }
 
@@ -139,7 +144,7 @@ namespace MintzLevin.pageMain.subShareSrc
         private Dictionary<string, Indexes> _indexLookup = new Dictionary<string, Indexes>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
+        /// Initializes a new instance of the <see cref="subRouting"/> component class.
         /// </summary>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
@@ -149,7 +154,8 @@ namespace MintzLevin.pageMain.subShareSrc
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            sharecontentsrc = new MintzLevin.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc(ComponentMediator, 38);
+            routingsrc = new MintzLevin.pageMain.subRouting.routingsrc.routingsrc(ComponentMediator, 16);
+            routedest = new MintzLevin.pageMain.subRouting.routedest.routedest(ComponentMediator, 24);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -157,7 +163,9 @@ namespace MintzLevin.pageMain.subShareSrc
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((MintzLevin.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc)sharecontentsrc).AddDevice(device);
+            ((MintzLevin.pageMain.subRouting.routingsrc.routingsrc)routingsrc).AddDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.routedest.routedest)routedest).AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
@@ -165,7 +173,9 @@ namespace MintzLevin.pageMain.subShareSrc
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((MintzLevin.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc)sharecontentsrc).RemoveDevice(device);
+            ((MintzLevin.pageMain.subRouting.routingsrc.routingsrc)routingsrc).RemoveDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.routedest.routedest)routedest).RemoveDevice(device);
         }
 
         #endregion
@@ -173,24 +183,29 @@ namespace MintzLevin.pageMain.subShareSrc
         #region CH5 Contract
 
         /// <inheritdoc/>
-        public void subShareSrc_Visibility_fb(subShareSrcBoolInputSigDelegate callback)
+        public void subRouting_Visibility_fb(subRoutingBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subShareSrc_Visibility_fbState], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subRouting_Visibility_fbState], this);
             }
         }
 
         /// <inheritdoc/>
-        public void subShareSrc_Visibility_fb(bool digital)
+        public void subRouting_Visibility_fb(bool digital)
         {
-            subShareSrc_Visibility_fb((sig, component) => sig.BoolValue = digital);
+            subRouting_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
 
         /// <summary>
-        /// ComplexComponent sharecontentsrc
+        /// ComplexComponent routingsrc
         /// </summary>
-        public MintzLevin.pageMain.subShareSrc.sharecontentsrc.Isharecontentsrc sharecontentsrc { get; private set; }
+        public MintzLevin.pageMain.subRouting.routingsrc.Iroutingsrc routingsrc { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent routedest
+        /// </summary>
+        public MintzLevin.pageMain.subRouting.routedest.Iroutedest routedest { get; private set; }
 
         #endregion
 
@@ -203,7 +218,7 @@ namespace MintzLevin.pageMain.subShareSrc
 
         public override string ToString()
         {
-            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subShareSrc", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
+            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subRouting", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
         }
 
         #endregion

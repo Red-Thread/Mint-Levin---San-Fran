@@ -68,6 +68,11 @@ namespace MintzLevin.pageMain
         MintzLevin.pageMain.subDisplays.IsubDisplays subDisplays { get; }
 
         /// <summary>
+        /// ComplexComponent subRouting
+        /// </summary>
+        MintzLevin.pageMain.subRouting.IsubRouting subRouting { get; }
+
+        /// <summary>
         /// ComplexComponent zref_Button
         /// </summary>
         MintzLevin.pageMain.Navigation.INavigation Navigation { get; }
@@ -197,11 +202,12 @@ namespace MintzLevin.pageMain
  
             subCamera = new MintzLevin.pageMain.subCamera.subCamera(ComponentMediator, 2);
             subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 4);
-            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 15);
-            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 22);
-            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 23);
-            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 29);
-            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 31);
+            subRouting = new MintzLevin.pageMain.subRouting.subRouting(ComponentMediator, 15);
+            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 29);
+            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 36);
+            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 37);
+            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 43);
+            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 45);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -212,6 +218,8 @@ namespace MintzLevin.pageMain
             ((MintzLevin.pageMain.subCamera.subCamera)subCamera).AddDevice(device);
 
             ((MintzLevin.pageMain.subDisplays.subDisplays)subDisplays).AddDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.subRouting)subRouting).AddDevice(device);
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).AddDevice(device);
 
@@ -232,6 +240,8 @@ namespace MintzLevin.pageMain
             ((MintzLevin.pageMain.subCamera.subCamera)subCamera).RemoveDevice(device);
 
             ((MintzLevin.pageMain.subDisplays.subDisplays)subDisplays).RemoveDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.subRouting)subRouting).RemoveDevice(device);
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).RemoveDevice(device);
 
@@ -288,6 +298,11 @@ namespace MintzLevin.pageMain
         /// ComplexComponent subDisplays
         /// </summary>
         public MintzLevin.pageMain.subDisplays.IsubDisplays subDisplays { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent subRouting
+        /// </summary>
+        public MintzLevin.pageMain.subRouting.IsubRouting subRouting { get; private set; }
 
         /// <summary>
         /// ComplexComponent Navigation
