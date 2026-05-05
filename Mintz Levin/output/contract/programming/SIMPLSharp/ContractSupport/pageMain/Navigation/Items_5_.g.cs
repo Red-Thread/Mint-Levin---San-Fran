@@ -123,14 +123,14 @@ namespace MintzLevin.pageMain.Navigation
             internal static class Booleans
             {
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.Press
                 /// pageMain.Navigation.Items[5].Button.Press
                 /// </summary>
                 public const uint Button_PressEvent = 1201;
 
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Selected
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.Selected
                 /// pageMain.Navigation.Items[5].Button.Selected
                 /// </summary>
                 public const uint Button_SelectedState = 1201;
@@ -143,12 +143,12 @@ namespace MintzLevin.pageMain.Navigation
             {
 
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.IndirectText
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.IndirectText
                 /// pageMain.Navigation.Items[5].Button.Indirect Text
                 /// </summary>
                 public const uint Button_IndirectTextState = 1;
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_ButtonCONTRACT.Button.Icon
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.Icon
                 /// pageMain.Navigation.Items[5].Button.Icon
                 /// </summary>
                 public const uint Button_IconState = 2;

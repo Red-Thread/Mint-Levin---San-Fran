@@ -34,9 +34,34 @@ namespace MintzLevin.pageMain.subAudioEvent
         object UserObject { get; set; }
 
         /// <summary>
+        /// Event pageMain.subAudioEvent.ceilingMicMuteBtn.Press (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> ceilingMicMuteBtn_PressEvent;
+
+        /// <summary>
         /// Event pageMain.subAudioEvent.ceilingMicToggle.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> ceilingMicToggle_PressEvent;
+
+        /// <summary>
+        /// Event pageMain.subAudioEvent.overflowBreakArea.Press (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> overflowBreakArea_PressEvent;
+
+        /// <summary>
+        /// Event pageMain.subAudioEvent.prefunc.fader.Lower Touch (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> prefuncfader_LowerTouchEvent;
+
+        /// <summary>
+        /// Event pageMain.subAudioEvent.overflowPreFunc.Press (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> overflowPreFunc_PressEvent;
+
+        /// <summary>
+        /// Event pageMain.subAudioEvent.reception.fader.Lower Touch (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> receptionfader_LowerTouchEvent;
 
         /// <summary>
         /// Event pageMain.subAudioEvent.prefuncToggle.Press (from panel to Control System)
@@ -47,16 +72,6 @@ namespace MintzLevin.pageMain.subAudioEvent
         /// Event pageMain.subAudioEvent.receptToggle.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> receptToggle_PressEvent;
-
-        /// <summary>
-        /// Event pageMain.subAudioEvent.prefunc.fader.Lower Touch (from panel to Control System)
-        /// </summary>
-        event EventHandler<UIEventArgs> prefuncfader_LowerTouchEvent;
-
-        /// <summary>
-        /// Event pageMain.subAudioEvent.reception.fader.Lower Touch (from panel to Control System)
-        /// </summary>
-        event EventHandler<UIEventArgs> receptionfader_LowerTouchEvent;
 
         /// <summary>
         /// pageMain.subAudioEvent.ceilingMicToggle.Visibility Feedback
@@ -370,22 +385,40 @@ namespace MintzLevin.pageMain.subAudioEvent
             internal static class Booleans
             {
                 /// <summary>
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.ceilingMicMuteBtn.Press
+                /// pageMain.subAudioEvent.ceilingMicMuteBtn.Press
+                /// </summary>
+                public const uint ceilingMicMuteBtn_PressEvent = 2;
+
+                /// <summary>
                 /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.ceilingMicToggle.Press
                 /// pageMain.subAudioEvent.ceilingMicToggle.Press
                 /// </summary>
-                public const uint ceilingMicToggle_PressEvent = 2;
+                public const uint ceilingMicToggle_PressEvent = 3;
+
+                /// <summary>
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.overflowBreakArea.Press
+                /// pageMain.subAudioEvent.overflowBreakArea.Press
+                /// </summary>
+                public const uint overflowBreakArea_PressEvent = 4;
+
+                /// <summary>
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.overflowPreFunc.Press
+                /// pageMain.subAudioEvent.overflowPreFunc.Press
+                /// </summary>
+                public const uint overflowPreFunc_PressEvent = 5;
 
                 /// <summary>
                 /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.prefuncToggle.Press
                 /// pageMain.subAudioEvent.prefuncToggle.Press
                 /// </summary>
-                public const uint prefuncToggle_PressEvent = 3;
+                public const uint prefuncToggle_PressEvent = 6;
 
                 /// <summary>
                 /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.receptToggle.Press
                 /// pageMain.subAudioEvent.receptToggle.Press
                 /// </summary>
-                public const uint receptToggle_PressEvent = 4;
+                public const uint receptToggle_PressEvent = 7;
 
 
                 /// <summary>
@@ -580,12 +613,15 @@ namespace MintzLevin.pageMain.subAudioEvent
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.ceilingMicMuteBtn_PressEvent, onceilingMicMuteBtn_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.ceilingMicToggle_PressEvent, onceilingMicToggle_Press);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.overflowBreakArea_PressEvent, onoverflowBreakArea_Press);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.overflowPreFunc_PressEvent, onoverflowPreFunc_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.prefuncToggle_PressEvent, onprefuncToggle_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptToggle_PressEvent, onreceptToggle_Press);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.prefuncfader_LowerTouchEvent, onprefuncfader_LowerTouch);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.receptionfader_LowerTouchEvent, onreceptionfader_LowerTouch);
-            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 46);
+            Faders = new MintzLevin.pageMain.subAudioEvent.Faders.Faders(ComponentMediator, 48);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -609,10 +645,55 @@ namespace MintzLevin.pageMain.subAudioEvent
         #region CH5 Contract
 
         /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> ceilingMicMuteBtn_PressEvent;
+        private void onceilingMicMuteBtn_Press(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = ceilingMicMuteBtn_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
         public event EventHandler<UIEventArgs> ceilingMicToggle_PressEvent;
         private void onceilingMicToggle_Press(SmartObjectEventArgs eventArgs)
         {
             EventHandler<UIEventArgs> handler = ceilingMicToggle_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> overflowBreakArea_PressEvent;
+        private void onoverflowBreakArea_Press(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = overflowBreakArea_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> prefuncfader_LowerTouchEvent;
+        private void onprefuncfader_LowerTouch(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = prefuncfader_LowerTouchEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> overflowPreFunc_PressEvent;
+        private void onoverflowPreFunc_Press(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = overflowPreFunc_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> receptionfader_LowerTouchEvent;
+        private void onreceptionfader_LowerTouch(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = receptionfader_LowerTouchEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -631,24 +712,6 @@ namespace MintzLevin.pageMain.subAudioEvent
         private void onreceptToggle_Press(SmartObjectEventArgs eventArgs)
         {
             EventHandler<UIEventArgs> handler = receptToggle_PressEvent;
-            if (handler != null)
-                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
-        }
-
-        /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> prefuncfader_LowerTouchEvent;
-        private void onprefuncfader_LowerTouch(SmartObjectEventArgs eventArgs)
-        {
-            EventHandler<UIEventArgs> handler = prefuncfader_LowerTouchEvent;
-            if (handler != null)
-                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
-        }
-
-        /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> receptionfader_LowerTouchEvent;
-        private void onreceptionfader_LowerTouch(SmartObjectEventArgs eventArgs)
-        {
-            EventHandler<UIEventArgs> handler = receptionfader_LowerTouchEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -980,11 +1043,14 @@ namespace MintzLevin.pageMain.subAudioEvent
 
             IsDisposed = true;
 
+            ceilingMicMuteBtn_PressEvent = null;
             ceilingMicToggle_PressEvent = null;
+            overflowBreakArea_PressEvent = null;
+            prefuncfader_LowerTouchEvent = null;
+            overflowPreFunc_PressEvent = null;
+            receptionfader_LowerTouchEvent = null;
             prefuncToggle_PressEvent = null;
             receptToggle_PressEvent = null;
-            prefuncfader_LowerTouchEvent = null;
-            receptionfader_LowerTouchEvent = null;
         }
 
         #endregion

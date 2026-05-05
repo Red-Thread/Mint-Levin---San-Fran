@@ -73,7 +73,7 @@ namespace MintzLevin.pageMain
         MintzLevin.pageMain.subRouting.IsubRouting subRouting { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button
+        /// ComplexComponent zref_navBtn
         /// </summary>
         MintzLevin.pageMain.Navigation.INavigation Navigation { get; }
 
@@ -203,11 +203,11 @@ namespace MintzLevin.pageMain
             subCamera = new MintzLevin.pageMain.subCamera.subCamera(ComponentMediator, 2);
             subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 4);
             subRouting = new MintzLevin.pageMain.subRouting.subRouting(ComponentMediator, 15);
-            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 29);
-            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 36);
-            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 37);
-            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 43);
-            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 45);
+            Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 31);
+            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 38);
+            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 39);
+            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 45);
+            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 47);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

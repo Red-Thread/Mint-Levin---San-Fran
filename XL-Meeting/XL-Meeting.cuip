@@ -1,0 +1,32 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-05-05 15:18:39.262669-04:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-05-05 15:19:49.250526-04:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{DeviceResolutionSource}
+[]
+
+{ProjectAttributes}
+
+[Attributes]
+Name = "XL-Meeting"
+ThemeId = "light-theme.css"
+ProjectThemeIds = "light-theme.css"
+ThemePageColor = "#ffffff"
+IncludeUnusedAsset = "False"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.16.0"
+ComponentKey = "UiEditor"
+Id = "590776b2-f4de-45c4-8b72-501494a6cdfd"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DeviceResolutionIds = "G-L-DGE1000-1920-1080"
+ipId = "20"
+ProjectSchemaVersion = "6"
+

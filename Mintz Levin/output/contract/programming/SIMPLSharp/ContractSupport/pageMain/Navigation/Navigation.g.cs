@@ -152,37 +152,37 @@ namespace MintzLevin.pageMain.Navigation
         void Navigation_List_Item6_Visible(bool digital);
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[0]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[0]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_0_ Items_0_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[1]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[1]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_1_ Items_1_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[2]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[2]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_2_ Items_2_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[3]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[3]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_3_ Items_3_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[4]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[4]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_4_ Items_4_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]s[5]
+        /// ComplexComponent zref_navBtn.Items[{0}]s[5]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItems_5_ Items_5_ { get; }
 
         /// <summary>
-        /// ComplexComponent zref_Button.Items[{0}]
+        /// ComplexComponent zref_navBtn.Items[{0}]
         /// </summary>
         MintzLevin.pageMain.Navigation.IItem Item { get; }
     }
@@ -314,13 +314,13 @@ namespace MintzLevin.pageMain.Navigation
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new MintzLevin.pageMain.Navigation.Items_0_(ComponentMediator, 30, 6);
-            Items_1_ = new MintzLevin.pageMain.Navigation.Items_1_(ComponentMediator, 31, 6);
-            Items_2_ = new MintzLevin.pageMain.Navigation.Items_2_(ComponentMediator, 32, 6);
-            Items_3_ = new MintzLevin.pageMain.Navigation.Items_3_(ComponentMediator, 33, 6);
-            Items_4_ = new MintzLevin.pageMain.Navigation.Items_4_(ComponentMediator, 34, 6);
-            Items_5_ = new MintzLevin.pageMain.Navigation.Items_5_(ComponentMediator, 35, 6);
-            Item = new MintzLevin.pageMain.Navigation.Item(ComponentMediator, 30, 6);
+            Items_0_ = new MintzLevin.pageMain.Navigation.Items_0_(ComponentMediator, 32, 6);
+            Items_1_ = new MintzLevin.pageMain.Navigation.Items_1_(ComponentMediator, 33, 6);
+            Items_2_ = new MintzLevin.pageMain.Navigation.Items_2_(ComponentMediator, 34, 6);
+            Items_3_ = new MintzLevin.pageMain.Navigation.Items_3_(ComponentMediator, 35, 6);
+            Items_4_ = new MintzLevin.pageMain.Navigation.Items_4_(ComponentMediator, 36, 6);
+            Items_5_ = new MintzLevin.pageMain.Navigation.Items_5_(ComponentMediator, 37, 6);
+            Item = new MintzLevin.pageMain.Navigation.Item(ComponentMediator, 32, 6);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

@@ -34,6 +34,11 @@ namespace MintzLevin.pageMain.subRouting
         object UserObject { get; set; }
 
         /// <summary>
+        /// Event pageMain.subRouting.overide.Press (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> overide_PressEvent;
+
+        /// <summary>
         /// subRouting.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
@@ -44,6 +49,18 @@ namespace MintzLevin.pageMain.subRouting
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void subRouting_Visibility_fb(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.overide.Press Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void overide_Selected(subRoutingBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.overide.Press Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void overide_Selected(bool digital);
 
         /// <summary>
         /// ComplexComponent zref_btnShare
@@ -97,12 +114,24 @@ namespace MintzLevin.pageMain.subRouting
             /// </summary>
             internal static class Booleans
             {
+                /// <summary>
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subRouting.overide.Press
+                /// pageMain.subRouting.overide.Press
+                /// </summary>
+                public const uint overide_PressEvent = 2;
+
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.Visibility_fb
                 /// subRouting.Visibility
                 /// </summary>
                 public const uint subRouting_Visibility_fbState = 1;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.overide.Selected
+                /// pageMain.subRouting.overide.Press
+                /// </summary>
+                public const uint overide_SelectedState = 3;
 
             }
         }
@@ -154,6 +183,7 @@ namespace MintzLevin.pageMain.subRouting
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.overide_PressEvent, onoveride_Press);
             routingsrc = new MintzLevin.pageMain.subRouting.routingsrc.routingsrc(ComponentMediator, 16);
             routedest = new MintzLevin.pageMain.subRouting.routedest.routedest(ComponentMediator, 24);
         }
@@ -182,6 +212,29 @@ namespace MintzLevin.pageMain.subRouting
 
         #region CH5 Contract
 
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> overide_PressEvent;
+        private void onoveride_Press(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = overide_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        /// <inheritdoc/>
+        public void overide_Selected(subRoutingBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.overide_SelectedState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void overide_Selected(bool digital)
+        {
+            overide_Selected((sig, component) => sig.BoolValue = digital);
+        }
         /// <inheritdoc/>
         public void subRouting_Visibility_fb(subRoutingBoolInputSigDelegate callback)
         {
@@ -234,6 +287,7 @@ namespace MintzLevin.pageMain.subRouting
 
             IsDisposed = true;
 
+            overide_PressEvent = null;
         }
 
         #endregion

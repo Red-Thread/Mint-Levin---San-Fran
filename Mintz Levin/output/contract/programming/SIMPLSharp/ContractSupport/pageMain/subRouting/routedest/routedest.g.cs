@@ -27,11 +27,129 @@ namespace MintzLevin.pageMain.subRouting.routedest
 {
 
     /// <summary>
+    /// Allow events by list item and states (feedbacks) to be set by item index.
+    /// </summary>
+    public partial interface IroutedestByItem
+    {
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item1_Visible Feedback
+        /// </summary>
+        /// <param name="listItemIndex">The index of the listItem (1 based).</param>
+        /// <param name="callback">The delegate to set the feedback.</param>
+        void List_Item_Visible(ushort listItemIndex, routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// Helper pageMain.subRouting.route.dest.List_Item1_Visible Feedback
+        /// </summary>
+        /// <param name="listItemIndex">The index of the listItem (1 based).</param>
+        /// <param name="digital">The <see="bool"/> value to set on the panel.</param>
+        void List_Item_Visible(ushort listItemIndex, bool digital);
+    }
+
+
+    /// <summary>
+    /// Search List
+    /// </summary>
+    internal partial class routedest
+    {
+        #region CH5 Contract
+        /// <inheritdoc/>
+        public void List_Item_Visible(ushort listItemIndex, routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item1_VisibleState + (uint) listItemIndex], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void List_Item_Visible(ushort listItemIndex, bool digital)
+        {
+            List_Item_Visible(listItemIndex, (sig, component) => sig.BoolValue = digital);
+        }
+
+        #endregion
+    }
+
+    /// <summary>
     /// routedest
     /// </summary>
-    public partial interface Iroutedest 
+    public partial interface Iroutedest : IroutedestByItem
     {
         object UserObject { get; set; }
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item1_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item1_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item1_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item1_Visible(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item2_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item2_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item2_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item2_Visible(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item3_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item3_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item3_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item3_Visible(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item4_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item4_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item4_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item4_Visible(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item5_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item5_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item5_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item5_Visible(bool digital);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item6_Visible Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void routedest_List_Item6_Visible(routedestBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subRouting.route.dest.List_Item6_Visible Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void routedest_List_Item6_Visible(bool digital);
 
         /// <summary>
         /// ComplexComponent zrefDest.Items[{0}]s[0]
@@ -54,11 +172,27 @@ namespace MintzLevin.pageMain.subRouting.routedest
         MintzLevin.pageMain.subRouting.routedest.IItems_3_ Items_3_ { get; }
 
         /// <summary>
+        /// ComplexComponent zrefDest.Items[{0}]s[4]
+        /// </summary>
+        MintzLevin.pageMain.subRouting.routedest.IItems_4_ Items_4_ { get; }
+
+        /// <summary>
+        /// ComplexComponent zrefDest.Items[{0}]s[5]
+        /// </summary>
+        MintzLevin.pageMain.subRouting.routedest.IItems_5_ Items_5_ { get; }
+
+        /// <summary>
         /// ComplexComponent zrefDest.Items[{0}]
         /// </summary>
         MintzLevin.pageMain.subRouting.routedest.IItem Item { get; }
     }
 
+    /// <summary>
+    /// Digital callback used in feedback events.
+    /// </summary>
+    /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
+    /// <param name="routedest">The <see cref="Iroutedest"/> on which to apply the feedback.</param>
+    public delegate void routedestBoolInputSigDelegate(BoolInputSig boolInputSig, Iroutedest routedest);
 
     /// <summary>
     /// routedest
@@ -89,6 +223,48 @@ namespace MintzLevin.pageMain.subRouting.routedest
 
         private static class Joins
         {
+            /// <summary>
+            /// Digital signals,
+            /// </summary>
+            internal static class Booleans
+            {
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item1_Visible
+                /// pageMain.subRouting.route.dest.List_Item1_Visible
+                /// </summary>
+                public const uint routedest_List_Item1_VisibleState = 1;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item2_Visible
+                /// pageMain.subRouting.route.dest.List_Item2_Visible
+                /// </summary>
+                public const uint routedest_List_Item2_VisibleState = 2;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item3_Visible
+                /// pageMain.subRouting.route.dest.List_Item3_Visible
+                /// </summary>
+                public const uint routedest_List_Item3_VisibleState = 3;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item4_Visible
+                /// pageMain.subRouting.route.dest.List_Item4_Visible
+                /// </summary>
+                public const uint routedest_List_Item4_VisibleState = 4;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item5_Visible
+                /// pageMain.subRouting.route.dest.List_Item5_Visible
+                /// </summary>
+                public const uint routedest_List_Item5_VisibleState = 5;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subRouting.routedest.List_Item6_Visible
+                /// pageMain.subRouting.route.dest.List_Item6_Visible
+                /// </summary>
+                public const uint routedest_List_Item6_VisibleState = 6;
+
+            }
         }
 
         #endregion
@@ -138,11 +314,13 @@ namespace MintzLevin.pageMain.subRouting.routedest
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new MintzLevin.pageMain.subRouting.routedest.Items_0_(ComponentMediator, 25, 4);
-            Items_1_ = new MintzLevin.pageMain.subRouting.routedest.Items_1_(ComponentMediator, 26, 4);
-            Items_2_ = new MintzLevin.pageMain.subRouting.routedest.Items_2_(ComponentMediator, 27, 4);
-            Items_3_ = new MintzLevin.pageMain.subRouting.routedest.Items_3_(ComponentMediator, 28, 4);
-            Item = new MintzLevin.pageMain.subRouting.routedest.Item(ComponentMediator, 25, 4);
+            Items_0_ = new MintzLevin.pageMain.subRouting.routedest.Items_0_(ComponentMediator, 25, 6);
+            Items_1_ = new MintzLevin.pageMain.subRouting.routedest.Items_1_(ComponentMediator, 26, 6);
+            Items_2_ = new MintzLevin.pageMain.subRouting.routedest.Items_2_(ComponentMediator, 27, 6);
+            Items_3_ = new MintzLevin.pageMain.subRouting.routedest.Items_3_(ComponentMediator, 28, 6);
+            Items_4_ = new MintzLevin.pageMain.subRouting.routedest.Items_4_(ComponentMediator, 29, 6);
+            Items_5_ = new MintzLevin.pageMain.subRouting.routedest.Items_5_(ComponentMediator, 30, 6);
+            Item = new MintzLevin.pageMain.subRouting.routedest.Item(ComponentMediator, 25, 6);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -157,6 +335,10 @@ namespace MintzLevin.pageMain.subRouting.routedest
             ((MintzLevin.pageMain.subRouting.routedest.Items_2_)Items_2_).AddDevice(device);
 
             ((MintzLevin.pageMain.subRouting.routedest.Items_3_)Items_3_).AddDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.routedest.Items_4_)Items_4_).AddDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.routedest.Items_5_)Items_5_).AddDevice(device);
 
             ((MintzLevin.pageMain.subRouting.routedest.Item)Item).AddDevice(device);
         }
@@ -174,12 +356,101 @@ namespace MintzLevin.pageMain.subRouting.routedest
 
             ((MintzLevin.pageMain.subRouting.routedest.Items_3_)Items_3_).RemoveDevice(device);
 
+            ((MintzLevin.pageMain.subRouting.routedest.Items_4_)Items_4_).RemoveDevice(device);
+
+            ((MintzLevin.pageMain.subRouting.routedest.Items_5_)Items_5_).RemoveDevice(device);
+
             ((MintzLevin.pageMain.subRouting.routedest.Item)Item).RemoveDevice(device);
         }
 
         #endregion
 
         #region CH5 Contract
+
+        /// <inheritdoc/>
+        public void routedest_List_Item1_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item1_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item1_Visible(bool digital)
+        {
+            routedest_List_Item1_Visible((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void routedest_List_Item2_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item2_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item2_Visible(bool digital)
+        {
+            routedest_List_Item2_Visible((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void routedest_List_Item3_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item3_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item3_Visible(bool digital)
+        {
+            routedest_List_Item3_Visible((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void routedest_List_Item4_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item4_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item4_Visible(bool digital)
+        {
+            routedest_List_Item4_Visible((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void routedest_List_Item5_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item5_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item5_Visible(bool digital)
+        {
+            routedest_List_Item5_Visible((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void routedest_List_Item6_Visible(routedestBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.routedest_List_Item6_VisibleState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void routedest_List_Item6_Visible(bool digital)
+        {
+            routedest_List_Item6_Visible((sig, component) => sig.BoolValue = digital);
+        }
 
         /// <summary>
         /// ComplexComponent Items[0]
@@ -200,6 +471,16 @@ namespace MintzLevin.pageMain.subRouting.routedest
         /// ComplexComponent Items[3]
         /// </summary>
         public MintzLevin.pageMain.subRouting.routedest.IItems_3_ Items_3_ { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent Items[4]
+        /// </summary>
+        public MintzLevin.pageMain.subRouting.routedest.IItems_4_ Items_4_ { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent Items[5]
+        /// </summary>
+        public MintzLevin.pageMain.subRouting.routedest.IItems_5_ Items_5_ { get; private set; }
 
         /// <summary>
         /// ComplexComponent Items[{0}]
