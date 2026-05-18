@@ -6,7 +6,7 @@
 //
 //     Project:     XL-Meeting
 //     Version:     1.0.0.0
-//     Sdk:         CH5:2.16.0
+//     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
 //     IndexOnly:   False
 //
@@ -161,7 +161,7 @@ namespace XLMeeting.pageMain.subRoomSetup
             _devices = new List<BasicTriListWithSmartObject>(); 
  
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Button_PressEvent, onButton_Press);
-            rmSetup = new XLMeeting.pageMain.subRoomSetup.rmSetup(ComponentMediator, 45);
+            rmSetup = new XLMeeting.pageMain.subRoomSetup.rmSetup(ComponentMediator, 6);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

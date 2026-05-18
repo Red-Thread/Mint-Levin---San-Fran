@@ -5,7 +5,7 @@
     "_created": "2025-11-11T09:32:29.727081-05:00",
     "_lastModifiedByAppHost": "2.601.10.0",
     "_minimumAppHost": "2.0.0",
-    "_modified": "2026-05-05T15:18:51.488738-04:00"
+    "_modified": "2026-05-08T15:31:24.564007-04:00"
   },
   "_solution": {
     "_name": "Mint Levin - San Fran",
@@ -16,11 +16,6 @@
         "_datetime": "2025-11-20T16:43:27.412631Z"
       },
       {
-        "_name": "XL-Meeting",
-        "_filename": "XL-Meeting/XL-Meeting.cuip",
-        "_datetime": "2026-05-05T19:18:39.405808Z"
-      },
-      {
         "_name": "Pre-Function",
         "_filename": "Pre-Function/Pre-Function.cuip",
         "_datetime": "2025-11-11T22:24:35.076478Z"
@@ -29,6 +24,11 @@
         "_name": "Mintz Levin",
         "_filename": "Mintz Levin/Mintz Levin.cuip",
         "_datetime": "2025-11-11T14:32:37.6534Z"
+      },
+      {
+        "_name": "XL-Meeting",
+        "_filename": "XL-Meeting/XL-Meeting.cuip",
+        "_datetime": "2026-05-08T19:30:17.093316Z"
       }
     ]
   }

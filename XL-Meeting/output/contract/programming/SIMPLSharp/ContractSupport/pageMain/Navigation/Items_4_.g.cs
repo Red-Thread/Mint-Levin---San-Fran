@@ -6,7 +6,7 @@
 //
 //     Project:     XL-Meeting
 //     Version:     1.0.0.0
-//     Sdk:         CH5:2.16.0
+//     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
 //     IndexOnly:   False
 //

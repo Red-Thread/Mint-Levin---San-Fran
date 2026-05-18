@@ -6,7 +6,7 @@
 //
 //     Project:     XL-Meeting
 //     Version:     1.0.0.0
-//     Sdk:         CH5:2.16.0
+//     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
 //     IndexOnly:   False
 //
@@ -314,13 +314,13 @@ namespace XLMeeting.pageMain.Navigation
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            Items_0_ = new XLMeeting.pageMain.Navigation.Items_0_(ComponentMediator, 38, 6);
-            Items_1_ = new XLMeeting.pageMain.Navigation.Items_1_(ComponentMediator, 39, 6);
-            Items_2_ = new XLMeeting.pageMain.Navigation.Items_2_(ComponentMediator, 40, 6);
-            Items_3_ = new XLMeeting.pageMain.Navigation.Items_3_(ComponentMediator, 41, 6);
-            Items_4_ = new XLMeeting.pageMain.Navigation.Items_4_(ComponentMediator, 42, 6);
-            Items_5_ = new XLMeeting.pageMain.Navigation.Items_5_(ComponentMediator, 43, 6);
-            Item = new XLMeeting.pageMain.Navigation.Item(ComponentMediator, 38, 6);
+            Items_0_ = new XLMeeting.pageMain.Navigation.Items_0_(ComponentMediator, 9, 6);
+            Items_1_ = new XLMeeting.pageMain.Navigation.Items_1_(ComponentMediator, 10, 6);
+            Items_2_ = new XLMeeting.pageMain.Navigation.Items_2_(ComponentMediator, 11, 6);
+            Items_3_ = new XLMeeting.pageMain.Navigation.Items_3_(ComponentMediator, 12, 6);
+            Items_4_ = new XLMeeting.pageMain.Navigation.Items_4_(ComponentMediator, 13, 6);
+            Items_5_ = new XLMeeting.pageMain.Navigation.Items_5_(ComponentMediator, 14, 6);
+            Item = new XLMeeting.pageMain.Navigation.Item(ComponentMediator, 9, 6);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)

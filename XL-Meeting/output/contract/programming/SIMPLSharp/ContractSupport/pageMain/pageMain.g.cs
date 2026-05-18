@@ -6,7 +6,7 @@
 //
 //     Project:     XL-Meeting
 //     Version:     1.0.0.0
-//     Sdk:         CH5:2.16.0
+//     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
 //     IndexOnly:   False
 //
@@ -70,29 +70,29 @@ namespace XLMeeting.pageMain
         void roomtime_Indirect(string serial);
 
         /// <summary>
-        /// ComplexComponent subAudio
-        /// </summary>
-        XLMeeting.pageMain.subAudio.IsubAudio subAudio { get; }
-
-        /// <summary>
         /// ComplexComponent subShareSrc
         /// </summary>
-        XLMeeting.pageMain.subShareSrc.IsubShareSrc subShareSrc { get; }
-
-        /// <summary>
-        /// ComplexComponent subCamera
-        /// </summary>
-        XLMeeting.pageMain.subCamera.IsubCamera subCamera { get; }
-
-        /// <summary>
-        /// ComplexComponent subLights
-        /// </summary>
-        XLMeeting.pageMain.subLights.IsubLights subLights { get; }
+        XLMeeting.pageMain.IsubShareSrc subShareSrc { get; }
 
         /// <summary>
         /// ComplexComponent subDisplays
         /// </summary>
-        XLMeeting.pageMain.subDisplays.IsubDisplays subDisplays { get; }
+        XLMeeting.pageMain.IsubDisplays subDisplays { get; }
+
+        /// <summary>
+        /// ComplexComponent subLights
+        /// </summary>
+        XLMeeting.pageMain.IsubLights subLights { get; }
+
+        /// <summary>
+        /// ComplexComponent subRoomSetup
+        /// </summary>
+        XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; }
+
+        /// <summary>
+        /// ComplexComponent subAudio
+        /// </summary>
+        XLMeeting.pageMain.IsubAudio subAudio { get; }
 
         /// <summary>
         /// ComplexComponent zref_Button
@@ -100,9 +100,9 @@ namespace XLMeeting.pageMain
         XLMeeting.pageMain.Navigation.INavigation Navigation { get; }
 
         /// <summary>
-        /// ComplexComponent subRoomSetup
+        /// ComplexComponent subCamera
         /// </summary>
-        XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; }
+        XLMeeting.pageMain.subCamera.IsubCamera subCamera { get; }
     }
 
     /// <summary>
@@ -212,13 +212,13 @@ namespace XLMeeting.pageMain
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            subAudio = new XLMeeting.pageMain.subAudio.subAudio(ComponentMediator, 2);
-            subShareSrc = new XLMeeting.pageMain.subShareSrc.subShareSrc(ComponentMediator, 6);
-            subCamera = new XLMeeting.pageMain.subCamera.subCamera(ComponentMediator, 14);
-            subLights = new XLMeeting.pageMain.subLights.subLights(ComponentMediator, 16);
-            subDisplays = new XLMeeting.pageMain.subDisplays.subDisplays(ComponentMediator, 26);
-            Navigation = new XLMeeting.pageMain.Navigation.Navigation(ComponentMediator, 37);
-            subRoomSetup = new XLMeeting.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 44);
+            subShareSrc = new XLMeeting.pageMain.subShareSrc(ComponentMediator, 2);
+            subDisplays = new XLMeeting.pageMain.subDisplays(ComponentMediator, 3);
+            subLights = new XLMeeting.pageMain.subLights(ComponentMediator, 4);
+            subRoomSetup = new XLMeeting.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 5);
+            subAudio = new XLMeeting.pageMain.subAudio(ComponentMediator, 7);
+            Navigation = new XLMeeting.pageMain.Navigation.Navigation(ComponentMediator, 8);
+            subCamera = new XLMeeting.pageMain.subCamera.subCamera(ComponentMediator, 15);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -226,19 +226,19 @@ namespace XLMeeting.pageMain
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((XLMeeting.pageMain.subAudio.subAudio)subAudio).AddDevice(device);
+            ((XLMeeting.pageMain.subShareSrc)subShareSrc).AddDevice(device);
 
-            ((XLMeeting.pageMain.subShareSrc.subShareSrc)subShareSrc).AddDevice(device);
+            ((XLMeeting.pageMain.subDisplays)subDisplays).AddDevice(device);
 
-            ((XLMeeting.pageMain.subCamera.subCamera)subCamera).AddDevice(device);
+            ((XLMeeting.pageMain.subLights)subLights).AddDevice(device);
 
-            ((XLMeeting.pageMain.subLights.subLights)subLights).AddDevice(device);
+            ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).AddDevice(device);
 
-            ((XLMeeting.pageMain.subDisplays.subDisplays)subDisplays).AddDevice(device);
+            ((XLMeeting.pageMain.subAudio)subAudio).AddDevice(device);
 
             ((XLMeeting.pageMain.Navigation.Navigation)Navigation).AddDevice(device);
 
-            ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).AddDevice(device);
+            ((XLMeeting.pageMain.subCamera.subCamera)subCamera).AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
@@ -246,19 +246,19 @@ namespace XLMeeting.pageMain
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((XLMeeting.pageMain.subAudio.subAudio)subAudio).RemoveDevice(device);
+            ((XLMeeting.pageMain.subShareSrc)subShareSrc).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subShareSrc.subShareSrc)subShareSrc).RemoveDevice(device);
+            ((XLMeeting.pageMain.subDisplays)subDisplays).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subCamera.subCamera)subCamera).RemoveDevice(device);
+            ((XLMeeting.pageMain.subLights)subLights).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subLights.subLights)subLights).RemoveDevice(device);
+            ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subDisplays.subDisplays)subDisplays).RemoveDevice(device);
+            ((XLMeeting.pageMain.subAudio)subAudio).RemoveDevice(device);
 
             ((XLMeeting.pageMain.Navigation.Navigation)Navigation).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).RemoveDevice(device);
+            ((XLMeeting.pageMain.subCamera.subCamera)subCamera).RemoveDevice(device);
         }
 
         #endregion
@@ -311,29 +311,29 @@ namespace XLMeeting.pageMain
         }
 
         /// <summary>
-        /// ComplexComponent subAudio
-        /// </summary>
-        public XLMeeting.pageMain.subAudio.IsubAudio subAudio { get; private set; }
-
-        /// <summary>
         /// ComplexComponent subShareSrc
         /// </summary>
-        public XLMeeting.pageMain.subShareSrc.IsubShareSrc subShareSrc { get; private set; }
-
-        /// <summary>
-        /// ComplexComponent subCamera
-        /// </summary>
-        public XLMeeting.pageMain.subCamera.IsubCamera subCamera { get; private set; }
-
-        /// <summary>
-        /// ComplexComponent subLights
-        /// </summary>
-        public XLMeeting.pageMain.subLights.IsubLights subLights { get; private set; }
+        public XLMeeting.pageMain.IsubShareSrc subShareSrc { get; private set; }
 
         /// <summary>
         /// ComplexComponent subDisplays
         /// </summary>
-        public XLMeeting.pageMain.subDisplays.IsubDisplays subDisplays { get; private set; }
+        public XLMeeting.pageMain.IsubDisplays subDisplays { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent subLights
+        /// </summary>
+        public XLMeeting.pageMain.IsubLights subLights { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent subRoomSetup
+        /// </summary>
+        public XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; private set; }
+
+        /// <summary>
+        /// ComplexComponent subAudio
+        /// </summary>
+        public XLMeeting.pageMain.IsubAudio subAudio { get; private set; }
 
         /// <summary>
         /// ComplexComponent Navigation
@@ -341,9 +341,9 @@ namespace XLMeeting.pageMain
         public XLMeeting.pageMain.Navigation.INavigation Navigation { get; private set; }
 
         /// <summary>
-        /// ComplexComponent subRoomSetup
+        /// ComplexComponent subCamera
         /// </summary>
-        public XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; private set; }
+        public XLMeeting.pageMain.subCamera.IsubCamera subCamera { get; private set; }
 
         #endregion
 

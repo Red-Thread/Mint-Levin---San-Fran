@@ -6,7 +6,7 @@
 //
 //     Project:     XL-Meeting
 //     Version:     1.0.0.0
-//     Sdk:         CH5:2.16.0
+//     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
 //     IndexOnly:   False
 //
@@ -299,7 +299,7 @@ namespace XLMeeting.pageMain.subCamera
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camPreset3_PressEvent, oncamPreset3_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camZoomIn_PressEvent, oncamZoomIn_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camZoomOut_PressEvent, oncamZoomOut_Press);
-            cameraDpad = new XLMeeting.pageMain.subCamera.cameraDpad(ComponentMediator, 15);
+            cameraDpad = new XLMeeting.pageMain.subCamera.cameraDpad(ComponentMediator, 16);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
