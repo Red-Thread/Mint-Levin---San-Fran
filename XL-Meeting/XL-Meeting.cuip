@@ -3,7 +3,7 @@ Schema = "1.0.0.0"
 CreatedByAppHost = "2.601.10.0"
 Created = 2026-05-08 15:30:16.942279-04:00
 LastModifiedByAppHost = "2.601.10.0"
-Modified = 2026-05-08 15:30:16.942274-04:00
+Modified = 2026-06-11 10:03:05.694816-04:00
 CreatedByProjectApp = "1.4201.17.0"
 LastModifiedByProjectApp = "1.4201.17.0"
 MinimumProjectApp = "1.2600.1"
@@ -15,7 +15,6 @@ MinimumAppHost = "2.0.0"
 {ProjectAttributes}
 
 [Attributes]
-ComponentKey = "UiEditor"
 Name = "XL-Meeting"
 ThemeId = "light-theme.css"
 ProjectThemeIds = "light-theme.css"
@@ -23,10 +22,11 @@ ThemePageColor = "#ffffff"
 IncludeUnusedAsset = "False"
 OverrideThemeColor = "False"
 SdkId = "CH5:2.16.1"
+ComponentKey = "UiEditor"
 Id = "76867e06-fab8-4fbe-ab16-055fc57ee6af"
 RuntimeThemeJoin = "0"
 RuntimeLanguageJoin = "0"
 DeviceResolutionIds = "D-L-TSW1070-1280-0800,G-L-DGE1000-1920-1080"
-ipId = "03"
+ipId = "1F"
 ProjectSchemaVersion = "6"
 

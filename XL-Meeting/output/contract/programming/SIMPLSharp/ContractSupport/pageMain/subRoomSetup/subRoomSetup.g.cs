@@ -34,9 +34,9 @@ namespace XLMeeting.pageMain.subRoomSetup
         object UserObject { get; set; }
 
         /// <summary>
-        /// Event pageMain.subRoomSetup.Button.Press (from panel to Control System)
+        /// Event pageMain.subRoomSetup.dockrelease.Press (from panel to Control System)
         /// </summary>
-        event EventHandler<UIEventArgs> Button_PressEvent;
+        event EventHandler<UIEventArgs> dockrelease_PressEvent;
 
         /// <summary>
         /// subRoomSetup.Visibility Feedback
@@ -98,10 +98,10 @@ namespace XLMeeting.pageMain.subRoomSetup
             internal static class Booleans
             {
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subRoomSetup.Button.Press
-                /// pageMain.subRoomSetup.Button.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subRoomSetup.dockrelease.Press
+                /// pageMain.subRoomSetup.dockrelease.Press
                 /// </summary>
-                public const uint Button_PressEvent = 2;
+                public const uint dockrelease_PressEvent = 2;
 
 
                 /// <summary>
@@ -160,8 +160,8 @@ namespace XLMeeting.pageMain.subRoomSetup
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Button_PressEvent, onButton_Press);
-            rmSetup = new XLMeeting.pageMain.subRoomSetup.rmSetup(ComponentMediator, 6);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.dockrelease_PressEvent, ondockrelease_Press);
+            rmSetup = new XLMeeting.pageMain.subRoomSetup.rmSetup(ComponentMediator, 36);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -185,10 +185,10 @@ namespace XLMeeting.pageMain.subRoomSetup
         #region CH5 Contract
 
         /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> Button_PressEvent;
-        private void onButton_Press(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> dockrelease_PressEvent;
+        private void ondockrelease_Press(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = Button_PressEvent;
+            EventHandler<UIEventArgs> handler = dockrelease_PressEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -240,7 +240,7 @@ namespace XLMeeting.pageMain.subRoomSetup
 
             IsDisposed = true;
 
-            Button_PressEvent = null;
+            dockrelease_PressEvent = null;
         }
 
         #endregion

@@ -1,0 +1,271 @@
+{
+  "name": "XL-Meeting-1",
+  "timestamp": "2026-06-11T13:51:54.459517+00:00",
+  "version": "1.0.0.0",
+  "schema_version": 1,
+  "extra_value": "",
+  "signals": {
+    "states": {
+      "boolean": {
+        "2": {
+          "1": "pageMain.subRouting.Visibility_fb"
+        },
+        "3": {
+          "1": "pageMain.subRoomSetup.Visibility_fb"
+        },
+        "4": {
+          "1001": "pageMain.subRoomSetup.rmSetup.Button1ItemSelected",
+          "1002": "pageMain.subRoomSetup.rmSetup.Button2ItemSelected",
+          "1003": "pageMain.subRoomSetup.rmSetup.Button3ItemSelected",
+          "1501": "pageMain.subRoomSetup.rmSetup.Button1Visible",
+          "1502": "pageMain.subRoomSetup.rmSetup.Button2Visible",
+          "1503": "pageMain.subRoomSetup.rmSetup.Button3Visible"
+        },
+        "5": {
+          "1": "pageMain.subCamera.camAutoTrack.Visibility_fb",
+          "2": "pageMain.subCamera.Visibility_fb",
+          "3": "pageMain.subCamera.camPreset1.Enable",
+          "4": "pageMain.subCamera.camPreset2.Enable",
+          "5": "pageMain.subCamera.camPreset3.Enable",
+          "6": "pageMain.subCamera.camZoomIn.Enable",
+          "7": "pageMain.subCamera.camZoomOut.Enable",
+          "8": "pageMain.subCamera.camAutoTrack.Selected",
+          "9": "pageMain.subCamera.camPreset1.Selected",
+          "10": "pageMain.subCamera.camPreset2.Selected",
+          "11": "pageMain.subCamera.camPreset3.Selected",
+          "12": "pageMain.subCamera.camZoomIn.Selected",
+          "13": "pageMain.subCamera.camZoomOut.Selected"
+        },
+        "6": {
+          "2": "pageMain.subCamera.cameraDpad.Enable"
+        },
+        "7": {
+          "1": "pageMain.subDisplays.Visibility_fb"
+        },
+        "8": {
+          "1": "pageMain.subShareSrc.Visibility_fb"
+        },
+        "9": {
+          "1": "pageMain.Navigation.List_Item1_Visible",
+          "2": "pageMain.Navigation.List_Item2_Visible",
+          "3": "pageMain.Navigation.List_Item3_Visible",
+          "4": "pageMain.Navigation.List_Item4_Visible",
+          "5": "pageMain.Navigation.List_Item5_Visible",
+          "6": "pageMain.Navigation.List_Item6_Visible"
+        },
+        "10": {
+          "1201": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.button.Selected"
+        },
+        "11": {
+          "1201": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.button.Selected"
+        },
+        "12": {
+          "1201": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.button.Selected"
+        },
+        "13": {
+          "1201": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.button.Selected"
+        },
+        "14": {
+          "1201": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.button.Selected"
+        },
+        "15": {
+          "1201": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.button.Selected"
+        },
+        "16": {
+          "1": "pageMain.subAudio.ceilingmictoggle.Visibility_fb",
+          "2": "pageMain.subAudio.prefuncfader.Visibility_fb",
+          "3": "pageMain.subAudio.prefunctoggle.Visibility_fb",
+          "4": "pageMain.subAudio.receptionfader.Visibility_fb",
+          "5": "pageMain.subAudio.receptiontoggle.Visibility_fb",
+          "6": "pageMain.subAudio.borderCeilingMic.Visibility_fb",
+          "7": "pageMain.subAudio.ceilingmicMutestatus.Visibility_fb",
+          "8": "pageMain.subAudio.ceilingMicmutetxt.Visibility_fb",
+          "9": "pageMain.subAudio.prefuncborder.Visibility_fb",
+          "10": "pageMain.subAudio.prefuncname.Visibility_fb",
+          "11": "pageMain.subAudio.prefuncttogglename.Visibility_fb",
+          "12": "pageMain.subAudio.receptionborder.Visibility_fb",
+          "13": "pageMain.subAudio.receptionname.Visibility_fb",
+          "14": "pageMain.subAudio.receptiontogglename.Visibility_fb",
+          "15": "pageMain.subAudio.Visibility_fb",
+          "17": "pageMain.subAudio.ceilingMicMuteBtn.Selected",
+          "18": "pageMain.subAudio.ceilingmictoggle.Selected",
+          "19": "pageMain.subAudio.prefunctoggle.Selected",
+          "20": "pageMain.subAudio.receptiontoggle.Selected"
+        }
+      },
+      "numeric": {
+        "16": {
+          "4": "pageMain.subAudio.prefuncfader.LowerTouchfb",
+          "5": "pageMain.subAudio.receptionfader.LowerTouchfb"
+        }
+      },
+      "string": {
+        "1": {
+          "1": "pageMain.roomname.Indirect",
+          "2": "pageMain.roomstatustext.Indirect"
+        },
+        "4": {
+          "1": "pageMain.subRoomSetup.rmSetup.Button1Text",
+          "2": "pageMain.subRoomSetup.rmSetup.Button2Text",
+          "3": "pageMain.subRoomSetup.rmSetup.Button3Text",
+          "501": "pageMain.subRoomSetup.rmSetup.Button1IconClass",
+          "502": "pageMain.subRoomSetup.rmSetup.Button2IconClass",
+          "503": "pageMain.subRoomSetup.rmSetup.Button3IconClass"
+        },
+        "10": {
+          "1": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.button.Icon"
+        },
+        "11": {
+          "1": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.button.Icon"
+        },
+        "12": {
+          "1": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.button.Icon"
+        },
+        "13": {
+          "1": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.button.Icon"
+        },
+        "14": {
+          "1": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.button.Icon"
+        },
+        "15": {
+          "1": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.button.IndirectText",
+          "2": "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.button.Icon"
+        },
+        "16": {
+          "1": "pageMain.subAudio.prefuncname.Indirect",
+          "2": "pageMain.subAudio.prefuncttogglename.Indirect",
+          "3": "pageMain.subAudio.receptionname.Indirect",
+          "4": "pageMain.subAudio.receptiontogglename.Indirect"
+        }
+      }
+    },
+    "events": {
+      "boolean": {
+        "pageMain.subRoomSetup.dockrelease.Press": {
+          "joinId": 2,
+          "smartObjectId": 3
+        },
+        "pageMain.subRoomSetup.rmSetup.Button1ItemPress": {
+          "joinId": 1001,
+          "smartObjectId": 4
+        },
+        "pageMain.subRoomSetup.rmSetup.Button2ItemPress": {
+          "joinId": 1002,
+          "smartObjectId": 4
+        },
+        "pageMain.subRoomSetup.rmSetup.Button3ItemPress": {
+          "joinId": 1003,
+          "smartObjectId": 4
+        },
+        "pageMain.subCamera.camAutoTrack.Press": {
+          "joinId": 1,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.camPreset1.Press": {
+          "joinId": 2,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.camPreset2.Press": {
+          "joinId": 3,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.camPreset3.Press": {
+          "joinId": 4,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.camZoomIn.Press": {
+          "joinId": 5,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.camZoomOut.Press": {
+          "joinId": 6,
+          "smartObjectId": 5
+        },
+        "pageMain.subCamera.cameraDpad.Up": {
+          "joinId": 3,
+          "smartObjectId": 6
+        },
+        "pageMain.subCamera.cameraDpad.Down": {
+          "joinId": 4,
+          "smartObjectId": 6
+        },
+        "pageMain.subCamera.cameraDpad.Left": {
+          "joinId": 5,
+          "smartObjectId": 6
+        },
+        "pageMain.subCamera.cameraDpad.Right": {
+          "joinId": 6,
+          "smartObjectId": 6
+        },
+        "pageMain.subCamera.cameraDpad.Center": {
+          "joinId": 7,
+          "smartObjectId": 6
+        },
+        "pageMain.Navigation.Items[0].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 10
+        },
+        "pageMain.Navigation.Items[1].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 11
+        },
+        "pageMain.Navigation.Items[2].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 12
+        },
+        "pageMain.Navigation.Items[3].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 13
+        },
+        "pageMain.Navigation.Items[4].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 14
+        },
+        "pageMain.Navigation.Items[5].zref_ButtonCONTRACT.button.Press": {
+          "joinId": 1201,
+          "smartObjectId": 15
+        },
+        "pageMain.subAudio.ceilingMicMuteBtn.Press": {
+          "joinId": 2,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.ceilingmictoggle.Press": {
+          "joinId": 3,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.overflowBreakArea.Press": {
+          "joinId": 4,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.preFunctButtonOverflow.Press": {
+          "joinId": 5,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.prefunctoggle.Press": {
+          "joinId": 6,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.receptiontoggle.Press": {
+          "joinId": 7,
+          "smartObjectId": 16
+        }
+      },
+      "numeric": {
+        "pageMain.subAudio.prefuncfader.LowerTouch": {
+          "joinId": 4,
+          "smartObjectId": 16
+        },
+        "pageMain.subAudio.receptionfader.LowerTouch": {
+          "joinId": 5,
+          "smartObjectId": 16
+        }
+      },
+      "string": {}
+    }
+  }
+}

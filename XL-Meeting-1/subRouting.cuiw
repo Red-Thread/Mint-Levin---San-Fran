@@ -1,0 +1,184 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.601.10.0"
+Created = 2026-06-11 09:51:25.157527-04:00
+LastModifiedByAppHost = "2.601.10.0"
+Modified = 2026-06-11 09:51:25.157525-04:00
+CreatedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4201.17.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.0.0"
+
+{Html}
+<div categoryname="Widget Components" id="ie1028443f" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" defaultWidth="987px" defaultHeight="660px" class="widget-container"><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="7" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" useContractForCustomStyle="false" useContractForCustomClass="false" useContractForEnable="false" useContractForShow="false" useContractForNumItems="false" useContractForItemEnable="true" useContractForItemShow="true" customvstheme="custom" loaditems="visible-only" id="ivs4" componentName="routingsrc" ccid_linkSendReceive="True" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" pd-subpagereceivestateenable="Contract Enabled" pd-subpagereceivestateshow="Contract Enabled" oldID="izz6agx6ke0yf" widgetid="we7b68e96-241b-485c-8994-1d997b2ba1b4"></ch5-subpage-reference-list><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="6" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" useContractForCustomStyle="false" useContractForCustomClass="false" useContractForEnable="false" useContractForShow="false" useContractForNumItems="false" useContractForItemEnable="true" useContractForItemShow="true" customvstheme="custom" loaditems="visible-only" id="ilec" componentName="route.dest" ccid_linkSendReceive="True" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" pd-subpagereceivestateenable="Contract Enabled" pd-subpagereceivestateshow="Contract Enabled" oldID="ilr2" widgetid="w5a8c36f8-94ac-449e-a4b1-ee101438150a">
+              </ch5-subpage-reference-list><ch5-toggle handleshape="circle" orientation="horizontal" size="regular" value="true" customvstheme="custom" id="ic29" componentName="overide" ccid_ActiveFont="'Roboto'" ccid_Label="Zoom Auto Routing" ccid_linkSendReceive="True" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" label="Zoom Auto Routing" labelon="Enabled" labeloff="Disabled">
+              </ch5-toggle><h1 class="gjs-html-header" headingType="h1" data-mytext="myText" componentName="Html-header_1" ccid_ActiveFont="'Roboto'" id="i2bw" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" oldID="igrq">Destinations</h1><h1 class="gjs-html-header" headingType="h1" data-mytext="myText" componentName="Html-header" ccid_ActiveFont="'Roboto'" id="ib0g" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]">Sources</h1><html-div componentName="Html-div_1" id="io6i" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]" oldID="iskg"></html-div><html-div componentName="Html-div" id="i6ez" devicesVisited="[&quot;DGE-1000: 1920x1080&quot;]"></html-div></div>
+
+{Css}
+@media (max-width: 99999px){#ie1028443f{width:987px;height:660px;left:0;top:0;position:absolute;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#i6ez{display:block;background-color:#000000;border-style:solid;border-width:0;border-color:#000000;width:933px;height:2px;left:27px;top:127px;position:absolute;z-index:24;}#io6i{display:block;background-color:#000000;border-style:solid;border-width:0;border-color:#000000;width:933px;height:2px;left:27px;top:398px;position:absolute;z-index:25;}#ib0g{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;display:block;color:black;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:27px;top:91px;position:absolute;z-index:26;custom-font-size:32px;font-style:normal;font-family:'Roboto';}#i2bw{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;display:block;color:black;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:27px;top:360px;position:absolute;z-index:27;custom-font-size:32px;font-style:normal;font-family:'Roboto';}#ic29 .ch5-toggle :not(i):not(svg){font-family:'Roboto';}#ilec{width:844px;height:auto;display:block;left:71px;top:409px;position:absolute;z-index:29;}#ic29{width:100px;display:block;left:359px;top:36px;position:absolute;z-index:28;--ch5-toggle--on-label-regular-font-size:12px;Label_on_font-size:12px;custom-on-label-font-size:12px;--ch5-toggle--off-label-regular-font-size:12px;Label_off_font-size:12px;custom-off-label-font-size:12px;--ch5-toggle--on-text-font-weight:400;Label_on_font-weight:400;--ch5-toggle--off-text-font-weight:400;Label_off_font-weight:400;}#ivs4{width:971px;height:auto;display:block;left:8px;top:162px;position:absolute;z-index:29;}#wrapper{background-color:#ffffff;}}@media (orientation: landscape) and (max-width: 1921px) and (max-height: 1081px), (orientation: landscape) and (max-width: 1919px){#ie1028443f{width:987px;height:660px;left:0;top:0;position:absolute;}#i6ez{display:block;background-color:#000000;border-style:solid;border-width:0;border-color:#000000;width:933px;height:2px;left:27px;top:127px;position:absolute;z-index:24;}#io6i{display:block;background-color:#000000;border-style:solid;border-width:0;border-color:#000000;width:933px;height:2px;left:27px;top:398px;position:absolute;z-index:25;}#ib0g{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;display:block;color:black;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:27px;top:91px;position:absolute;z-index:26;custom-font-size:32px;font-style:normal;font-family:'Roboto';}#i2bw{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;display:block;color:black;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:27px;top:360px;position:absolute;z-index:27;custom-font-size:32px;font-style:normal;font-family:'Roboto';}#ic29 .ch5-toggle > div{display:flex;align-items:center;}#ilec{width:844px;height:auto;display:block;left:71px;top:409px;position:absolute;z-index:29;}#ic29{width:100px;display:block;left:359px;top:36px;position:absolute;z-index:28;Label_on_font-size:12px;--ch5-toggle--on-label-regular-font-size:12px;Label_off_font-size:12px;--ch5-toggle--off-label-regular-font-size:12px;Label_on_font-weight:400;--ch5-toggle--on-text-font-weight:400;Label_off_font-weight:400;--ch5-toggle--off-text-font-weight:400;}#ivs4{left:8px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "subRouting"
+PageMode = "absolute"
+Id = "06adc75d-577e-4e8b-aed5-b0684d05f95f"
+DisplayBackgroundColor = "False"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Subpage Reference List"
+Editable = true
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+columns = "1"
+rows = "1"
+centeritems = "true"
+numberofitems = "7"
+scrolltoposition = "0"
+scrollbar = "false"
+endless = "false"
+indexid = "idx"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+useContractForNumItems = "false"
+useContractForItemEnable = "true"
+useContractForItemShow = "true"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "ivs4"
+componentName = "routingsrc"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+pd-subpagereceivestateenable = "Contract Enabled"
+pd-subpagereceivestateshow = "Contract Enabled"
+oldID = "izz6agx6ke0yf"
+widgetid = "we7b68e96-241b-485c-8994-1d997b2ba1b4"
+[[Elements.Components]]
+Type = "Ch5 Subpage Reference List"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+orientation = "horizontal"
+columns = "1"
+rows = "1"
+centeritems = "true"
+numberofitems = "6"
+scrolltoposition = "0"
+scrollbar = "false"
+endless = "false"
+indexid = "idx"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+useContractForNumItems = "false"
+useContractForItemEnable = "true"
+useContractForItemShow = "true"
+customvstheme = "custom"
+loaditems = "visible-only"
+id = "ilec"
+componentName = "route.dest"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+pd-subpagereceivestateenable = "Contract Enabled"
+pd-subpagereceivestateshow = "Contract Enabled"
+oldID = "ilr2"
+widgetid = "w5a8c36f8-94ac-449e-a4b1-ee101438150a"
+[[Elements.Components]]
+Type = "Ch5 Toggle"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+handleshape = "circle"
+orientation = "horizontal"
+size = "regular"
+value = "true"
+customvstheme = "custom"
+id = "ic29"
+componentName = "overide"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Zoom Auto Routing"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+label = "Zoom Auto Routing"
+labelon = "Enabled"
+labeloff = "Disabled"
+[[Elements.Components]]
+Type = "html-header"
+Classes = ["gjs-html-header"]
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "Destinations"
+Removable = false
+Draggable = false
+Highlightable = 0
+Copyable = false
+_InnerText = false
+
+[Elements.Components.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Html-header_1"
+ccid_ActiveFont = "'Roboto'"
+id = "i2bw"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+oldID = "igrq"
+[[Elements.Components]]
+Type = "html-header"
+Classes = ["gjs-html-header"]
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "Sources"
+Removable = false
+Draggable = false
+Highlightable = 0
+Copyable = false
+_InnerText = false
+
+[Elements.Components.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+id = "ib0g"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+[[Elements.Components]]
+Type = "html-div"
+
+[Elements.Components.Attributes]
+componentName = "Html-div_1"
+id = "io6i"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+oldID = "iskg"
+[[Elements.Components]]
+Type = "html-div"
+
+[Elements.Components.Attributes]
+componentName = "Html-div"
+id = "i6ez"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+
+[Elements.Attributes]
+categoryname = "Widget Components"
+id = "ie1028443f"
+devicesVisited = "[\"DGE-1000: 1920x1080\"]"
+defaultWidth = "987px"
+defaultHeight = "660px"
+

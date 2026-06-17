@@ -34,6 +34,11 @@ namespace XLMeeting.pageMain.subCamera
         object UserObject { get; set; }
 
         /// <summary>
+        /// Event pageMain.subCamera.camAutoTrack.Press (from panel to Control System)
+        /// </summary>
+        event EventHandler<UIEventArgs> camAutoTrack_PressEvent;
+
+        /// <summary>
         /// Event pageMain.subCamera.camPreset1.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> camPreset1_PressEvent;
@@ -59,6 +64,18 @@ namespace XLMeeting.pageMain.subCamera
         event EventHandler<UIEventArgs> camZoomOut_PressEvent;
 
         /// <summary>
+        /// pageMain.subCamera.camAutoTrack.Visibility Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camAutoTrack_Visibility_fb(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camAutoTrack.Visibility Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camAutoTrack_Visibility_fb(bool digital);
+
+        /// <summary>
         /// subCamera.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
@@ -69,6 +86,78 @@ namespace XLMeeting.pageMain.subCamera
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void subCamera_Visibility_fb(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset1.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPreset1_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset1.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPreset1_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset2.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPreset2_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset2.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPreset2_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset3.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPreset3_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset3.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPreset3_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camZoomIn.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camZoomIn_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camZoomIn.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camZoomIn_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camZoomOut.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camZoomOut_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camZoomOut.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camZoomOut_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camAutoTrack.Press Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camAutoTrack_Selected(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camAutoTrack.Press Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camAutoTrack_Selected(bool digital);
 
         /// <summary>
         /// pageMain.subCamera.camPreset1.Selected Feedback
@@ -178,6 +267,12 @@ namespace XLMeeting.pageMain.subCamera
             internal static class Booleans
             {
                 /// <summary>
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subCamera.camAutoTrack.Press
+                /// pageMain.subCamera.camAutoTrack.Press
+                /// </summary>
+                public const uint camAutoTrack_PressEvent = 1;
+
+                /// <summary>
                 /// Output or Event digital joinInfo from panel to Control System: pageMain.subCamera.camPreset1.Press
                 /// pageMain.subCamera.camPreset1.Press
                 /// </summary>
@@ -209,40 +304,82 @@ namespace XLMeeting.pageMain.subCamera
 
 
                 /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camAutoTrack.Visibility_fb
+                /// pageMain.subCamera.camAutoTrack.Visibility
+                /// </summary>
+                public const uint camAutoTrack_Visibility_fbState = 1;
+
+                /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.Visibility_fb
                 /// subCamera.Visibility
                 /// </summary>
-                public const uint subCamera_Visibility_fbState = 1;
+                public const uint subCamera_Visibility_fbState = 2;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset1.Enable
+                /// pageMain.subCamera.camPreset1.Enable
+                /// </summary>
+                public const uint camPreset1_EnableState = 3;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset2.Enable
+                /// pageMain.subCamera.camPreset2.Enable
+                /// </summary>
+                public const uint camPreset2_EnableState = 4;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset3.Enable
+                /// pageMain.subCamera.camPreset3.Enable
+                /// </summary>
+                public const uint camPreset3_EnableState = 5;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomIn.Enable
+                /// pageMain.subCamera.camZoomIn.Enable
+                /// </summary>
+                public const uint camZoomIn_EnableState = 6;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomOut.Enable
+                /// pageMain.subCamera.camZoomOut.Enable
+                /// </summary>
+                public const uint camZoomOut_EnableState = 7;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camAutoTrack.Selected
+                /// pageMain.subCamera.camAutoTrack.Press
+                /// </summary>
+                public const uint camAutoTrack_SelectedState = 8;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset1.Selected
                 /// pageMain.subCamera.camPreset1.Selected
                 /// </summary>
-                public const uint camPreset1_SelectedState = 3;
+                public const uint camPreset1_SelectedState = 9;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset2.Selected
                 /// pageMain.subCamera.camPreset2.Selected
                 /// </summary>
-                public const uint camPreset2_SelectedState = 4;
+                public const uint camPreset2_SelectedState = 10;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset3.Selected
                 /// pageMain.subCamera.camPreset3.Selected
                 /// </summary>
-                public const uint camPreset3_SelectedState = 5;
+                public const uint camPreset3_SelectedState = 11;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomIn.Selected
                 /// pageMain.subCamera.camZoomIn.Selected
                 /// </summary>
-                public const uint camZoomIn_SelectedState = 6;
+                public const uint camZoomIn_SelectedState = 12;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomOut.Selected
                 /// pageMain.subCamera.camZoomOut.Selected
                 /// </summary>
-                public const uint camZoomOut_SelectedState = 7;
+                public const uint camZoomOut_SelectedState = 13;
 
             }
         }
@@ -294,12 +431,13 @@ namespace XLMeeting.pageMain.subCamera
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camAutoTrack_PressEvent, oncamAutoTrack_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camPreset1_PressEvent, oncamPreset1_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camPreset2_PressEvent, oncamPreset2_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camPreset3_PressEvent, oncamPreset3_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camZoomIn_PressEvent, oncamZoomIn_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.camZoomOut_PressEvent, oncamZoomOut_Press);
-            cameraDpad = new XLMeeting.pageMain.subCamera.cameraDpad(ComponentMediator, 16);
+            cameraDpad = new XLMeeting.pageMain.subCamera.cameraDpad(ComponentMediator, 49);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -321,6 +459,15 @@ namespace XLMeeting.pageMain.subCamera
         #endregion
 
         #region CH5 Contract
+
+        /// <inheritdoc/>
+        public event EventHandler<UIEventArgs> camAutoTrack_PressEvent;
+        private void oncamAutoTrack_Press(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = camAutoTrack_PressEvent;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
 
         /// <inheritdoc/>
         public event EventHandler<UIEventArgs> camPreset1_PressEvent;
@@ -368,6 +515,48 @@ namespace XLMeeting.pageMain.subCamera
         }
 
         /// <inheritdoc/>
+        public void camAutoTrack_Selected(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camAutoTrack_SelectedState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camAutoTrack_Selected(bool digital)
+        {
+            camAutoTrack_Selected((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void camAutoTrack_Visibility_fb(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camAutoTrack_Visibility_fbState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camAutoTrack_Visibility_fb(bool digital)
+        {
+            camAutoTrack_Visibility_fb((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void camPreset1_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPreset1_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPreset1_Enable(bool digital)
+        {
+            camPreset1_Enable((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void camPreset1_Selected(subCameraBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -380,6 +569,20 @@ namespace XLMeeting.pageMain.subCamera
         public void camPreset1_Selected(bool digital)
         {
             camPreset1_Selected((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void camPreset2_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPreset2_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPreset2_Enable(bool digital)
+        {
+            camPreset2_Enable((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
         public void camPreset2_Selected(subCameraBoolInputSigDelegate callback)
@@ -396,6 +599,20 @@ namespace XLMeeting.pageMain.subCamera
             camPreset2_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
+        public void camPreset3_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPreset3_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPreset3_Enable(bool digital)
+        {
+            camPreset3_Enable((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void camPreset3_Selected(subCameraBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -410,6 +627,20 @@ namespace XLMeeting.pageMain.subCamera
             camPreset3_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
+        public void camZoomIn_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camZoomIn_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camZoomIn_Enable(bool digital)
+        {
+            camZoomIn_Enable((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void camZoomIn_Selected(subCameraBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -422,6 +653,20 @@ namespace XLMeeting.pageMain.subCamera
         public void camZoomIn_Selected(bool digital)
         {
             camZoomIn_Selected((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void camZoomOut_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camZoomOut_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camZoomOut_Enable(bool digital)
+        {
+            camZoomOut_Enable((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
         public void camZoomOut_Selected(subCameraBoolInputSigDelegate callback)
@@ -484,6 +729,7 @@ namespace XLMeeting.pageMain.subCamera
 
             IsDisposed = true;
 
+            camAutoTrack_PressEvent = null;
             camPreset1_PressEvent = null;
             camPreset2_PressEvent = null;
             camPreset3_PressEvent = null;

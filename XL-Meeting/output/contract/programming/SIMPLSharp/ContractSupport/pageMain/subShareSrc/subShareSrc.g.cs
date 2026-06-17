@@ -23,40 +23,45 @@ using Crestron.SimplSharpPro;
 using Crestron.SimplSharpPro.DeviceSupport;
 using XLMeeting;
 
-namespace XLMeeting.pageMain
+namespace XLMeeting.pageMain.subShareSrc
 {
 
     /// <summary>
-    /// subDisplays
+    /// subShareSrc
     /// </summary>
-    public partial interface IsubDisplays 
+    public partial interface IsubShareSrc 
     {
         object UserObject { get; set; }
 
         /// <summary>
-        /// subDisplays.Visibility Feedback
+        /// subShareSrc.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void subDisplays_Visibility_fb(subDisplaysBoolInputSigDelegate callback);
+        void subShareSrc_Visibility_fb(subShareSrcBoolInputSigDelegate callback);
 
         /// <summary>
-        /// subDisplays.Visibility Feedback
+        /// subShareSrc.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
-        void subDisplays_Visibility_fb(bool digital);
+        void subShareSrc_Visibility_fb(bool digital);
+
+        /// <summary>
+        /// ComplexComponent zref_ButtonShare
+        /// </summary>
+        XLMeeting.pageMain.subShareSrc.sharecontentsrc.Isharecontentsrc sharecontentsrc { get; }
     }
 
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
-    /// <param name="subdisplays">The <see cref="IsubDisplays"/> on which to apply the feedback.</param>
-    public delegate void subDisplaysBoolInputSigDelegate(BoolInputSig boolInputSig, IsubDisplays subdisplays);
+    /// <param name="subsharesrc">The <see cref="IsubShareSrc"/> on which to apply the feedback.</param>
+    public delegate void subShareSrcBoolInputSigDelegate(BoolInputSig boolInputSig, IsubShareSrc subsharesrc);
 
     /// <summary>
-    /// subDisplays
+    /// subShareSrc
     /// </summary>
-    internal partial class subDisplays : IsubDisplays, IDisposable
+    internal partial class subShareSrc : IsubShareSrc, IDisposable
     {
         #region Standard CH5 Component members
 
@@ -89,10 +94,10 @@ namespace XLMeeting.pageMain
             {
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subDisplays.Visibility_fb
-                /// subDisplays.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subShareSrc.Visibility_fb
+                /// subShareSrc.Visibility
                 /// </summary>
-                public const uint subDisplays_Visibility_fbState = 1;
+                public const uint subShareSrc_Visibility_fbState = 1;
 
             }
         }
@@ -102,23 +107,23 @@ namespace XLMeeting.pageMain
         #region Construction and Initialization
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
+        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
-        internal subDisplays(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
+        internal subShareSrc(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
         {
             ComponentMediator = componentMediator;
             Initialize(controlJoinId, itemCount);
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
+        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
-        internal subDisplays(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
+        internal subShareSrc(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
         {
         }
 
@@ -134,7 +139,7 @@ namespace XLMeeting.pageMain
         private Dictionary<string, Indexes> _indexLookup = new Dictionary<string, Indexes>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
+        /// Initializes a new instance of the <see cref="subShareSrc"/> component class.
         /// </summary>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
@@ -144,18 +149,23 @@ namespace XLMeeting.pageMain
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
+            sharecontentsrc = new XLMeeting.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc(ComponentMediator, 3);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
         {
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((XLMeeting.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc)sharecontentsrc).AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
         {
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((XLMeeting.pageMain.subShareSrc.sharecontentsrc.sharecontentsrc)sharecontentsrc).RemoveDevice(device);
         }
 
         #endregion
@@ -163,19 +173,24 @@ namespace XLMeeting.pageMain
         #region CH5 Contract
 
         /// <inheritdoc/>
-        public void subDisplays_Visibility_fb(subDisplaysBoolInputSigDelegate callback)
+        public void subShareSrc_Visibility_fb(subShareSrcBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subDisplays_Visibility_fbState], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subShareSrc_Visibility_fbState], this);
             }
         }
 
         /// <inheritdoc/>
-        public void subDisplays_Visibility_fb(bool digital)
+        public void subShareSrc_Visibility_fb(bool digital)
         {
-            subDisplays_Visibility_fb((sig, component) => sig.BoolValue = digital);
+            subShareSrc_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
+
+        /// <summary>
+        /// ComplexComponent sharecontentsrc
+        /// </summary>
+        public XLMeeting.pageMain.subShareSrc.sharecontentsrc.Isharecontentsrc sharecontentsrc { get; private set; }
 
         #endregion
 
@@ -188,7 +203,7 @@ namespace XLMeeting.pageMain
 
         public override string ToString()
         {
-            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subDisplays", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
+            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subShareSrc", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
         }
 
         #endregion

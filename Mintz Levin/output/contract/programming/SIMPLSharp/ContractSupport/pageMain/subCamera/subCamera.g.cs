@@ -100,6 +100,42 @@ namespace MintzLevin.pageMain.subCamera
         void subCamera_Visibility_fb(bool digital);
 
         /// <summary>
+        /// pageMain.subCamera.camPreset_01.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPreset_01_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset_01.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPreset_01_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset_02.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPreset_02_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPreset_02.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPreset_02_Enable(bool digital);
+
+        /// <summary>
+        /// pageMain.subCamera.camPrest_00.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void camPrest_00_Enable(subCameraBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.camPrest_00.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void camPrest_00_Enable(bool digital);
+
+        /// <summary>
         /// pageMain.subCamera.camZoomIn.Enable Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
@@ -298,52 +334,70 @@ namespace MintzLevin.pageMain.subCamera
                 public const uint subCamera_Visibility_fbState = 3;
 
                 /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset_01.Enable
+                /// pageMain.subCamera.camPreset_01.Enable
+                /// </summary>
+                public const uint camPreset_01_EnableState = 4;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset_02.Enable
+                /// pageMain.subCamera.camPreset_02.Enable
+                /// </summary>
+                public const uint camPreset_02_EnableState = 5;
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPrest_00.Enable
+                /// pageMain.subCamera.camPrest_00.Enable
+                /// </summary>
+                public const uint camPrest_00_EnableState = 6;
+
+                /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomIn.Enable
                 /// pageMain.subCamera.camZoomIn.Enable
                 /// </summary>
-                public const uint camZoomIn_EnableState = 4;
+                public const uint camZoomIn_EnableState = 7;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.CamZoomOut.Enable
                 /// pageMain.subCamera.CamZoomOut.Enable
                 /// </summary>
-                public const uint CamZoomOut_EnableState = 5;
+                public const uint CamZoomOut_EnableState = 8;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camAutoTrack.Selected
                 /// pageMain.subCamera.camAutoTrack.Press
                 /// </summary>
-                public const uint camAutoTrack_SelectedState = 6;
+                public const uint camAutoTrack_SelectedState = 9;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset_01.Selected
                 /// pageMain.subCamera.camPreset_01.Selected
                 /// </summary>
-                public const uint camPreset_01_SelectedState = 7;
+                public const uint camPreset_01_SelectedState = 10;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPreset_02.Selected
                 /// pageMain.subCamera.camPreset_02.Selected
                 /// </summary>
-                public const uint camPreset_02_SelectedState = 8;
+                public const uint camPreset_02_SelectedState = 11;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camPrest_00.Selected
                 /// pageMain.subCamera.camPrest_00.Selected
                 /// </summary>
-                public const uint camPrest_00_SelectedState = 9;
+                public const uint camPrest_00_SelectedState = 12;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.camZoomIn.Selected
                 /// pageMain.subCamera.camZoomIn.Selected
                 /// </summary>
-                public const uint camZoomIn_SelectedState = 10;
+                public const uint camZoomIn_SelectedState = 13;
 
                 /// <summary>
                 /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.CamZoomOut.Selected
                 /// pageMain.subCamera.CamZoomOut.Selected
                 /// </summary>
-                public const uint CamZoomOut_SelectedState = 11;
+                public const uint CamZoomOut_SelectedState = 14;
 
             }
         }
@@ -521,6 +575,20 @@ namespace MintzLevin.pageMain.subCamera
             camearAutoTrackTxt_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
+        public void camPreset_01_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPreset_01_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPreset_01_Enable(bool digital)
+        {
+            camPreset_01_Enable((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void camPreset_01_Selected(subCameraBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -535,6 +603,20 @@ namespace MintzLevin.pageMain.subCamera
             camPreset_01_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
+        public void camPreset_02_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPreset_02_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPreset_02_Enable(bool digital)
+        {
+            camPreset_02_Enable((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
         public void camPreset_02_Selected(subCameraBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
@@ -547,6 +629,20 @@ namespace MintzLevin.pageMain.subCamera
         public void camPreset_02_Selected(bool digital)
         {
             camPreset_02_Selected((sig, component) => sig.BoolValue = digital);
+        }
+        /// <inheritdoc/>
+        public void camPrest_00_Enable(subCameraBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.camPrest_00_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void camPrest_00_Enable(bool digital)
+        {
+            camPrest_00_Enable((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
         public void camPrest_00_Selected(subCameraBoolInputSigDelegate callback)

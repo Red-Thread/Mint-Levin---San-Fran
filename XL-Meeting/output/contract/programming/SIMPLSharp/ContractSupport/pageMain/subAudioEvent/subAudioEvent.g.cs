@@ -23,416 +23,397 @@ using Crestron.SimplSharpPro;
 using Crestron.SimplSharpPro.DeviceSupport;
 using XLMeeting;
 
-namespace XLMeeting.pageMain
+namespace XLMeeting.pageMain.subAudioEvent
 {
 
     /// <summary>
-    /// subAudio
+    /// subAudioEvent
     /// </summary>
-    public partial interface IsubAudio 
+    public partial interface IsubAudioEvent 
     {
         object UserObject { get; set; }
 
         /// <summary>
-        /// Event pageMain.subAudio.ceilingMicMuteBtn.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.ceilingMicMuteBtn.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> ceilingMicMuteBtn_PressEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.ceilingmic.toggle.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.ceilingmic.toggle.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> ceilingmictoggle_PressEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.preFunctButtonOverflow.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.overflowBreakArea.Press (from panel to Control System)
         /// </summary>
-        event EventHandler<UIEventArgs> preFunctButtonOverflow_PressEvent;
+        event EventHandler<UIEventArgs> overflowBreakArea_PressEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.prefunc.fader.Lower Touch (from panel to Control System)
+        /// Event pageMain.subAudioEvent.prefunc.fader.Lower Touch (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> prefuncfader_LowerTouchEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.prefunc.toggle.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.preFunctButtonOverflow.Press (from panel to Control System)
         /// </summary>
-        event EventHandler<UIEventArgs> prefunctoggle_PressEvent;
+        event EventHandler<UIEventArgs> preFunctButtonOverflow_PressEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.reception.fader.Lower Touch (from panel to Control System)
+        /// Event pageMain.subAudioEvent.reception.fader.Lower Touch (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> receptionfader_LowerTouchEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.receptionButtonOverflow.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.prefunc.toggle.Press (from panel to Control System)
         /// </summary>
-        event EventHandler<UIEventArgs> receptionButtonOverflow_PressEvent;
+        event EventHandler<UIEventArgs> prefunctoggle_PressEvent;
 
         /// <summary>
-        /// Event pageMain.subAudio.reception.toggle.Press (from panel to Control System)
+        /// Event pageMain.subAudioEvent.reception.toggle.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> receptiontoggle_PressEvent;
 
         /// <summary>
-        /// pageMain.subAudio.ceilingmic.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.ceilingmic.toggle.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void ceilingmictoggle_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void ceilingmictoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingmic.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.ceilingmic.toggle.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void ceilingmictoggle_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.fader.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.fader.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefuncfader_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void prefuncfader_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.fader.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.fader.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefuncfader_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.toggle.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefunctoggle_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void prefunctoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.toggle.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefunctoggle_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.reception.fader.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.fader.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptionfader_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void receptionfader_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.fader.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.fader.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptionfader_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.toggle.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptiontoggle_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void receptiontoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.toggle.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptiontoggle_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.border.CeilingMic.Visibility Feedback
+        /// pageMain.subAudioEvent.border.CeilingMic.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void borderCeilingMic_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void borderCeilingMic_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.border.CeilingMic.Visibility Feedback
+        /// pageMain.subAudioEvent.border.CeilingMic.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void borderCeilingMic_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.ceiling.micMute.status.Visibility Feedback
+        /// pageMain.subAudioEvent.ceiling.micMute.status.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void ceilingmicMutestatus_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void ceilingmicMutestatus_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.ceiling.micMute.status.Visibility Feedback
+        /// pageMain.subAudioEvent.ceiling.micMute.status.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void ceilingmicMutestatus_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingMic.mute.txt.Visibility Feedback
+        /// pageMain.subAudioEvent.ceilingMic.mute.txt.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void ceilingMicmutetxt_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void ceilingMicmutetxt_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingMic.mute.txt.Visibility Feedback
+        /// pageMain.subAudioEvent.ceilingMic.mute.txt.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void ceilingMicmutetxt_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.border.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.border.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefuncborder_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void prefuncborder_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.border.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.border.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefuncborder_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.name.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.name.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefuncname_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void prefuncname_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.name.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunc.name.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefuncname_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunct.toggle.name.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunct.toggle.name.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefuncttogglename_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void prefuncttogglename_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunct.toggle.name.Visibility Feedback
+        /// pageMain.subAudioEvent.prefunct.toggle.name.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefuncttogglename_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.reception.border.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.border.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptionborder_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void receptionborder_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.border.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.border.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptionborder_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.reception.name.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.name.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptionname_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void receptionname_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.name.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.name.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptionname_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.name.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.toggle.name.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptiontogglename_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void receptiontogglename_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.name.Visibility Feedback
+        /// pageMain.subAudioEvent.reception.toggle.name.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptiontogglename_Visibility_fb(bool digital);
 
         /// <summary>
-        /// subAudio.Visibility Feedback
+        /// subAudioEvent.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void subAudio_Visibility_fb(subAudioBoolInputSigDelegate callback);
+        void subAudioEvent_Visibility_fb(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// subAudio.Visibility Feedback
+        /// subAudioEvent.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
-        void subAudio_Visibility_fb(bool digital);
+        void subAudioEvent_Visibility_fb(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingMicMuteBtn.Selected Feedback
+        /// pageMain.subAudioEvent.ceilingMicMuteBtn.Selected Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void ceilingMicMuteBtn_Selected(subAudioBoolInputSigDelegate callback);
+        void ceilingMicMuteBtn_Selected(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingMicMuteBtn.Selected Feedback
+        /// pageMain.subAudioEvent.ceilingMicMuteBtn.Selected Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void ceilingMicMuteBtn_Selected(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingmic.toggle.Press Feedback
+        /// pageMain.subAudioEvent.ceilingmic.toggle.Press Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void ceilingmictoggle_Selected(subAudioBoolInputSigDelegate callback);
+        void ceilingmictoggle_Selected(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.ceilingmic.toggle.Press Feedback
+        /// pageMain.subAudioEvent.ceilingmic.toggle.Press Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void ceilingmictoggle_Selected(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.preFunctButtonOverflow.Selected Feedback
+        /// pageMain.subAudioEvent.prefunc.toggle.Press Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void preFunctButtonOverflow_Selected(subAudioBoolInputSigDelegate callback);
+        void prefunctoggle_Selected(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.preFunctButtonOverflow.Selected Feedback
-        /// </summary>
-        /// <param name="digital">The bool to update the panel.</param>
-        void preFunctButtonOverflow_Selected(bool digital);
-
-        /// <summary>
-        /// pageMain.subAudio.prefunc.toggle.Press Feedback
-        /// </summary>
-        /// <param name="callback">The bool delegate to update the panel.</param>
-        void prefunctoggle_Selected(subAudioBoolInputSigDelegate callback);
-
-        /// <summary>
-        /// pageMain.subAudio.prefunc.toggle.Press Feedback
+        /// pageMain.subAudioEvent.prefunc.toggle.Press Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void prefunctoggle_Selected(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.receptionButtonOverflow.Selected Feedback
+        /// pageMain.subAudioEvent.reception.toggle.Press Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptionButtonOverflow_Selected(subAudioBoolInputSigDelegate callback);
+        void receptiontoggle_Selected(subAudioEventBoolInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.receptionButtonOverflow.Selected Feedback
-        /// </summary>
-        /// <param name="digital">The bool to update the panel.</param>
-        void receptionButtonOverflow_Selected(bool digital);
-
-        /// <summary>
-        /// pageMain.subAudio.reception.toggle.Press Feedback
-        /// </summary>
-        /// <param name="callback">The bool delegate to update the panel.</param>
-        void receptiontoggle_Selected(subAudioBoolInputSigDelegate callback);
-
-        /// <summary>
-        /// pageMain.subAudio.reception.toggle.Press Feedback
+        /// pageMain.subAudioEvent.reception.toggle.Press Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
         void receptiontoggle_Selected(bool digital);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.prefunc.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The ushort delegate to update the panel.</param>
-        void prefuncfader_LowerTouchfb(subAudioUShortInputSigDelegate callback);
+        void prefuncfader_LowerTouchfb(subAudioEventUShortInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.prefunc.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The ushort analog to update the panel.</param>
         void prefuncfader_LowerTouchfb(ushort analog);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.prefunc.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The short analog to update the panel.</param>
         void prefuncfader_LowerTouchfb(short analog);
 
         /// <summary>
-        /// pageMain.subAudio.reception.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.reception.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The ushort delegate to update the panel.</param>
-        void receptionfader_LowerTouchfb(subAudioUShortInputSigDelegate callback);
+        void receptionfader_LowerTouchfb(subAudioEventUShortInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.reception.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The ushort analog to update the panel.</param>
         void receptionfader_LowerTouchfb(ushort analog);
 
         /// <summary>
-        /// pageMain.subAudio.reception.fader.Lower Touch fb Feedback
+        /// pageMain.subAudioEvent.reception.fader.Lower Touch fb Feedback
         /// </summary>
         /// <param name="callback">The short analog to update the panel.</param>
         void receptionfader_LowerTouchfb(short analog);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.name.Indirect Feedback
+        /// pageMain.subAudioEvent.prefunc.name.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void prefuncname_Indirect(subAudioStringInputSigDelegate callback);
+        void prefuncname_Indirect(subAudioEventStringInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunc.name.Indirect Feedback
+        /// pageMain.subAudioEvent.prefunc.name.Indirect Feedback
         /// </summary>
         /// <param name="serial">The <see cref="string"/> to update the panel.</param>
         void prefuncname_Indirect(string serial);
 
         /// <summary>
-        /// pageMain.subAudio.prefunct.toggle.name.Indirect Feedback
+        /// pageMain.subAudioEvent.prefunct.toggle.name.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void prefuncttogglename_Indirect(subAudioStringInputSigDelegate callback);
+        void prefuncttogglename_Indirect(subAudioEventStringInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.prefunct.toggle.name.Indirect Feedback
+        /// pageMain.subAudioEvent.prefunct.toggle.name.Indirect Feedback
         /// </summary>
         /// <param name="serial">The <see cref="string"/> to update the panel.</param>
         void prefuncttogglename_Indirect(string serial);
 
         /// <summary>
-        /// pageMain.subAudio.reception.name.Indirect Feedback
+        /// pageMain.subAudioEvent.reception.name.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void receptionname_Indirect(subAudioStringInputSigDelegate callback);
+        void receptionname_Indirect(subAudioEventStringInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.name.Indirect Feedback
+        /// pageMain.subAudioEvent.reception.name.Indirect Feedback
         /// </summary>
         /// <param name="serial">The <see cref="string"/> to update the panel.</param>
         void receptionname_Indirect(string serial);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.name.Indirect Feedback
+        /// pageMain.subAudioEvent.reception.toggle.name.Indirect Feedback
         /// </summary>
         /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void receptiontogglename_Indirect(subAudioStringInputSigDelegate callback);
+        void receptiontogglename_Indirect(subAudioEventStringInputSigDelegate callback);
 
         /// <summary>
-        /// pageMain.subAudio.reception.toggle.name.Indirect Feedback
+        /// pageMain.subAudioEvent.reception.toggle.name.Indirect Feedback
         /// </summary>
         /// <param name="serial">The <see cref="string"/> to update the panel.</param>
         void receptiontogglename_Indirect(string serial);
+
+        /// <summary>
+        /// ComplexComponent zref_Fader
+        /// </summary>
+        XLMeeting.pageMain.subAudioEvent.faders.Ifaders faders { get; }
     }
 
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
-    /// <param name="subaudio">The <see cref="IsubAudio"/> on which to apply the feedback.</param>
-    public delegate void subAudioBoolInputSigDelegate(BoolInputSig boolInputSig, IsubAudio subaudio);
+    /// <param name="subaudioevent">The <see cref="IsubAudioEvent"/> on which to apply the feedback.</param>
+    public delegate void subAudioEventBoolInputSigDelegate(BoolInputSig boolInputSig, IsubAudioEvent subaudioevent);
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="uShortInputSig">The <see cref="UShortInputSig"/> joinInfo data.</param>
-    /// <param name="subaudio">The <see cref="IsubAudio"/> on which to apply the feedback.</param>
-    public delegate void subAudioUShortInputSigDelegate(UShortInputSig uShortInputSig, IsubAudio subaudio);
+    /// <param name="subaudioevent">The <see cref="IsubAudioEvent"/> on which to apply the feedback.</param>
+    public delegate void subAudioEventUShortInputSigDelegate(UShortInputSig uShortInputSig, IsubAudioEvent subaudioevent);
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="stringInputSig">The <see cref="StringInputSig"/> joinInfo data.</param>
-    /// <param name="subaudio">The <see cref="IsubAudio"/> on which to apply the feedback.</param>
-    public delegate void subAudioStringInputSigDelegate(StringInputSig stringInputSig, IsubAudio subaudio);
+    /// <param name="subaudioevent">The <see cref="IsubAudioEvent"/> on which to apply the feedback.</param>
+    public delegate void subAudioEventStringInputSigDelegate(StringInputSig stringInputSig, IsubAudioEvent subaudioevent);
 
     /// <summary>
-    /// subAudio
+    /// subAudioEvent
     /// </summary>
-    internal partial class subAudio : IsubAudio, IDisposable
+    internal partial class subAudioEvent : IsubAudioEvent, IDisposable
     {
         #region Standard CH5 Component members
 
@@ -464,167 +445,155 @@ namespace XLMeeting.pageMain
             internal static class Booleans
             {
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.ceilingMicMuteBtn.Press
-                /// pageMain.subAudio.ceilingMicMuteBtn.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.ceilingMicMuteBtn.Press
+                /// pageMain.subAudioEvent.ceilingMicMuteBtn.Press
                 /// </summary>
                 public const uint ceilingMicMuteBtn_PressEvent = 2;
 
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.ceilingmictoggle.Press
-                /// pageMain.subAudio.ceilingmic.toggle.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.ceilingmictoggle.Press
+                /// pageMain.subAudioEvent.ceilingmic.toggle.Press
                 /// </summary>
                 public const uint ceilingmictoggle_PressEvent = 3;
 
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.preFunctButtonOverflow.Press
-                /// pageMain.subAudio.preFunctButtonOverflow.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.overflowBreakArea.Press
+                /// pageMain.subAudioEvent.overflowBreakArea.Press
                 /// </summary>
-                public const uint preFunctButtonOverflow_PressEvent = 4;
+                public const uint overflowBreakArea_PressEvent = 4;
 
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.prefunctoggle.Press
-                /// pageMain.subAudio.prefunc.toggle.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.preFunctButtonOverflow.Press
+                /// pageMain.subAudioEvent.preFunctButtonOverflow.Press
                 /// </summary>
-                public const uint prefunctoggle_PressEvent = 5;
+                public const uint preFunctButtonOverflow_PressEvent = 5;
 
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.receptionButtonOverflow.Press
-                /// pageMain.subAudio.receptionButtonOverflow.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.prefunctoggle.Press
+                /// pageMain.subAudioEvent.prefunc.toggle.Press
                 /// </summary>
-                public const uint receptionButtonOverflow_PressEvent = 6;
+                public const uint prefunctoggle_PressEvent = 6;
 
                 /// <summary>
-                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudio.receptiontoggle.Press
-                /// pageMain.subAudio.reception.toggle.Press
+                /// Output or Event digital joinInfo from panel to Control System: pageMain.subAudioEvent.receptiontoggle.Press
+                /// pageMain.subAudioEvent.reception.toggle.Press
                 /// </summary>
                 public const uint receptiontoggle_PressEvent = 7;
 
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.ceilingmictoggle.Visibility_fb
-                /// pageMain.subAudio.ceilingmic.toggle.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingmictoggle.Visibility_fb
+                /// pageMain.subAudioEvent.ceilingmic.toggle.Visibility
                 /// </summary>
                 public const uint ceilingmictoggle_Visibility_fbState = 1;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefuncfader.Visibility_fb
-                /// pageMain.subAudio.prefunc.fader.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncfader.Visibility_fb
+                /// pageMain.subAudioEvent.prefunc.fader.Visibility
                 /// </summary>
                 public const uint prefuncfader_Visibility_fbState = 2;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefunctoggle.Visibility_fb
-                /// pageMain.subAudio.prefunc.toggle.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefunctoggle.Visibility_fb
+                /// pageMain.subAudioEvent.prefunc.toggle.Visibility
                 /// </summary>
                 public const uint prefunctoggle_Visibility_fbState = 3;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptionfader.Visibility_fb
-                /// pageMain.subAudio.reception.fader.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptionfader.Visibility_fb
+                /// pageMain.subAudioEvent.reception.fader.Visibility
                 /// </summary>
                 public const uint receptionfader_Visibility_fbState = 4;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptiontoggle.Visibility_fb
-                /// pageMain.subAudio.reception.toggle.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptiontoggle.Visibility_fb
+                /// pageMain.subAudioEvent.reception.toggle.Visibility
                 /// </summary>
                 public const uint receptiontoggle_Visibility_fbState = 5;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.borderCeilingMic.Visibility_fb
-                /// pageMain.subAudio.border.CeilingMic.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.borderCeilingMic.Visibility_fb
+                /// pageMain.subAudioEvent.border.CeilingMic.Visibility
                 /// </summary>
                 public const uint borderCeilingMic_Visibility_fbState = 6;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.ceilingmicMutestatus.Visibility_fb
-                /// pageMain.subAudio.ceiling.micMute.status.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingmicMutestatus.Visibility_fb
+                /// pageMain.subAudioEvent.ceiling.micMute.status.Visibility
                 /// </summary>
                 public const uint ceilingmicMutestatus_Visibility_fbState = 7;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.ceilingMicmutetxt.Visibility_fb
-                /// pageMain.subAudio.ceilingMic.mute.txt.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicmutetxt.Visibility_fb
+                /// pageMain.subAudioEvent.ceilingMic.mute.txt.Visibility
                 /// </summary>
                 public const uint ceilingMicmutetxt_Visibility_fbState = 8;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefuncborder.Visibility_fb
-                /// pageMain.subAudio.prefunc.border.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncborder.Visibility_fb
+                /// pageMain.subAudioEvent.prefunc.border.Visibility
                 /// </summary>
                 public const uint prefuncborder_Visibility_fbState = 9;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefuncname.Visibility_fb
-                /// pageMain.subAudio.prefunc.name.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncname.Visibility_fb
+                /// pageMain.subAudioEvent.prefunc.name.Visibility
                 /// </summary>
                 public const uint prefuncname_Visibility_fbState = 10;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefuncttogglename.Visibility_fb
-                /// pageMain.subAudio.prefunct.toggle.name.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncttogglename.Visibility_fb
+                /// pageMain.subAudioEvent.prefunct.toggle.name.Visibility
                 /// </summary>
                 public const uint prefuncttogglename_Visibility_fbState = 11;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptionborder.Visibility_fb
-                /// pageMain.subAudio.reception.border.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptionborder.Visibility_fb
+                /// pageMain.subAudioEvent.reception.border.Visibility
                 /// </summary>
                 public const uint receptionborder_Visibility_fbState = 12;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptionname.Visibility_fb
-                /// pageMain.subAudio.reception.name.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptionname.Visibility_fb
+                /// pageMain.subAudioEvent.reception.name.Visibility
                 /// </summary>
                 public const uint receptionname_Visibility_fbState = 13;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptiontogglename.Visibility_fb
-                /// pageMain.subAudio.reception.toggle.name.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptiontogglename.Visibility_fb
+                /// pageMain.subAudioEvent.reception.toggle.name.Visibility
                 /// </summary>
                 public const uint receptiontogglename_Visibility_fbState = 14;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.Visibility_fb
-                /// subAudio.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.Visibility_fb
+                /// subAudioEvent.Visibility
                 /// </summary>
-                public const uint subAudio_Visibility_fbState = 15;
+                public const uint subAudioEvent_Visibility_fbState = 15;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.ceilingMicMuteBtn.Selected
-                /// pageMain.subAudio.ceilingMicMuteBtn.Selected
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingMicMuteBtn.Selected
+                /// pageMain.subAudioEvent.ceilingMicMuteBtn.Selected
                 /// </summary>
                 public const uint ceilingMicMuteBtn_SelectedState = 17;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.ceilingmictoggle.Selected
-                /// pageMain.subAudio.ceilingmic.toggle.Press
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.ceilingmictoggle.Selected
+                /// pageMain.subAudioEvent.ceilingmic.toggle.Press
                 /// </summary>
                 public const uint ceilingmictoggle_SelectedState = 18;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.preFunctButtonOverflow.Selected
-                /// pageMain.subAudio.preFunctButtonOverflow.Selected
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.prefunctoggle.Selected
+                /// pageMain.subAudioEvent.prefunc.toggle.Press
                 /// </summary>
-                public const uint preFunctButtonOverflow_SelectedState = 19;
+                public const uint prefunctoggle_SelectedState = 19;
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.prefunctoggle.Selected
-                /// pageMain.subAudio.prefunc.toggle.Press
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudioEvent.receptiontoggle.Selected
+                /// pageMain.subAudioEvent.reception.toggle.Press
                 /// </summary>
-                public const uint prefunctoggle_SelectedState = 20;
-
-                /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptionButtonOverflow.Selected
-                /// pageMain.subAudio.receptionButtonOverflow.Selected
-                /// </summary>
-                public const uint receptionButtonOverflow_SelectedState = 21;
-
-                /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subAudio.receptiontoggle.Selected
-                /// pageMain.subAudio.reception.toggle.Press
-                /// </summary>
-                public const uint receptiontoggle_SelectedState = 22;
+                public const uint receptiontoggle_SelectedState = 20;
 
             }
             /// <summary>
@@ -633,27 +602,27 @@ namespace XLMeeting.pageMain
             internal static class Numerics
             {
                 /// <summary>
-                /// Output or Event analog joinInfo from panel to Control System: pageMain.subAudio.prefuncfader.LowerTouch
-                /// pageMain.subAudio.prefunc.fader.Lower Touch
+                /// Output or Event analog joinInfo from panel to Control System: pageMain.subAudioEvent.prefuncfader.LowerTouch
+                /// pageMain.subAudioEvent.prefunc.fader.Lower Touch
                 /// </summary>
                 public const uint prefuncfader_LowerTouchEvent = 4;
 
                 /// <summary>
-                /// Output or Event analog joinInfo from panel to Control System: pageMain.subAudio.receptionfader.LowerTouch
-                /// pageMain.subAudio.reception.fader.Lower Touch
+                /// Output or Event analog joinInfo from panel to Control System: pageMain.subAudioEvent.receptionfader.LowerTouch
+                /// pageMain.subAudioEvent.reception.fader.Lower Touch
                 /// </summary>
                 public const uint receptionfader_LowerTouchEvent = 5;
 
 
                 /// <summary>
-                /// Input or Feedback analog joinInfo from Control System to panel: pageMain.subAudio.prefuncfader.LowerTouchfb
-                /// pageMain.subAudio.prefunc.fader.Lower Touch fb
+                /// Input or Feedback analog joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncfader.LowerTouchfb
+                /// pageMain.subAudioEvent.prefunc.fader.Lower Touch fb
                 /// </summary>
                 public const uint prefuncfader_LowerTouchfbState = 4;
 
                 /// <summary>
-                /// Input or Feedback analog joinInfo from Control System to panel: pageMain.subAudio.receptionfader.LowerTouchfb
-                /// pageMain.subAudio.reception.fader.Lower Touch fb
+                /// Input or Feedback analog joinInfo from Control System to panel: pageMain.subAudioEvent.receptionfader.LowerTouchfb
+                /// pageMain.subAudioEvent.reception.fader.Lower Touch fb
                 /// </summary>
                 public const uint receptionfader_LowerTouchfbState = 5;
 
@@ -665,23 +634,23 @@ namespace XLMeeting.pageMain
             {
 
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudio.prefuncname.Indirect
-                /// pageMain.subAudio.prefunc.name.Indirect
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncname.Indirect
+                /// pageMain.subAudioEvent.prefunc.name.Indirect
                 /// </summary>
                 public const uint prefuncname_IndirectState = 1;
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudio.prefuncttogglename.Indirect
-                /// pageMain.subAudio.prefunct.toggle.name.Indirect
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.prefuncttogglename.Indirect
+                /// pageMain.subAudioEvent.prefunct.toggle.name.Indirect
                 /// </summary>
                 public const uint prefuncttogglename_IndirectState = 2;
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudio.receptionname.Indirect
-                /// pageMain.subAudio.reception.name.Indirect
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.receptionname.Indirect
+                /// pageMain.subAudioEvent.reception.name.Indirect
                 /// </summary>
                 public const uint receptionname_IndirectState = 3;
                 /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudio.receptiontogglename.Indirect
-                /// pageMain.subAudio.reception.toggle.name.Indirect
+                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.subAudioEvent.receptiontogglename.Indirect
+                /// pageMain.subAudioEvent.reception.toggle.name.Indirect
                 /// </summary>
                 public const uint receptiontogglename_IndirectState = 4;
             }
@@ -692,23 +661,23 @@ namespace XLMeeting.pageMain
         #region Construction and Initialization
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subAudio"/> component class.
+        /// Initializes a new instance of the <see cref="subAudioEvent"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
-        internal subAudio(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
+        internal subAudioEvent(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
         {
             ComponentMediator = componentMediator;
             Initialize(controlJoinId, itemCount);
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subAudio"/> component class.
+        /// Initializes a new instance of the <see cref="subAudioEvent"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
-        internal subAudio(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
+        internal subAudioEvent(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
         {
         }
 
@@ -724,7 +693,7 @@ namespace XLMeeting.pageMain
         private Dictionary<string, Indexes> _indexLookup = new Dictionary<string, Indexes>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subAudio"/> component class.
+        /// Initializes a new instance of the <see cref="subAudioEvent"/> component class.
         /// </summary>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
@@ -736,24 +705,29 @@ namespace XLMeeting.pageMain
  
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.ceilingMicMuteBtn_PressEvent, onceilingMicMuteBtn_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.ceilingmictoggle_PressEvent, onceilingmictoggle_Press);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.overflowBreakArea_PressEvent, onoverflowBreakArea_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.preFunctButtonOverflow_PressEvent, onpreFunctButtonOverflow_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.prefunctoggle_PressEvent, onprefunctoggle_Press);
-            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptionButtonOverflow_PressEvent, onreceptionButtonOverflow_Press);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.receptiontoggle_PressEvent, onreceptiontoggle_Press);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.prefuncfader_LowerTouchEvent, onprefuncfader_LowerTouch);
             ComponentMediator.ConfigureNumericEvent(controlJoinId, Joins.Numerics.receptionfader_LowerTouchEvent, onreceptionfader_LowerTouch);
+            faders = new XLMeeting.pageMain.subAudioEvent.faders.faders(ComponentMediator, 38);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
         {
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((XLMeeting.pageMain.subAudioEvent.faders.faders)faders).AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
         {
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
+
+            ((XLMeeting.pageMain.subAudioEvent.faders.faders)faders).RemoveDevice(device);
         }
 
         #endregion
@@ -779,10 +753,10 @@ namespace XLMeeting.pageMain
         }
 
         /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> preFunctButtonOverflow_PressEvent;
-        private void onpreFunctButtonOverflow_Press(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> overflowBreakArea_PressEvent;
+        private void onoverflowBreakArea_Press(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = preFunctButtonOverflow_PressEvent;
+            EventHandler<UIEventArgs> handler = overflowBreakArea_PressEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -797,10 +771,10 @@ namespace XLMeeting.pageMain
         }
 
         /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> prefunctoggle_PressEvent;
-        private void onprefunctoggle_Press(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> preFunctButtonOverflow_PressEvent;
+        private void onpreFunctButtonOverflow_Press(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = prefunctoggle_PressEvent;
+            EventHandler<UIEventArgs> handler = preFunctButtonOverflow_PressEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -815,10 +789,10 @@ namespace XLMeeting.pageMain
         }
 
         /// <inheritdoc/>
-        public event EventHandler<UIEventArgs> receptionButtonOverflow_PressEvent;
-        private void onreceptionButtonOverflow_Press(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> prefunctoggle_PressEvent;
+        private void onprefunctoggle_Press(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = receptionButtonOverflow_PressEvent;
+            EventHandler<UIEventArgs> handler = prefunctoggle_PressEvent;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
@@ -833,7 +807,7 @@ namespace XLMeeting.pageMain
         }
 
         /// <inheritdoc/>
-        public void borderCeilingMic_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void borderCeilingMic_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -847,7 +821,7 @@ namespace XLMeeting.pageMain
             borderCeilingMic_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void ceilingMicMuteBtn_Selected(subAudioBoolInputSigDelegate callback)
+        public void ceilingMicMuteBtn_Selected(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -861,7 +835,7 @@ namespace XLMeeting.pageMain
             ceilingMicMuteBtn_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void ceilingmicMutestatus_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void ceilingmicMutestatus_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -875,7 +849,7 @@ namespace XLMeeting.pageMain
             ceilingmicMutestatus_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void ceilingMicmutetxt_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void ceilingMicmutetxt_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -889,7 +863,7 @@ namespace XLMeeting.pageMain
             ceilingMicmutetxt_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void ceilingmictoggle_Selected(subAudioBoolInputSigDelegate callback)
+        public void ceilingmictoggle_Selected(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -903,7 +877,7 @@ namespace XLMeeting.pageMain
             ceilingmictoggle_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void ceilingmictoggle_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void ceilingmictoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -917,7 +891,7 @@ namespace XLMeeting.pageMain
             ceilingmictoggle_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void prefuncborder_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void prefuncborder_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -931,7 +905,7 @@ namespace XLMeeting.pageMain
             prefuncborder_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void prefuncfader_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void prefuncfader_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -945,7 +919,7 @@ namespace XLMeeting.pageMain
             prefuncfader_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void prefuncname_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void prefuncname_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -959,21 +933,7 @@ namespace XLMeeting.pageMain
             prefuncname_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void preFunctButtonOverflow_Selected(subAudioBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.preFunctButtonOverflow_SelectedState], this);
-            }
-        }
-
-        /// <inheritdoc/>
-        public void preFunctButtonOverflow_Selected(bool digital)
-        {
-            preFunctButtonOverflow_Selected((sig, component) => sig.BoolValue = digital);
-        }
-        /// <inheritdoc/>
-        public void prefunctoggle_Selected(subAudioBoolInputSigDelegate callback)
+        public void prefunctoggle_Selected(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -987,7 +947,7 @@ namespace XLMeeting.pageMain
             prefunctoggle_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void prefunctoggle_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void prefunctoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1001,7 +961,7 @@ namespace XLMeeting.pageMain
             prefunctoggle_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void prefuncttogglename_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void prefuncttogglename_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1015,7 +975,7 @@ namespace XLMeeting.pageMain
             prefuncttogglename_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptionborder_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void receptionborder_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1029,21 +989,7 @@ namespace XLMeeting.pageMain
             receptionborder_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptionButtonOverflow_Selected(subAudioBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.receptionButtonOverflow_SelectedState], this);
-            }
-        }
-
-        /// <inheritdoc/>
-        public void receptionButtonOverflow_Selected(bool digital)
-        {
-            receptionButtonOverflow_Selected((sig, component) => sig.BoolValue = digital);
-        }
-        /// <inheritdoc/>
-        public void receptionfader_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void receptionfader_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1057,7 +1003,7 @@ namespace XLMeeting.pageMain
             receptionfader_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptionname_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void receptionname_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1071,7 +1017,7 @@ namespace XLMeeting.pageMain
             receptionname_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptiontoggle_Selected(subAudioBoolInputSigDelegate callback)
+        public void receptiontoggle_Selected(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1085,7 +1031,7 @@ namespace XLMeeting.pageMain
             receptiontoggle_Selected((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptiontoggle_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void receptiontoggle_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1099,7 +1045,7 @@ namespace XLMeeting.pageMain
             receptiontoggle_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void receptiontogglename_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void receptiontogglename_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1113,22 +1059,22 @@ namespace XLMeeting.pageMain
             receptiontogglename_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
         /// <inheritdoc/>
-        public void subAudio_Visibility_fb(subAudioBoolInputSigDelegate callback)
+        public void subAudioEvent_Visibility_fb(subAudioEventBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subAudio_Visibility_fbState], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subAudioEvent_Visibility_fbState], this);
             }
         }
 
         /// <inheritdoc/>
-        public void subAudio_Visibility_fb(bool digital)
+        public void subAudioEvent_Visibility_fb(bool digital)
         {
-            subAudio_Visibility_fb((sig, component) => sig.BoolValue = digital);
+            subAudioEvent_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
 
         /// <inheritdoc/>
-        public void prefuncfader_LowerTouchfb(subAudioUShortInputSigDelegate callback)
+        public void prefuncfader_LowerTouchfb(subAudioEventUShortInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1148,7 +1094,7 @@ namespace XLMeeting.pageMain
             prefuncfader_LowerTouchfb((sig, component) => sig.ShortValue = analog);
         }
         /// <inheritdoc/>
-        public void receptionfader_LowerTouchfb(subAudioUShortInputSigDelegate callback)
+        public void receptionfader_LowerTouchfb(subAudioEventUShortInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1169,7 +1115,7 @@ namespace XLMeeting.pageMain
         }
 
         /// <inheritdoc/>
-        public void prefuncname_Indirect(subAudioStringInputSigDelegate callback)
+        public void prefuncname_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1183,7 +1129,7 @@ namespace XLMeeting.pageMain
             prefuncname_Indirect((sig, component) => sig.StringValue = serial);
         }
         /// <inheritdoc/>
-        public void prefuncttogglename_Indirect(subAudioStringInputSigDelegate callback)
+        public void prefuncttogglename_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1197,7 +1143,7 @@ namespace XLMeeting.pageMain
             prefuncttogglename_Indirect((sig, component) => sig.StringValue = serial);
         }
         /// <inheritdoc/>
-        public void receptionname_Indirect(subAudioStringInputSigDelegate callback)
+        public void receptionname_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1211,7 +1157,7 @@ namespace XLMeeting.pageMain
             receptionname_Indirect((sig, component) => sig.StringValue = serial);
         }
         /// <inheritdoc/>
-        public void receptiontogglename_Indirect(subAudioStringInputSigDelegate callback)
+        public void receptiontogglename_Indirect(subAudioEventStringInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -1225,6 +1171,11 @@ namespace XLMeeting.pageMain
             receptiontogglename_Indirect((sig, component) => sig.StringValue = serial);
         }
 
+        /// <summary>
+        /// ComplexComponent faders
+        /// </summary>
+        public XLMeeting.pageMain.subAudioEvent.faders.Ifaders faders { get; private set; }
+
         #endregion
 
         #region Overrides
@@ -1236,7 +1187,7 @@ namespace XLMeeting.pageMain
 
         public override string ToString()
         {
-            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subAudio", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
+            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subAudioEvent", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
         }
 
         #endregion
@@ -1254,11 +1205,11 @@ namespace XLMeeting.pageMain
 
             ceilingMicMuteBtn_PressEvent = null;
             ceilingmictoggle_PressEvent = null;
-            preFunctButtonOverflow_PressEvent = null;
+            overflowBreakArea_PressEvent = null;
             prefuncfader_LowerTouchEvent = null;
-            prefunctoggle_PressEvent = null;
+            preFunctButtonOverflow_PressEvent = null;
             receptionfader_LowerTouchEvent = null;
-            receptionButtonOverflow_PressEvent = null;
+            prefunctoggle_PressEvent = null;
             receptiontoggle_PressEvent = null;
         }
 

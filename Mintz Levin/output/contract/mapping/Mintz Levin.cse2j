@@ -1,6 +1,6 @@
 {
   "name": "Mintz Levin",
-  "timestamp": "2026-05-08T19:20:14.650063+00:00",
+  "timestamp": "2026-06-11T15:09:25.867495+00:00",
   "version": "1.0.0.0",
   "schema_version": 1,
   "extra_value": "",
@@ -11,14 +11,17 @@
           "1": "pageMain.subCamera.camAutoTrack.Visibility_fb",
           "2": "pageMain.subCamera.camearAutoTrackTxt.Visibility_fb",
           "3": "pageMain.subCamera.Visibility_fb",
-          "4": "pageMain.subCamera.camZoomIn.Enable",
-          "5": "pageMain.subCamera.CamZoomOut.Enable",
-          "6": "pageMain.subCamera.camAutoTrack.Selected",
-          "7": "pageMain.subCamera.camPreset_01.Selected",
-          "8": "pageMain.subCamera.camPreset_02.Selected",
-          "9": "pageMain.subCamera.camPrest_00.Selected",
-          "10": "pageMain.subCamera.camZoomIn.Selected",
-          "11": "pageMain.subCamera.CamZoomOut.Selected"
+          "4": "pageMain.subCamera.camPreset_01.Enable",
+          "5": "pageMain.subCamera.camPreset_02.Enable",
+          "6": "pageMain.subCamera.camPrest_00.Enable",
+          "7": "pageMain.subCamera.camZoomIn.Enable",
+          "8": "pageMain.subCamera.CamZoomOut.Enable",
+          "9": "pageMain.subCamera.camAutoTrack.Selected",
+          "10": "pageMain.subCamera.camPreset_01.Selected",
+          "11": "pageMain.subCamera.camPreset_02.Selected",
+          "12": "pageMain.subCamera.camPrest_00.Selected",
+          "13": "pageMain.subCamera.camZoomIn.Selected",
+          "14": "pageMain.subCamera.CamZoomOut.Selected"
         },
         "3": {
           "2": "pageMain.subCamera.cameraDPad.Enable"
@@ -172,16 +175,9 @@
           "1201": "pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.Selected"
         },
         "38": {
-          "3": "pageMain.tempHeader.Button_1.Selected",
-          "4": "pageMain.tempHeader.Button_2.Selected",
-          "5": "pageMain.tempHeader.Button_3.Selected",
-          "6": "pageMain.tempHeader.Button.Selected",
-          "7": "pageMain.tempHeader.cameera.Selected"
-        },
-        "39": {
           "1": "pageMain.subShareSrc.Visibility_fb"
         },
-        "40": {
+        "39": {
           "1": "pageMain.subShareSrc.sharecontentsrc.List_Item1_Visible",
           "2": "pageMain.subShareSrc.sharecontentsrc.List_Item2_Visible",
           "3": "pageMain.subShareSrc.sharecontentsrc.List_Item3_Visible",
@@ -191,23 +187,23 @@
           "7": "pageMain.subShareSrc.sharecontentsrc.List_Item3_Enable",
           "8": "pageMain.subShareSrc.sharecontentsrc.List_Item4_Enable"
         },
-        "41": {
+        "40": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "42": {
+        "41": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "43": {
+        "42": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "44": {
+        "43": {
           "1201": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Selected"
         },
-        "45": {
+        "44": {
           "1": "pageMain.subRoomSetup.roomcombinebutton.Visibility_fb",
           "2": "pageMain.subRoomSetup.Visibility_fb"
         },
-        "46": {
+        "45": {
           "1001": "pageMain.subRoomSetup.rmSetup.Button1ItemSelected",
           "1002": "pageMain.subRoomSetup.rmSetup.Button2ItemSelected",
           "1003": "pageMain.subRoomSetup.rmSetup.Button3ItemSelected",
@@ -215,7 +211,7 @@
           "1502": "pageMain.subRoomSetup.rmSetup.Button2Visible",
           "1503": "pageMain.subRoomSetup.rmSetup.Button3Visible"
         },
-        "47": {
+        "46": {
           "1": "pageMain.subAudioEvent.ceilingMicToggle.Visibility_fb",
           "2": "pageMain.subAudioEvent.prefuncToggle.Visibility_fb",
           "3": "pageMain.subAudioEvent.receptToggle.Visibility_fb",
@@ -231,26 +227,26 @@
           "14": "pageMain.subAudioEvent.prefuncToggle.Selected",
           "15": "pageMain.subAudioEvent.receptToggle.Selected"
         },
-        "48": {
+        "47": {
           "1": "pageMain.subAudioEvent.Faders.List_Item1_Visible",
           "2": "pageMain.subAudioEvent.Faders.List_Item2_Visible"
         },
-        "49": {
+        "48": {
           "1201": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.MicMute.Selected"
         },
-        "50": {
+        "49": {
           "1201": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.MicMute.Selected"
         }
       },
       "numeric": {
-        "47": {
+        "46": {
           "4": "pageMain.subAudioEvent.prefuncfader.LowerTouchfb",
           "5": "pageMain.subAudioEvent.receptionfader.LowerTouchfb"
         },
-        "49": {
+        "48": {
           "1801": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouchfb"
         },
-        "50": {
+        "49": {
           "1801": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouchfb"
         }
       },
@@ -365,23 +361,23 @@
           "1": "pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.IndirectText",
           "2": "pageMain.Navigation.Items[5].zref_navBtnCONTRACT.Button.Icon"
         },
-        "41": {
+        "40": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "42": {
+        "41": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "43": {
+        "42": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "44": {
+        "43": {
           "1": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcname.Indirect",
           "2": "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Icon"
         },
-        "46": {
+        "45": {
           "1": "pageMain.subRoomSetup.rmSetup.Button1Text",
           "2": "pageMain.subRoomSetup.rmSetup.Button2Text",
           "3": "pageMain.subRoomSetup.rmSetup.Button3Text",
@@ -389,16 +385,16 @@
           "502": "pageMain.subRoomSetup.rmSetup.Button2IconClass",
           "503": "pageMain.subRoomSetup.rmSetup.Button3IconClass"
         },
-        "47": {
+        "46": {
           "1": "pageMain.subAudioEvent.overflowbreakAreaname.Indirect",
           "2": "pageMain.subAudioEvent.overFlowpreFunctionname.Indirect",
           "3": "pageMain.subAudioEvent.textBreakArea.Indirect",
           "4": "pageMain.subAudioEvent.textPreFunc.Indirect"
         },
-        "49": {
+        "48": {
           "1": "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.FormattedText.Indirect"
         },
-        "50": {
+        "49": {
           "1": "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.FormattedText.Indirect"
         }
       }
@@ -625,107 +621,87 @@
           "joinId": 1201,
           "smartObjectId": 37
         },
-        "pageMain.tempHeader.Button_1.Press": {
-          "joinId": 3,
-          "smartObjectId": 38
-        },
-        "pageMain.tempHeader.Button_2.Press": {
-          "joinId": 4,
-          "smartObjectId": 38
-        },
-        "pageMain.tempHeader.Button_3.Press": {
-          "joinId": 5,
-          "smartObjectId": 38
-        },
-        "pageMain.tempHeader.Button.Press": {
-          "joinId": 6,
-          "smartObjectId": 38
-        },
-        "pageMain.tempHeader.cameera.Press": {
-          "joinId": 7,
-          "smartObjectId": 38
-        },
         "pageMain.subShareSrc.sharecontentsrc.Items[0].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
-          "smartObjectId": 41
+          "smartObjectId": 40
         },
         "pageMain.subShareSrc.sharecontentsrc.Items[1].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
-          "smartObjectId": 42
+          "smartObjectId": 41
         },
         "pageMain.subShareSrc.sharecontentsrc.Items[2].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
-          "smartObjectId": 43
+          "smartObjectId": 42
         },
         "pageMain.subShareSrc.sharecontentsrc.Items[3].zref_btnShareCONTRACT.contentsrcbutton.Press": {
           "joinId": 1201,
-          "smartObjectId": 44
+          "smartObjectId": 43
         },
         "pageMain.subRoomSetup.dockrelease.Press": {
           "joinId": 2,
-          "smartObjectId": 45
+          "smartObjectId": 44
         },
         "pageMain.subRoomSetup.rmSetup.Button1ItemPress": {
           "joinId": 1001,
-          "smartObjectId": 46
+          "smartObjectId": 45
         },
         "pageMain.subRoomSetup.rmSetup.Button2ItemPress": {
           "joinId": 1002,
-          "smartObjectId": 46
+          "smartObjectId": 45
         },
         "pageMain.subRoomSetup.rmSetup.Button3ItemPress": {
           "joinId": 1003,
-          "smartObjectId": 46
+          "smartObjectId": 45
         },
         "pageMain.subAudioEvent.ceilingMicMuteBtn.Press": {
           "joinId": 2,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.ceilingMicToggle.Press": {
           "joinId": 3,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.overflowBreakArea.Press": {
           "joinId": 4,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.overflowPreFunc.Press": {
           "joinId": 5,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.prefuncToggle.Press": {
           "joinId": 6,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.receptToggle.Press": {
           "joinId": 7,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.MicMute.Press": {
           "joinId": 1201,
-          "smartObjectId": 49
+          "smartObjectId": 48
         },
         "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.MicMute.Press": {
           "joinId": 1201,
-          "smartObjectId": 50
+          "smartObjectId": 49
         }
       },
       "numeric": {
         "pageMain.subAudioEvent.prefuncfader.LowerTouch": {
           "joinId": 4,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.receptionfader.LowerTouch": {
           "joinId": 5,
-          "smartObjectId": 47
+          "smartObjectId": 46
         },
         "pageMain.subAudioEvent.Faders.Items[0].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 49
+          "smartObjectId": 48
         },
         "pageMain.subAudioEvent.Faders.Items[1].zref_FaderCONTRACT.Slider.LowerTouch": {
           "joinId": 1801,
-          "smartObjectId": 50
+          "smartObjectId": 49
         }
       },
       "string": {}

@@ -78,11 +78,6 @@ namespace MintzLevin.pageMain
         MintzLevin.pageMain.Navigation.INavigation Navigation { get; }
 
         /// <summary>
-        /// ComplexComponent tempHeader
-        /// </summary>
-        MintzLevin.pageMain.ItempHeader tempHeader { get; }
-
-        /// <summary>
         /// ComplexComponent subShareSrc
         /// </summary>
         MintzLevin.pageMain.subShareSrc.IsubShareSrc subShareSrc { get; }
@@ -204,10 +199,9 @@ namespace MintzLevin.pageMain
             subDisplays = new MintzLevin.pageMain.subDisplays.subDisplays(ComponentMediator, 4);
             subRouting = new MintzLevin.pageMain.subRouting.subRouting(ComponentMediator, 15);
             Navigation = new MintzLevin.pageMain.Navigation.Navigation(ComponentMediator, 31);
-            tempHeader = new MintzLevin.pageMain.tempHeader(ComponentMediator, 38);
-            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 39);
-            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 45);
-            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 47);
+            subShareSrc = new MintzLevin.pageMain.subShareSrc.subShareSrc(ComponentMediator, 38);
+            subRoomSetup = new MintzLevin.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 44);
+            subAudioEvent = new MintzLevin.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 46);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -222,8 +216,6 @@ namespace MintzLevin.pageMain
             ((MintzLevin.pageMain.subRouting.subRouting)subRouting).AddDevice(device);
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).AddDevice(device);
-
-            ((MintzLevin.pageMain.tempHeader)tempHeader).AddDevice(device);
 
             ((MintzLevin.pageMain.subShareSrc.subShareSrc)subShareSrc).AddDevice(device);
 
@@ -244,8 +236,6 @@ namespace MintzLevin.pageMain
             ((MintzLevin.pageMain.subRouting.subRouting)subRouting).RemoveDevice(device);
 
             ((MintzLevin.pageMain.Navigation.Navigation)Navigation).RemoveDevice(device);
-
-            ((MintzLevin.pageMain.tempHeader)tempHeader).RemoveDevice(device);
 
             ((MintzLevin.pageMain.subShareSrc.subShareSrc)subShareSrc).RemoveDevice(device);
 
@@ -308,11 +298,6 @@ namespace MintzLevin.pageMain
         /// ComplexComponent Navigation
         /// </summary>
         public MintzLevin.pageMain.Navigation.INavigation Navigation { get; private set; }
-
-        /// <summary>
-        /// ComplexComponent tempHeader
-        /// </summary>
-        public MintzLevin.pageMain.ItempHeader tempHeader { get; private set; }
 
         /// <summary>
         /// ComplexComponent subShareSrc

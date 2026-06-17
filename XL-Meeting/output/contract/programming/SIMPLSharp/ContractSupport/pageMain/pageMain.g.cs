@@ -58,31 +58,19 @@ namespace XLMeeting.pageMain
         void roomstatustext_Indirect(string serial);
 
         /// <summary>
-        /// room.time.Indirect Feedback
-        /// </summary>
-        /// <param name="callback">The <see cref="string"/> delegate to update the panel.</param>
-        void roomtime_Indirect(pageMainStringInputSigDelegate callback);
-
-        /// <summary>
-        /// room.time.Indirect Feedback
-        /// </summary>
-        /// <param name="serial">The <see cref="string"/> to update the panel.</param>
-        void roomtime_Indirect(string serial);
-
-        /// <summary>
         /// ComplexComponent subShareSrc
         /// </summary>
-        XLMeeting.pageMain.IsubShareSrc subShareSrc { get; }
+        XLMeeting.pageMain.subShareSrc.IsubShareSrc subShareSrc { get; }
 
         /// <summary>
         /// ComplexComponent subDisplays
         /// </summary>
-        XLMeeting.pageMain.IsubDisplays subDisplays { get; }
+        XLMeeting.pageMain.subDisplays.IsubDisplays subDisplays { get; }
 
         /// <summary>
-        /// ComplexComponent subLights
+        /// ComplexComponent subRouting
         /// </summary>
-        XLMeeting.pageMain.IsubLights subLights { get; }
+        XLMeeting.pageMain.subRouting.IsubRouting subRouting { get; }
 
         /// <summary>
         /// ComplexComponent subRoomSetup
@@ -90,9 +78,9 @@ namespace XLMeeting.pageMain
         XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; }
 
         /// <summary>
-        /// ComplexComponent subAudio
+        /// ComplexComponent subAudioEvent
         /// </summary>
-        XLMeeting.pageMain.IsubAudio subAudio { get; }
+        XLMeeting.pageMain.subAudioEvent.IsubAudioEvent subAudioEvent { get; }
 
         /// <summary>
         /// ComplexComponent zref_Button
@@ -157,11 +145,6 @@ namespace XLMeeting.pageMain
                 /// room.status.text.Indirect
                 /// </summary>
                 public const uint roomstatustext_IndirectState = 2;
-                /// <summary>
-                /// Input or Feedback serial joinInfo from Control System to panel: pageMain.roomtime.Indirect
-                /// room.time.Indirect
-                /// </summary>
-                public const uint roomtime_IndirectState = 3;
             }
         }
 
@@ -212,13 +195,13 @@ namespace XLMeeting.pageMain
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
-            subShareSrc = new XLMeeting.pageMain.subShareSrc(ComponentMediator, 2);
-            subDisplays = new XLMeeting.pageMain.subDisplays(ComponentMediator, 3);
-            subLights = new XLMeeting.pageMain.subLights(ComponentMediator, 4);
-            subRoomSetup = new XLMeeting.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 5);
-            subAudio = new XLMeeting.pageMain.subAudio(ComponentMediator, 7);
-            Navigation = new XLMeeting.pageMain.Navigation.Navigation(ComponentMediator, 8);
-            subCamera = new XLMeeting.pageMain.subCamera.subCamera(ComponentMediator, 15);
+            subShareSrc = new XLMeeting.pageMain.subShareSrc.subShareSrc(ComponentMediator, 2);
+            subDisplays = new XLMeeting.pageMain.subDisplays.subDisplays(ComponentMediator, 8);
+            subRouting = new XLMeeting.pageMain.subRouting.subRouting(ComponentMediator, 19);
+            subRoomSetup = new XLMeeting.pageMain.subRoomSetup.subRoomSetup(ComponentMediator, 35);
+            subAudioEvent = new XLMeeting.pageMain.subAudioEvent.subAudioEvent(ComponentMediator, 37);
+            Navigation = new XLMeeting.pageMain.Navigation.Navigation(ComponentMediator, 41);
+            subCamera = new XLMeeting.pageMain.subCamera.subCamera(ComponentMediator, 48);
         }
 
         public void AddDevice(BasicTriListWithSmartObject device)
@@ -226,15 +209,15 @@ namespace XLMeeting.pageMain
             Devices.Add(device);
             ComponentMediator.HookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((XLMeeting.pageMain.subShareSrc)subShareSrc).AddDevice(device);
+            ((XLMeeting.pageMain.subShareSrc.subShareSrc)subShareSrc).AddDevice(device);
 
-            ((XLMeeting.pageMain.subDisplays)subDisplays).AddDevice(device);
+            ((XLMeeting.pageMain.subDisplays.subDisplays)subDisplays).AddDevice(device);
 
-            ((XLMeeting.pageMain.subLights)subLights).AddDevice(device);
+            ((XLMeeting.pageMain.subRouting.subRouting)subRouting).AddDevice(device);
 
             ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).AddDevice(device);
 
-            ((XLMeeting.pageMain.subAudio)subAudio).AddDevice(device);
+            ((XLMeeting.pageMain.subAudioEvent.subAudioEvent)subAudioEvent).AddDevice(device);
 
             ((XLMeeting.pageMain.Navigation.Navigation)Navigation).AddDevice(device);
 
@@ -246,15 +229,15 @@ namespace XLMeeting.pageMain
             Devices.Remove(device);
             ComponentMediator.UnHookSmartObjectEvents(device.SmartObjects[ControlJoinId]);
 
-            ((XLMeeting.pageMain.subShareSrc)subShareSrc).RemoveDevice(device);
+            ((XLMeeting.pageMain.subShareSrc.subShareSrc)subShareSrc).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subDisplays)subDisplays).RemoveDevice(device);
+            ((XLMeeting.pageMain.subDisplays.subDisplays)subDisplays).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subLights)subLights).RemoveDevice(device);
+            ((XLMeeting.pageMain.subRouting.subRouting)subRouting).RemoveDevice(device);
 
             ((XLMeeting.pageMain.subRoomSetup.subRoomSetup)subRoomSetup).RemoveDevice(device);
 
-            ((XLMeeting.pageMain.subAudio)subAudio).RemoveDevice(device);
+            ((XLMeeting.pageMain.subAudioEvent.subAudioEvent)subAudioEvent).RemoveDevice(device);
 
             ((XLMeeting.pageMain.Navigation.Navigation)Navigation).RemoveDevice(device);
 
@@ -295,35 +278,21 @@ namespace XLMeeting.pageMain
         {
             roomstatustext_Indirect((sig, component) => sig.StringValue = serial);
         }
-        /// <inheritdoc/>
-        public void roomtime_Indirect(pageMainStringInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.roomtime_IndirectState], this);
-            }
-        }
-
-        /// <inheritdoc/>
-        public void roomtime_Indirect(string serial)
-        {
-            roomtime_Indirect((sig, component) => sig.StringValue = serial);
-        }
 
         /// <summary>
         /// ComplexComponent subShareSrc
         /// </summary>
-        public XLMeeting.pageMain.IsubShareSrc subShareSrc { get; private set; }
+        public XLMeeting.pageMain.subShareSrc.IsubShareSrc subShareSrc { get; private set; }
 
         /// <summary>
         /// ComplexComponent subDisplays
         /// </summary>
-        public XLMeeting.pageMain.IsubDisplays subDisplays { get; private set; }
+        public XLMeeting.pageMain.subDisplays.IsubDisplays subDisplays { get; private set; }
 
         /// <summary>
-        /// ComplexComponent subLights
+        /// ComplexComponent subRouting
         /// </summary>
-        public XLMeeting.pageMain.IsubLights subLights { get; private set; }
+        public XLMeeting.pageMain.subRouting.IsubRouting subRouting { get; private set; }
 
         /// <summary>
         /// ComplexComponent subRoomSetup
@@ -331,9 +300,9 @@ namespace XLMeeting.pageMain
         public XLMeeting.pageMain.subRoomSetup.IsubRoomSetup subRoomSetup { get; private set; }
 
         /// <summary>
-        /// ComplexComponent subAudio
+        /// ComplexComponent subAudioEvent
         /// </summary>
-        public XLMeeting.pageMain.IsubAudio subAudio { get; private set; }
+        public XLMeeting.pageMain.subAudioEvent.IsubAudioEvent subAudioEvent { get; private set; }
 
         /// <summary>
         /// ComplexComponent Navigation

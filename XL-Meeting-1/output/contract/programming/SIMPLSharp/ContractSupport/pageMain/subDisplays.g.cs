@@ -4,7 +4,7 @@
 //     AppHost:     2.601.10.0
 //     UI Plugin:   1.4201.17.0
 //
-//     Project:     XL-Meeting
+//     Project:     XL-Meeting-1
 //     Version:     1.0.0.0
 //     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
@@ -21,42 +21,42 @@ using System.Linq;
 using Crestron.SimplSharp;
 using Crestron.SimplSharpPro;
 using Crestron.SimplSharpPro.DeviceSupport;
-using XLMeeting;
+using XLMeeting1;
 
-namespace XLMeeting.pageMain
+namespace XLMeeting1.pageMain
 {
 
     /// <summary>
-    /// subLights
+    /// subDisplays
     /// </summary>
-    public partial interface IsubLights 
+    public partial interface IsubDisplays 
     {
         object UserObject { get; set; }
 
         /// <summary>
-        /// subLights.Visibility Feedback
+        /// subDisplays.Visibility Feedback
         /// </summary>
         /// <param name="callback">The bool delegate to update the panel.</param>
-        void subLights_Visibility_fb(subLightsBoolInputSigDelegate callback);
+        void subDisplays_Visibility_fb(subDisplaysBoolInputSigDelegate callback);
 
         /// <summary>
-        /// subLights.Visibility Feedback
+        /// subDisplays.Visibility Feedback
         /// </summary>
         /// <param name="digital">The bool to update the panel.</param>
-        void subLights_Visibility_fb(bool digital);
+        void subDisplays_Visibility_fb(bool digital);
     }
 
     /// <summary>
     /// Digital callback used in feedback events.
     /// </summary>
     /// <param name="boolInputSig">The <see cref="BoolInputSig"/> joinInfo data.</param>
-    /// <param name="sublights">The <see cref="IsubLights"/> on which to apply the feedback.</param>
-    public delegate void subLightsBoolInputSigDelegate(BoolInputSig boolInputSig, IsubLights sublights);
+    /// <param name="subdisplays">The <see cref="IsubDisplays"/> on which to apply the feedback.</param>
+    public delegate void subDisplaysBoolInputSigDelegate(BoolInputSig boolInputSig, IsubDisplays subdisplays);
 
     /// <summary>
-    /// subLights
+    /// subDisplays
     /// </summary>
-    internal partial class subLights : IsubLights, IDisposable
+    internal partial class subDisplays : IsubDisplays, IDisposable
     {
         #region Standard CH5 Component members
 
@@ -89,10 +89,10 @@ namespace XLMeeting.pageMain
             {
 
                 /// <summary>
-                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subLights.Visibility_fb
-                /// subLights.Visibility
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subDisplays.Visibility_fb
+                /// subDisplays.Visibility
                 /// </summary>
-                public const uint subLights_Visibility_fbState = 1;
+                public const uint subDisplays_Visibility_fbState = 1;
 
             }
         }
@@ -102,23 +102,23 @@ namespace XLMeeting.pageMain
         #region Construction and Initialization
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subLights"/> component class.
+        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
-        internal subLights(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
+        internal subDisplays(ComponentMediator componentMediator, uint controlJoinId, uint? itemCount)
         {
             ComponentMediator = componentMediator;
             Initialize(controlJoinId, itemCount);
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subLights"/> component class.
+        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
         /// </summary>
         /// <param name="componentMediator">The <see cref="ComponentMediator"/> used to instantiate the component.</param>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
-        internal subLights(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
+        internal subDisplays(ComponentMediator componentMediator, uint controlJoinId) : this(componentMediator, controlJoinId, null)
         {
         }
 
@@ -134,7 +134,7 @@ namespace XLMeeting.pageMain
         private Dictionary<string, Indexes> _indexLookup = new Dictionary<string, Indexes>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="subLights"/> component class.
+        /// Initializes a new instance of the <see cref="subDisplays"/> component class.
         /// </summary>
         /// <param name="controlJoinId">The SmartObjectId at which to create the component.</param>
         /// <param name="itemCount">The number of items.</param>
@@ -163,18 +163,18 @@ namespace XLMeeting.pageMain
         #region CH5 Contract
 
         /// <inheritdoc/>
-        public void subLights_Visibility_fb(subLightsBoolInputSigDelegate callback)
+        public void subDisplays_Visibility_fb(subDisplaysBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subLights_Visibility_fbState], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.subDisplays_Visibility_fbState], this);
             }
         }
 
         /// <inheritdoc/>
-        public void subLights_Visibility_fb(bool digital)
+        public void subDisplays_Visibility_fb(bool digital)
         {
-            subLights_Visibility_fb((sig, component) => sig.BoolValue = digital);
+            subDisplays_Visibility_fb((sig, component) => sig.BoolValue = digital);
         }
 
         #endregion
@@ -188,7 +188,7 @@ namespace XLMeeting.pageMain
 
         public override string ToString()
         {
-            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subLights", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
+            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "subDisplays", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
         }
 
         #endregion

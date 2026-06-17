@@ -4,7 +4,7 @@
 //     AppHost:     2.601.10.0
 //     UI Plugin:   1.4201.17.0
 //
-//     Project:     XL-Meeting
+//     Project:     XL-Meeting-1
 //     Version:     1.0.0.0
 //     Sdk:         CH5:2.16.1
 //     Strategy:    Modern
@@ -21,9 +21,9 @@ using System.Linq;
 using Crestron.SimplSharp;
 using Crestron.SimplSharpPro;
 using Crestron.SimplSharpPro.DeviceSupport;
-using XLMeeting;
+using XLMeeting1;
 
-namespace XLMeeting.pageMain
+namespace XLMeeting1.pageMain
 {
 
     /// <summary>

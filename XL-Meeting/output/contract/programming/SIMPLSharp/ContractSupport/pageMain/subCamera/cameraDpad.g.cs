@@ -88,6 +88,18 @@ namespace XLMeeting.pageMain.subCamera
         /// Event pageMain.subCamera.Center.Press (from panel to Control System)
         /// </summary>
         event EventHandler<UIEventArgs> CenterEvent;
+
+        /// <summary>
+        /// pageMain.subCamera.cameraDpad.Enable Feedback
+        /// </summary>
+        /// <param name="callback">The bool delegate to update the panel.</param>
+        void cameraDpad_Enable(cameraDpadBoolInputSigDelegate callback);
+
+        /// <summary>
+        /// pageMain.subCamera.cameraDpad.Enable Feedback
+        /// </summary>
+        /// <param name="digital">The bool to update the panel.</param>
+        void cameraDpad_Enable(bool digital);
     }
 
     /// <summary>
@@ -161,6 +173,12 @@ namespace XLMeeting.pageMain.subCamera
                 /// </summary>
                 public const uint CenterEvent = 7;
 
+
+                /// <summary>
+                /// Input or Feedback digital joinInfo from Control System to panel: pageMain.subCamera.cameraDpad.Enable
+                /// pageMain.subCamera.cameraDpad.Enable
+                /// </summary>
+                public const uint cameraDpad_EnableState = 2;
 
             }
         }
@@ -299,6 +317,20 @@ namespace XLMeeting.pageMain.subCamera
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
+        /// <inheritdoc/>
+        public void cameraDpad_Enable(cameraDpadBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.cameraDpad_EnableState], this);
+            }
+        }
+
+        /// <inheritdoc/>
+        public void cameraDpad_Enable(bool digital)
+        {
+            cameraDpad_Enable((sig, component) => sig.BoolValue = digital);
+        }
 
         #endregion
 
