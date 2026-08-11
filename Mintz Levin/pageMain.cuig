@@ -1,22 +1,22 @@
 {FileMetadata}
 Schema = "1.0.0.0"
-CreatedByAppHost = "2.601.10.0"
-Created = 2026-06-11 08:58:29.025609-04:00
-LastModifiedByAppHost = "2.601.10.0"
-Modified = 2026-06-11 08:58:29.025606-04:00
-CreatedByProjectApp = "1.4201.17.0"
-LastModifiedByProjectApp = "1.4201.17.0"
+CreatedByAppHost = "2.1501.15.0"
+Created = 2026-08-10 16:31:17.065494-04:00
+LastModifiedByAppHost = "2.1501.15.0"
+Modified = 2026-08-10 16:31:17.065487-04:00
+CreatedByProjectApp = "1.4801.18.0"
+LastModifiedByProjectApp = "1.4801.18.0"
 MinimumProjectApp = "1.3001.1"
-MinimumAppHost = "2.0.0"
+MinimumAppHost = "2.901.0"
 
 {Html}
-<ch5-template transitionduration="1s" transitiondelay="0s" templateid="w7b711e93-9ab6-4976-ad21-d112e407a06a" id="i374r" componentname="subRouting" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="wea02df91-78b1-45da-92bd-12f4c2b32abf" id="i12ru" componentname="subCamera" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="right" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="Combined" id="isw1" componentname="room.status" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" oldid="ifloh" ccid_label="Combined" ccid_activefont="'Inter'" pd-receivestatelabel="Contract Enabled"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="12:00:00" id="iozu" componentname="time.current" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" oldid="ifloh" pd-receivestatelabel="Csig.Check_Time_fb" ccid_label="12:00:00" ccid_activefont="'Inter'"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="left" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="XL Meeting  &amp; Board Room" id="ip4g" componentname="room.name" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" ccid_label="XL Meeting  & Board Room" ccid_activefont="'Inter'" pd-receivestatelabel="Contract Enabled">
-              </ch5-text><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="6" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" usecontractforcustomstyle="false" usecontractforcustomclass="false" usecontractforenable="false" usecontractforshow="false" usecontractfornumitems="false" usecontractforitemenable="false" usecontractforitemshow="true" customvstheme="custom" loaditems="visible-only" id="i3rs" componentname="Navigation" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-subpagereceivestateshow="Contract Enabled" widgetid="w2f8d3626-3d48-4e39-ae7b-bb738bca3136">
-              </ch5-subpage-reference-list><ch5-template transitionduration="1s" transitiondelay="0s" templateid="wfde751ad-c90b-4bab-80ae-7a1d15e7ad7f" id="iihd" componentname="subShareSrc" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w8a816be7-3c37-4eb9-b5a5-a6ecd2eeb18c" id="ipew" componentname="subRoomSetup" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w3394b36b-2383-4c4e-b2ed-b33fe2c6c703" id="i33w" componentname="subDisplays" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w015a2059-933a-4e30-8eea-3ee5fff0305d" id="ipqj2" componentname="subAudioEvent" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-background scale="fill" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="ie41" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" componentwasresized="false" imgbackgroundcolor="transparent" backgroundcolor="#f7f7fc">
+<ch5-template transitionduration="1s" transitiondelay="0s" templateid="w7b711e93-9ab6-4976-ad21-d112e407a06a" id="i374r" componentname="subRouting" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subRouting"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="wea02df91-78b1-45da-92bd-12f4c2b32abf" id="i12ru" componentname="subCamera" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subCamera"></ch5-template><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="right" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="Combined" id="isw1" componentname="room.status" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" oldid="ifloh" ccid_label="Combined" ccid_activefont="'Inter'" pd-receivestatelabel="Contract Enabled" ccid_componenttype="Formatted-Text"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="12:00:00" id="iozu" componentname="time.current" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" oldid="ifloh" pd-receivestatelabel="Csig.Check_Time_fb" ccid_label="12:00:00" ccid_activefont="'Inter'" ccid_componenttype="Formatted-Text"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="left" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="XL Meeting  &amp; Board Room" id="ip4g" componentname="room.name" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" ccid_themecssset="true" ccid_label="XL Meeting  & Board Room" ccid_activefont="'Inter'" pd-receivestatelabel="Contract Enabled" ccid_componenttype="Formatted-Text">
+              </ch5-text><ch5-subpage-reference-list orientation="horizontal" columns="1" rows="1" centeritems="true" numberofitems="6" scrolltoposition="0" scrollbar="false" endless="false" indexid="idx" usecontractforcustomstyle="false" usecontractforcustomclass="false" usecontractforenable="false" usecontractforshow="false" usecontractfornumitems="false" usecontractforitemenable="false" usecontractforitemshow="true" customvstheme="custom" loaditems="visible-only" id="i3rs" componentname="Navigation" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-subpagereceivestateshow="Contract Enabled" ccid_componenttype="Widget List" widgetid="w2f8d3626-3d48-4e39-ae7b-bb738bca3136">
+              </ch5-subpage-reference-list><ch5-template transitionduration="1s" transitiondelay="0s" templateid="wfde751ad-c90b-4bab-80ae-7a1d15e7ad7f" id="iihd" componentname="subShareSrc" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subShareSrc"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w8a816be7-3c37-4eb9-b5a5-a6ecd2eeb18c" id="ipew" componentname="subRoomSetup" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subRoomSetup"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w3394b36b-2383-4c4e-b2ed-b33fe2c6c703" id="i33w" componentname="subDisplays" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subDisplays"></ch5-template><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w015a2059-933a-4e30-8eea-3ee5fff0305d" id="ipqj2" componentname="subAudioEvent" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" pd-receivestateshow="Contract Enabled" ccid_componenttype="Widget" ccid_widgetname="subAudioEvent"></ch5-template><ch5-background scale="fill" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="ie41" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting&quot;]" componentwasresized="false" imgbackgroundcolor="transparent" backgroundcolor="#f7f7fc" ccid_componenttype="Background">
               </ch5-background>
 
 {Css}
-@media (max-width: 99999px){#i33w{display:none;left:0;top:77px;position:absolute;z-index:78;}#iihd{display:none;left:0;top:77px;position:absolute;z-index:80;}#ie41{top:0;left:0;z-index:-98;position:absolute;}#iozu{width:150px;height:48px;display:block;left:395px;top:0;position:absolute;z-index:83;}#ip4g{width:150px;height:48px;display:block;left:8px;top:0;position:absolute;z-index:82;}#i3rs{width:987px;height:auto;display:block;left:0;top:40px;position:absolute;z-index:81;}#isw1 .ch5-text :not(i):not(svg){font-family:"Inter";}#iozu .ch5-text :not(i):not(svg){font-family:"Inter";}#ip4g .ch5-text :not(i):not(svg){font-family:"Inter";}#isw1 .ch5-text{min-height:10px;min-width:10px;padding:0px;}#iozu .ch5-text{min-height:10px;min-width:10px;padding:0px;}#ip4g .ch5-text{min-height:10px;min-width:10px;padding:0px;}#ipew{display:none;left:0;top:77px;position:absolute;width:auto;height:auto;z-index:79;}#ipqj2{display:none;left:0;top:77px;position:absolute;z-index:77;}#isw1{width:150px;height:48px;display:block;left:780px;top:0;position:absolute;z-index:84;}#i12ru{display:none;left:10px;top:77px;position:absolute;z-index:85;}#i374r{display:block;left:10px;top:77px;position:absolute;z-index:87;}#wrapper{background-color:#f7f7fc;}}@media (orientation: landscape) and (max-width: 988px) and (max-height: 741px), (orientation: landscape) and (max-width: 986px){#ie41{top:0;left:0;z-index:-98;}#iihd{top:77px;display:none;z-index:80;}#i33w{display:none;top:77px;z-index:78;}#iozu{left:395px;top:0;position:absolute;width:150px;height:48px;z-index:83;}#ip4g{width:150px;height:48px;display:block;left:8px;top:0;position:absolute;z-index:82;}#i3rs{left:0;top:40px;position:absolute;width:987px;height:auto;display:block;z-index:81;}#ipew{top:77px;left:0;position:absolute;width:auto;height:auto;display:none;z-index:79;}#ipqj2{display:none;left:0;top:77px;position:absolute;z-index:77;}#isw1{left:780px;top:0;position:absolute;width:150px;height:48px;z-index:84;}#i12ru{display:none;left:10px;top:77px;position:absolute;z-index:85;}#i374r{display:block;left:10px;top:77px;position:absolute;z-index:87;}}
+@media (max-width: 99999px){#i33w{display:none;left:0;top:77px;position:absolute;z-index:78;}#iihd{display:none;left:0;top:77px;position:absolute;z-index:80;}#ie41{top:0;left:0;position:absolute;z-index:-98;}#iozu{width:150px;height:48px;display:block;left:395px;top:0;position:absolute;z-index:83;}#ip4g{width:150px;height:48px;display:block;left:8px;top:0;position:absolute;z-index:82;}#i3rs{width:987px;height:auto;display:block;left:0;top:40px;position:absolute;z-index:81;}#isw1 .ch5-text :not(i):not(svg){font-family:"Inter";}#iozu .ch5-text :not(i):not(svg){font-family:"Inter";}#ip4g .ch5-text :not(i):not(svg){font-family:"Inter";}#isw1 .ch5-text{min-height:10;min-width:10;padding:0px;}#iozu .ch5-text{min-height:10;min-width:10;padding:0px;}#ip4g .ch5-text{min-height:10;min-width:10;padding:0px;}#ipew{display:none;left:0;top:77px;position:absolute;width:auto;height:auto;z-index:79;}#ipqj2{display:none;left:0;top:77px;position:absolute;z-index:77;}#isw1{width:150px;height:48px;display:block;left:780px;top:0;position:absolute;z-index:84;}#i12ru{display:none;left:10px;top:77px;position:absolute;z-index:85;}#i374r{display:block;left:10px;top:77px;position:absolute;z-index:87;}#i4hc{background-color:#f7f7fc;}}@media (orientation: landscape) and (max-width: 988px) and (max-height: 741px), (orientation: landscape) and (max-width: 986px){#ie41{top:0;left:0;}#iihd{top:77px;display:none;}#i33w{display:none;top:77px;}#iozu{left:395px;top:0;position:absolute;width:150px;height:48px;}#ip4g{width:150px;height:48px;display:block;left:8px;top:0;position:absolute;}#i3rs{left:0;top:40px;position:absolute;width:987px;height:auto;display:block;}#ipew{top:77px;left:0;position:absolute;width:auto;height:auto;display:none;}#ipqj2{display:none;left:0;top:77px;position:absolute;}#isw1{left:780px;top:0;position:absolute;width:150px;height:48px;}#i12ru{display:none;left:10px;top:77px;position:absolute;}#i374r{display:block;left:10px;top:77px;position:absolute;}}
 
 {PageAttributes}
 
@@ -26,9 +26,13 @@ PageMode = "absolute"
 Id = "7e312b6a-d62b-48d6-b5d0-3524d233599b"
 StartPage = "True"
 PreloadPage = "True"
-CachePage = "False"
+CachePage = "True"
 VisibilityJoin = "0"
 DisplayBackgroundColor = "False"
+TransitionIn = ""
+TransitionOut = ""
+TransitionDuration = "1.00s"
+TransitionDelay = "0.00s"
 
 [[Elements]]
 Type = "Ch5 Template"
@@ -41,6 +45,8 @@ id = "i374r"
 componentName = "subRouting"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subRouting"
 [[Elements]]
 Type = "Ch5 Template"
 
@@ -52,6 +58,8 @@ id = "i12ru"
 componentName = "subCamera"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subCamera"
 [[Elements]]
 Type = "Ch5 Text"
 Editable = true
@@ -73,6 +81,7 @@ oldID = "ifloh"
 ccid_Label = "Combined"
 ccid_ActiveFont = "'Inter'"
 pd-receivestatelabel = "Contract Enabled"
+ccid_ComponentType = "Formatted-Text"
 [[Elements]]
 Type = "Ch5 Text"
 Editable = true
@@ -94,6 +103,7 @@ oldID = "ifloh"
 pd-receivestatelabel = "Csig.Check_Time_fb"
 ccid_Label = "12:00:00"
 ccid_ActiveFont = "'Inter'"
+ccid_ComponentType = "Formatted-Text"
 [[Elements]]
 Type = "Ch5 Text"
 Editable = true
@@ -118,6 +128,7 @@ ccid_themeCSSSet = "true"
 ccid_Label = "XL Meeting  & Board Room"
 ccid_ActiveFont = "'Inter'"
 pd-receivestatelabel = "Contract Enabled"
+ccid_ComponentType = "Formatted-Text"
 [[Elements]]
 Type = "Ch5 Subpage Reference List"
 Editable = true
@@ -150,6 +161,7 @@ componentName = "Navigation"
 ccid_linkSendReceive = "True"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-subpagereceivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget List"
 widgetid = "w2f8d3626-3d48-4e39-ae7b-bb738bca3136"
 [[Elements]]
 Type = "Ch5 Template"
@@ -162,6 +174,8 @@ id = "iihd"
 componentName = "subShareSrc"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subShareSrc"
 [[Elements]]
 Type = "Ch5 Template"
 
@@ -173,6 +187,8 @@ id = "ipew"
 componentName = "subRoomSetup"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subRoomSetup"
 [[Elements]]
 Type = "Ch5 Template"
 
@@ -184,6 +200,8 @@ id = "i33w"
 componentName = "subDisplays"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subDisplays"
 [[Elements]]
 Type = "Ch5 Template"
 
@@ -195,6 +213,8 @@ id = "ipqj2"
 componentName = "subAudioEvent"
 devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meeting\"]"
 pd-receivestateshow = "Contract Enabled"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "subAudioEvent"
 [[Elements]]
 Type = "Ch5 Background"
 Editable = true
@@ -216,4 +236,5 @@ devicesVisited = "[\"TSW-1070 Zoom v5.17  - Idle, TSW-1070 Zoom v5.17  - In Meet
 componentWasResized = "false"
 imgbackgroundcolor = "transparent"
 backgroundcolor = "#f7f7fc"
+ccid_ComponentType = "Background"
 

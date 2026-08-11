@@ -2,12 +2,12 @@
 Schema = "1.0.0.0"
 CreatedByAppHost = "2.601.10.0"
 Created = 2025-11-20 11:43:27.30868-05:00
-LastModifiedByAppHost = "2.601.10.0"
-Modified = 2025-11-20 11:43:27.308674-05:00
+LastModifiedByAppHost = "2.1501.15.0"
+Modified = 2026-08-10 16:01:21.32593-04:00
 CreatedByProjectApp = "1.4201.17.0"
-LastModifiedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4801.18.0"
 MinimumProjectApp = "1.2600.1"
-MinimumAppHost = "2.0.0"
+MinimumAppHost = "2.901.0"
 
 {DeviceResolutionSource}
 []
@@ -15,18 +15,21 @@ MinimumAppHost = "2.0.0"
 {ProjectAttributes}
 
 [Attributes]
-ComponentKey = "UiEditor"
 Name = "Break Area"
 ThemeId = "light-theme.css"
 ProjectThemeIds = "light-theme.css"
 ThemePageColor = "#ffffff"
 IncludeUnusedAsset = "False"
 OverrideThemeColor = "False"
-SdkId = "CH5:2.16.1"
+SdkId = "CH5:2.18.0"
+ComponentKey = "UiEditor"
 Id = "4cef7e31-166a-4bef-8a70-d53916bc83ef"
 RuntimeThemeJoin = "0"
 RuntimeLanguageJoin = "0"
+DefaultComponentMode = "custom"
+DefaultFontFamily = "Roboto"
 DeviceResolutionIds = "D-P-TSW560P-0360-0640"
 ipId = "03"
-ProjectSchemaVersion = "6"
+ProjectSchemaVersion = "13"
+ContractIsStale = "false"
 

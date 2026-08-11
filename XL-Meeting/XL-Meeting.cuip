@@ -2,12 +2,12 @@
 Schema = "1.0.0.0"
 CreatedByAppHost = "2.601.10.0"
 Created = 2026-05-08 15:30:16.942279-04:00
-LastModifiedByAppHost = "2.601.10.0"
-Modified = 2026-06-11 10:03:05.694816-04:00
+LastModifiedByAppHost = "2.1501.15.0"
+Modified = 2026-08-10 16:03:29.150716-04:00
 CreatedByProjectApp = "1.4201.17.0"
-LastModifiedByProjectApp = "1.4201.17.0"
+LastModifiedByProjectApp = "1.4801.18.0"
 MinimumProjectApp = "1.2600.1"
-MinimumAppHost = "2.0.0"
+MinimumAppHost = "2.901.0"
 
 {DeviceResolutionSource}
 []
@@ -21,12 +21,15 @@ ProjectThemeIds = "light-theme.css"
 ThemePageColor = "#ffffff"
 IncludeUnusedAsset = "False"
 OverrideThemeColor = "False"
-SdkId = "CH5:2.16.1"
+SdkId = "CH5:2.18.0"
 ComponentKey = "UiEditor"
 Id = "76867e06-fab8-4fbe-ab16-055fc57ee6af"
 RuntimeThemeJoin = "0"
 RuntimeLanguageJoin = "0"
+DefaultComponentMode = "custom"
+DefaultFontFamily = "Roboto"
 DeviceResolutionIds = "D-L-TSW1070-1280-0800,G-L-DGE1000-1920-1080"
 ipId = "1F"
-ProjectSchemaVersion = "6"
+ProjectSchemaVersion = "13"
+ContractIsStale = "false"
 

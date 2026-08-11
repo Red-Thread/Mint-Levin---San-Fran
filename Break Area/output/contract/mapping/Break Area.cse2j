@@ -1,6 +1,6 @@
 {
   "name": "Break Area",
-  "timestamp": "2026-06-11T15:08:25.826117+00:00",
+  "timestamp": "2026-08-10T20:40:44.174098+00:00",
   "version": "1.0.0.0",
   "schema_version": 1,
   "extra_value": "",
@@ -10,16 +10,18 @@
         "1": {
           "2": "main.Slider.Enabled"
         },
-        "3": {
+        "2": {
           "2": "main.srclist.ListEnabled",
           "4": "main.srclist.Button1ItemSelected",
           "5": "main.srclist.Button2ItemSelected",
           "6": "main.srclist.Button3ItemSelected",
           "7": "main.srclist.Button4ItemSelected",
+          "8": "main.srclist.Button5ItemSelected",
           "504": "main.srclist.Button1Visible",
           "505": "main.srclist.Button2Visible",
           "506": "main.srclist.Button3Visible",
-          "507": "main.srclist.Button4Visible"
+          "507": "main.srclist.Button4Visible",
+          "508": "main.srclist.Button5Visible"
         }
       },
       "numeric": {
@@ -29,13 +31,14 @@
       },
       "string": {
         "2": {
-          "1": "main.header.roomname.Indirect"
-        },
-        "3": {
           "1": "main.srclist.Button1Text",
           "2": "main.srclist.Button2Text",
           "3": "main.srclist.Button3Text",
-          "4": "main.srclist.Button4Text"
+          "4": "main.srclist.Button4Text",
+          "5": "main.srclist.Button5Text"
+        },
+        "3": {
+          "1": "main.header.roomname.Indirect"
         }
       }
     },
@@ -43,19 +46,23 @@
       "boolean": {
         "main.srclist.Button1ItemPress": {
           "joinId": 1001,
-          "smartObjectId": 3
+          "smartObjectId": 2
         },
         "main.srclist.Button2ItemPress": {
           "joinId": 1002,
-          "smartObjectId": 3
+          "smartObjectId": 2
         },
         "main.srclist.Button3ItemPress": {
           "joinId": 1003,
-          "smartObjectId": 3
+          "smartObjectId": 2
         },
         "main.srclist.Button4ItemPress": {
           "joinId": 1004,
-          "smartObjectId": 3
+          "smartObjectId": 2
+        },
+        "main.srclist.Button5ItemPress": {
+          "joinId": 1005,
+          "smartObjectId": 2
         }
       },
       "numeric": {
